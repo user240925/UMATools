@@ -2,6 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const path = require('path');
 const cheerio = require('cheerio');
+const puppeteer = require('puppeteer');
 
 const app = express();
 const PORT = 3000;
@@ -223,6 +224,67 @@ app.post('/api/fetch', async (req, res) => {
     });
 
   } catch (error) {
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
+
+app.post('/api/fetch-basic', async (req, res) => {
+  let browser = null;
+  try {
+    const { url } = req.body;
+
+    if (!url) {
+      return res.status(400).json({ error: '請提供網址' });
+    }
+
+    // 使用 Puppeteer 抓取動態渲染的網頁
+    browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+
+    const page = await browser.newPage();
+
+    // 設置 User-Agent
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+
+    // 設置視窗大小
+    await page.setViewport({ width: 1920, height: 1080 });
+
+    // 訪問網頁
+    await page.goto(url, {
+      waitUntil: 'networkidle2',
+      timeout: 30000
+    });
+
+    // 等待特定元素加載
+    try {
+      await page.waitForSelector('.skills_skill_table__ZoEHP', { timeout: 10000 });
+    } catch (e) {
+      // 如果找不到特定元素，繼續執行
+      console.log('特定元素未找到，繼續獲取頁面內容');
+    }
+
+    // 獲取完整的 HTML 內容
+    const content = await page.content();
+
+    await browser.close();
+    browser = null;
+
+    res.json({
+      success: true,
+      content: content,
+      status: 200,
+      contentType: 'text/html'
+    });
+
+  } catch (error) {
+    if (browser) {
+      await browser.close();
+    }
     res.status(500).json({
       success: false,
       error: error.message
