@@ -43,6 +43,110 @@ function parseUrlParameters(url) {
   }
 }
 
+function parseSkillData(html) {
+  const $ = cheerio.load(html);
+
+  const skillList = [];
+  const debugInfo = {
+    foundElements: {},
+    searchAttempts: []
+  };
+
+  // 尋找所有 skills_table_row 的 div 元素
+  $('[class*="skills_table_row"]').each(function (index) {
+    const row = $(this);
+
+    // 獲取圖標路徑
+    const iconElement = row.find('[class*="skills_table_icon"] img');
+    const iconSrc = iconElement.attr('src') || '';
+
+    // 獲取翻譯名稱（日文名稱）- 使用更精確的選擇器
+    const jpNameElement = row.children('[class*="skills_table_jpname"]').first();
+    const jpName = jpNameElement.text().trim();
+
+    // 獲取原始名稱（英文名稱）- 先嘗試直接子元素,如果找不到則在整個 row 內搜索
+    let enNameElement = row.children('[class*="skills_table_enname"]').first();
+    let enName = enNameElement.text().trim();
+
+    // 如果直接子元素沒找到,嘗試在 row 內部搜索
+    if (!enName) {
+      enNameElement = row.find('[class*="skills_table_enname"]').first();
+      enName = enNameElement.text().trim();
+    }
+
+    // 調試：記錄找到的元素的詳細資訊
+    const allDirectChildren = [];
+    row.children('div').each(function () {
+      const childClass = $(this).attr('class') || '';
+      const childText = $(this).text().trim();
+      allDirectChildren.push({
+        class: childClass,
+        text: childText.substring(0, 50),
+        hasJpName: childClass.includes('skills_table_jpname'),
+        hasEnName: childClass.includes('skills_table_enname'),
+        hasIcon: childClass.includes('skills_table_icon')
+      });
+    });
+
+    debugInfo.foundElements[index] = {
+      row_html: row.html()?.substring(0, 400),
+      icon_src: iconSrc,
+      icon_found: !!iconSrc,
+      jpName: jpName,
+      jpName_found: !!jpName,
+      jpName_classes: jpNameElement.attr('class') || 'NOT_FOUND',
+      jpName_html: jpNameElement.html()?.substring(0, 100) || 'NOT_FOUND',
+      enName: enName,
+      enName_found: !!enName,
+      enName_classes: enNameElement.attr('class') || 'NOT_FOUND',
+      enName_html: enNameElement.html()?.substring(0, 100) || 'NOT_FOUND',
+      direct_children: allDirectChildren
+    };
+
+    // 只添加有內容的技能
+    if (iconSrc || jpName || enName) {
+      skillList.push({
+        icon: iconSrc,
+        jpName: jpName,
+        enName: enName
+      });
+    }
+  });
+
+  debugInfo.searchAttempts.push({
+    method: 'search_skills_table_row_divs',
+    found: skillList.length
+  });
+
+  // 如果還是沒有找到，提供詳細的調試資訊
+  if (skillList.length === 0) {
+    const detailedDebug = [];
+    $('.skills_skill_table__ZoEHP').find('[class*="skills_table"]').each(function () {
+      const elem = $(this);
+      detailedDebug.push({
+        class: elem.attr('class'),
+        tag: this.name,
+        text: elem.text().trim().substring(0, 100),
+        html: elem.html()?.substring(0, 300)
+      });
+    });
+
+    return {
+      totalSkills: 0,
+      skills: [],
+      debug: detailedDebug,
+      debugInfo: debugInfo,
+      message: '未找到符合條件的技能資料，請檢查 HTML 結構'
+    };
+  }
+
+  return {
+    totalSkills: skillList.length,
+    skills: skillList,
+    debugInfo: debugInfo
+  };
+}
+
 function parseRaceCourseData(html) {
   const $ = cheerio.load(html);
 
@@ -51,8 +155,8 @@ function parseRaceCourseData(html) {
 
   // 擷取 courseSkillEffectTable 底下的所有資訊
   const skillList = [];
-  $('[class*="courseSkillEffectTable_component_courseSkillEffectTable"]').each(function() {
-    $(this).find('[class*="skillCard"]').each(function() {
+  $('[class*="courseSkillEffectTable_component_courseSkillEffectTable"]').each(function () {
+    $(this).find('[class*="skillCard"]').each(function () {
       const skillCard = $(this);
 
       // 基本資訊 - 使用多種可能的選擇器
@@ -65,7 +169,7 @@ function parseRaceCourseData(html) {
 
       // 收集所有圖片
       const images = [];
-      skillCard.find('img').each(function() {
+      skillCard.find('img').each(function () {
         const src = $(this).attr('src');
         const alt = $(this).attr('alt');
         if (src) {
@@ -76,7 +180,7 @@ function parseRaceCourseData(html) {
 
       // 收集所有 input 元素
       const inputs = [];
-      skillCard.find('input').each(function() {
+      skillCard.find('input').each(function () {
         const input = $(this);
         inputs.push({
           type: input.attr('type') || '',
@@ -97,10 +201,10 @@ function parseRaceCourseData(html) {
 
       // 收集所有帶有 class 的 div 和 span 元素
       const elements = [];
-      skillCard.find('div, span').each(function() {
+      skillCard.find('div, span').each(function () {
         const elem = $(this);
         const elemClass = elem.attr('class') || '';
-        const elemText = elem.contents().filter(function() {
+        const elemText = elem.contents().filter(function () {
           return this.type === 'text';
         }).text().trim();
 
@@ -153,7 +257,7 @@ function parseRaceCourseData(html) {
       const styleRelatedAttribs = {};
       Object.keys(allAttribs).forEach(key => {
         if (key.includes('color') || key.includes('style') || key.includes('theme') ||
-            key.includes('variant') || key.includes('type')) {
+          key.includes('variant') || key.includes('type')) {
           styleRelatedAttribs[key] = allAttribs[key];
         }
       });
@@ -240,13 +344,15 @@ app.post('/api/fetch-basic', async (req, res) => {
       return res.status(400).json({ error: '請提供網址' });
     }
 
-    // 使用 Puppeteer 抓取動態渲染的網頁
+    // 使用 Puppeteer 抓取動態渲染的網頁 (無痕模式)
     browser = await puppeteer.launch({
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
 
-    const page = await browser.newPage();
+    // 創建無痕模式的瀏覽器上下文
+    const context = await browser.createBrowserContext();
+    const page = await context.newPage();
 
     // 設置 User-Agent
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
@@ -260,13 +366,104 @@ app.post('/api/fetch-basic', async (req, res) => {
       timeout: 30000
     });
 
+    const fs = require('fs');
+    const logToFile = (msg) => {
+      fs.appendFileSync('server_log.txt', msg + '\n');
+      console.log(msg);
+    };
+
+    console.log('頁面已載入,開始處理伺服器設定...');
+
+    // 點擊右上角齒輪圖標並勾選台灣伺服器選項
+    try {
+      console.log('嘗試尋找並點擊右上角齒輪圖標...');
+
+      // 尋找齒輪圖標 (img src包含 settings.png)
+      await page.waitForSelector('img[src*="settings.png"]', { timeout: 5000 });
+
+      // 點擊齒輪圖標
+      const settingsClicked = await page.evaluate(() => {
+        const images = Array.from(document.querySelectorAll('img'));
+        const settingsIcon = images.find(img => img.src && img.src.includes('settings.png'));
+
+        if (settingsIcon) {
+          settingsIcon.click();
+          return true;
+        }
+        return false;
+      });
+
+      if (settingsClicked) {
+        console.log('已點擊齒輪圖標');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        // 勾選台灣伺服器選項
+        console.log('嘗試尋找並勾選台灣伺服器選項...');
+
+        try {
+          // 使用精確的 ID 選擇器
+          await page.waitForSelector('#serverTwCheckbox', { timeout: 5000 });
+
+          // 點擊對應的 input
+          const taiwanChecked = await page.evaluate(() => {
+            const input = document.getElementById('serverTwCheckbox');
+            if (input) {
+              input.click();
+              return true;
+            }
+            return false;
+          });
+
+          if (taiwanChecked) {
+            console.log('已勾選台灣伺服器選項');
+
+            // 等待頁面更新 - 增加等待時間
+            await new Promise(resolve => setTimeout(resolve, 5000));
+
+            // 明確等待技能表格的 enName 元素出現並可見
+            try {
+              await page.waitForSelector('[class*="skills_table_enname"]', {
+                timeout: 10000,
+                visible: true
+              });
+              console.log('找到 skills_table_enname 元素');
+
+              // 額外等待確保所有元素都已渲染
+              await new Promise(resolve => setTimeout(resolve, 2000));
+
+            } catch (e) {
+              console.log('等待 enName 元素時發生錯誤: ' + e.message);
+              console.log('將繼續嘗試抓取資料...');
+            }
+          } else {
+            throw new Error('無法點擊台灣伺服器選項');
+          }
+        } catch (e) {
+          console.log('勾選台灣伺服器失敗: ' + e.message);
+        }
+      } else {
+        console.log('未找到齒輪圖標');
+      }
+    } catch (e) {
+      console.log('設定伺服器選項時發生錯誤:', e.message);
+      console.log('繼續進行資料抓取...');
+    }
+
     // 等待特定元素加載
     try {
       await page.waitForSelector('.skills_skill_table__ZoEHP', { timeout: 10000 });
+      console.log('找到 skills_skill_table__ZoEHP');
+
+      // 額外等待 enName 元素出現
+      await page.waitForSelector('[class*="skills_table_enname"]', { timeout: 5000 });
+      console.log('找到 skills_table_enname 元素');
     } catch (e) {
       // 如果找不到特定元素，繼續執行
-      console.log('特定元素未找到，繼續獲取頁面內容');
+      console.log('某些元素未找到:', e.message);
     }
+
+    // 額外等待 2 秒確保所有動態內容都已載入
+    await new Promise(resolve => setTimeout(resolve, 2000));
 
     // 獲取完整的 HTML 內容
     const content = await page.content();
@@ -274,11 +471,15 @@ app.post('/api/fetch-basic', async (req, res) => {
     await browser.close();
     browser = null;
 
+    // 解析技能數據
+    const parsedData = parseSkillData(content);
+
     res.json({
       success: true,
       content: content,
       status: 200,
-      contentType: 'text/html'
+      contentType: 'text/html',
+      parsed: parsedData
     });
 
   } catch (error) {

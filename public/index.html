@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -240,6 +241,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>🏁 UMA Tools - 資訊收集工具</h1>
@@ -253,12 +255,9 @@
         <!-- 賽道資訊收集頁簽 -->
         <div id="raceTab" class="main-tab-content active">
             <div class="input-group">
-                <input
-                    type="text"
-                    id="raceUrlInput"
+                <input type="text" id="raceUrlInput"
                     placeholder="請輸入賽道網址 (例如: https://xn--gck1f423k.xn--1bvt37a.tools/race/courses/10301/effects/betweener)"
-                    value=""
-                >
+                    value="">
                 <button id="raceFetchBtn" onclick="fetchRaceContent()">抓取</button>
             </div>
 
@@ -307,12 +306,9 @@
         <!-- 技能資訊收集頁簽 -->
         <div id="skillTab" class="main-tab-content">
             <div class="input-group">
-                <input
-                    type="text"
-                    id="skillUrlInput"
-                    placeholder="請輸入技能網址 (例如: https://www.example.com)"
-                    value=""
-                >
+                <input type="text" id="skillUrlInput"
+                    placeholder="請輸入技能網址 (例如: https://gametora.com/ja/umamusume/skills)"
+                    value="https://gametora.com/ja/umamusume/skills">
                 <button id="skillFetchBtn" onclick="fetchSkillContent()">抓取</button>
             </div>
 
@@ -320,12 +316,37 @@
                 正在抓取技能資訊...
             </div>
 
-            <div id="skillResult" class="parsed-data hidden">
-                <div class="result-info">
-                    <p><strong>狀態碼:</strong> <span id="skillStatus"></span></p>
-                    <p><strong>內容類型:</strong> <span id="skillContentType"></span></p>
+            <div id="skillParsedData" class="parsed-data hidden">
+                <div class="sub-tabs">
+                    <button class="sub-tab active" onclick="switchSubTab('skill', 'parsed')">解析結果</button>
+                    <button class="sub-tab" onclick="switchSubTab('skill', 'raw')">原始內容</button>
                 </div>
-                <div class="result-content" id="skillContent"></div>
+
+                <div id="skillParsedTab" class="sub-tab-content active">
+                    <div class="parsed-section">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                            <h2 style="margin-bottom: 0;">📊 技能資訊 JSON</h2>
+                            <button id="downloadJsonBtn" onclick="downloadSkillJson()"
+                                style="padding: 5px 15px; font-size: 14px;">⬇️ 下載 JSON</button>
+                        </div>
+                        <div class="json-display" id="skillJson"></div>
+                    </div>
+
+                    <div class="parsed-section">
+                        <h2>🔍 抓取到的完整 HTML 內容</h2>
+                        <div class="result-content" id="skillHtmlContent" style="max-height: 600px; overflow-y: auto;">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="skillRawTab" class="sub-tab-content">
+                    <div class="result-info">
+                        <p><strong>狀態碼:</strong> <span id="skillStatus"></span></p>
+                        <p><strong>內容類型:</strong> <span id="skillContentType"></span></p>
+                    </div>
+                    <div class="result-content" id="skillContent"></div>
+                </div>
             </div>
 
             <div id="skillError" class="error hidden"></div>
@@ -333,6 +354,9 @@
     </div>
 
     <script>
+        // 全域變數儲存當前技能資料
+        let currentSkillData = null;
+
         // 主頁簽切換
         function switchMainTab(tabName) {
             const mainTabs = document.querySelectorAll('.main-tab');
@@ -454,7 +478,7 @@
         const skillUrlInput = document.getElementById('skillUrlInput');
         const skillFetchBtn = document.getElementById('skillFetchBtn');
         const skillLoading = document.getElementById('skillLoading');
-        const skillResult = document.getElementById('skillResult');
+        const skillParsedData = document.getElementById('skillParsedData');
         const skillError = document.getElementById('skillError');
 
         skillUrlInput.addEventListener('keypress', (e) => {
@@ -479,6 +503,7 @@
             hideSkillAll();
             skillLoading.classList.remove('hidden');
             skillFetchBtn.disabled = true;
+            currentSkillData = null; // 重置資料
 
             try {
                 const response = await fetch('/api/fetch-basic', {
@@ -508,7 +533,39 @@
             document.getElementById('skillStatus').textContent = data.status;
             document.getElementById('skillContentType').textContent = data.contentType || 'unknown';
             document.getElementById('skillContent').textContent = data.content;
-            skillResult.classList.remove('hidden');
+
+            if (data.parsed) {
+                currentSkillData = data.parsed; // 儲存解析後的資料
+                document.getElementById('skillJson').textContent = JSON.stringify(data.parsed, null, 2);
+            }
+
+            // 顯示完整的 HTML 內容
+            if (data.content) {
+                document.getElementById('skillHtmlContent').textContent = data.content;
+            } else {
+                document.getElementById('skillHtmlContent').textContent = '無 HTML 內容';
+            }
+
+            skillParsedData.classList.remove('hidden');
+        }
+
+        function downloadSkillJson() {
+            if (!currentSkillData) {
+                alert('沒有可下載的資料');
+                return;
+            }
+
+            const jsonString = JSON.stringify(currentSkillData, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'skills.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         }
 
         function showSkillError(message) {
@@ -517,9 +574,10 @@
         }
 
         function hideSkillAll() {
-            skillResult.classList.add('hidden');
+            skillParsedData.classList.add('hidden');
             skillError.classList.add('hidden');
         }
     </script>
 </body>
+
 </html>
