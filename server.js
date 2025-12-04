@@ -275,33 +275,49 @@ function parseSkillData(html) {
 function parseRaceCourseData(html) {
   const $ = cheerio.load(html);
 
-  // 擷取 headlineDefault_component_headlineDefault__body 內的 text
-  const headline = $('[class*="headlineDefault_component_headlineDefault__body"]').text().trim();
-
-  // 擷取 courseSkillEffectTable 底下的所有資訊
-  const skillList = [];
-  $('[class*="courseSkillEffectTable_component_courseSkillEffectTable"]').each(function () {
-    $(this).find('[class*="skillCard"]').each(function () {
-      const skillCard = $(this);
-
-      // 基本資訊 - 使用多種可能的選擇器
-      const name = skillCard.find('[class*="skillCard__name"], [class*="name"]').first().text().trim();
-      const effect = skillCard.find('[class*="skillCard__effect"], [class*="effect"]').first().text().trim();
-      const description = skillCard.find('[class*="description"], [class*="desc"]').first().text().trim();
+  // 輔助函數：從 skillCard 元素提取技能資訊
+  function extractSkillInfo(skillCard, containerIndex = 0) {
+    // 基本資訊 - 使用多種可能的選擇器
+    const name = skillCard.find('[class*="skillCard__name"]').first().text().trim();
+    const effect = skillCard.find('[class*="skillCard__effect"]').first().text().trim();
+    const memo = skillCard.find('[class*="skillCard__memo"]').first().text().trim();
+    const description = skillCard.find('[class*="description"], [class*="desc"]').first().text().trim();
 
       // 分割 effect 數據（用、或,分隔）
       const effectList = effect ? effect.split(/[、,]/).map(item => item.trim()).filter(item => item.length > 0) : [];
 
-      // 收集所有圖片
+      // 提取圖片 - 優先從 background-image 提取
+      let icon = '';
+      const iconDiv = skillCard.find('[class*="skillCard__icon"]').first();
+      if (iconDiv.length > 0) {
+        const styleAttr = iconDiv.attr('style') || '';
+        const bgMatch = styleAttr.match(/background-image:\s*url\(['"]?([^'")\s]+)['"]?\)/);
+        if (bgMatch) {
+          // 移除 &amp; 並解碼 HTML 實體
+          icon = bgMatch[1].replace(/&amp;/g, '&');
+        }
+      }
+
+      // 如果沒找到 background-image，嘗試找 img 標籤
+      if (!icon) {
+        const imgElement = skillCard.find('img').first();
+        if (imgElement.length > 0) {
+          icon = imgElement.attr('src') || '';
+        }
+      }
+
+      // 收集所有圖片（包括 img 標籤）
       const images = [];
+      if (icon) {
+        images.push({ src: icon, alt: name });
+      }
       skillCard.find('img').each(function () {
         const src = $(this).attr('src');
         const alt = $(this).attr('alt');
-        if (src) {
+        if (src && src !== icon) {
           images.push({ src, alt: alt || '' });
         }
       });
-      const icon = images.length > 0 ? images[0].src : '';
 
       // 收集所有 input 元素
       const inputs = [];
@@ -387,34 +403,80 @@ function parseRaceCourseData(html) {
         }
       });
 
-      // 獲取 skillCard 的 HTML 結構（僅前 500 字符，用於調試）
-      const htmlStructure = skillCard.html()?.substring(0, 500) || '';
+    // 獲取 skillCard 的 HTML 結構（僅前 500 字符，用於調試）
+    const htmlStructure = skillCard.html()?.substring(0, 500) || '';
 
-      const skillData = {
-        name: name,
-        effect: effect,
-        effectList: effectList,
-        description: description,
-        icon: icon,
-        images: images,
-        value: value,
-        maxValue: maxValue,
-        minValue: minValue,
-        inputs: inputs,
-        elements: elements,
-        dataAttributes: dataAttributes,
-        classes: classes,
-        style: style,
-        colorIndicator: colorIndicator,
-        rowType: rowType,
-        rowIndex: index,
-        styleRelatedAttribs: styleRelatedAttribs,
-        htmlStructure: htmlStructure
+    return {
+      name: name,
+      memo: memo,
+      effect: effect,
+      effectList: effectList,
+      description: description,
+      icon: icon,
+      images: images,
+      value: value,
+      maxValue: maxValue,
+      minValue: minValue,
+      inputs: inputs,
+      elements: elements,
+      dataAttributes: dataAttributes,
+      classes: classes,
+      style: style,
+      colorIndicator: colorIndicator,
+      rowType: rowType,
+      rowIndex: index,
+      styleRelatedAttribs: styleRelatedAttribs,
+      htmlStructure: htmlStructure
+    };
+  }
+
+  // 擷取 headlineDefault_component_headlineDefault__body 內的 text
+  const headline = $('[class*="headlineDefault_component_headlineDefault__body"]').text().trim();
+
+  // 擷取 courseSkillEffectTable 底下的所有資訊
+  const skillList = [];
+
+  // 只查找最外層的 container
+  $('[class*="courseSkillEffectTable_component_courseSkillEffectTable"]').each(function () {
+    $(this).find('[class*="courseSkillEffectTableRow_component_container"]').each(function (containerIndex) {
+      const container = $(this);
+
+      // 找出 container 內的所有 skillCard
+      const allSkillCards = container.find('[class*="skillCard__body"], [class*="skillCard"][class*="normal"], [class*="skillCard"][class*="unique"]');
+
+      if (allSkillCards.length === 0) return; // 如果沒找到任何 skillCard，跳過
+
+      // 提取主技能（第一個 skillCard）
+      const mainSkillCard = allSkillCards.first();
+      const mainSkillData = extractSkillInfo(mainSkillCard, containerIndex);
+
+      // 檢查是否有巢狀元素（超過一個 skillCard）
+      const hasNested = allSkillCards.length > 1;
+      const nestedSkills = [];
+
+      if (hasNested) {
+        // 提取所有巢狀技能（從第二個開始）
+        allSkillCards.slice(1).each(function () {
+          const nestedSkillCard = $(this);
+          const nestedSkillData = extractSkillInfo(nestedSkillCard, containerIndex);
+
+          // 只加入有實質內容的巢狀技能
+          if (nestedSkillData.name || nestedSkillData.effect || nestedSkillData.description) {
+            nestedSkills.push(nestedSkillData);
+          }
+        });
+      }
+
+      // 組合最終的技能資料
+      const finalSkillData = {
+        ...mainSkillData,
+        hasNested: hasNested,
+        nestedSkills: nestedSkills
       };
 
-      // 只加入有實質內容的技能
-      if (name || effect || description || elements.length > 0) {
-        skillList.push(skillData);
+      // 只加入有實質內容的主技能
+      if (mainSkillData.name || mainSkillData.effect || mainSkillData.description || mainSkillData.elements.length > 0) {
+        skillList.push(finalSkillData);
       }
     });
   });
