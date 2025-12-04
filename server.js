@@ -3,9 +3,134 @@ const axios = require('axios');
 const path = require('path');
 const cheerio = require('cheerio');
 const puppeteer = require('puppeteer');
+const fs = require('fs').promises;
+const fsSync = require('fs');
 
 const app = express();
 const PORT = 3000;
+
+// 輔助函數：生成檔案名稱（時間戳記 + 語系）
+function generateFileName(language = 'tw') {
+  const now = new Date();
+  const timestamp = now.getFullYear().toString() +
+    (now.getMonth() + 1).toString().padStart(2, '0') +
+    now.getDate().toString().padStart(2, '0') +
+    now.getHours().toString().padStart(2, '0') +
+    now.getMinutes().toString().padStart(2, '0') +
+    now.getSeconds().toString().padStart(2, '0');
+  return `${timestamp}_${language}.json`;
+}
+
+// 輔助函數：確保目錄存在
+async function ensureDirectoryExists(dirPath) {
+  try {
+    await fs.access(dirPath);
+  } catch {
+    await fs.mkdir(dirPath, { recursive: true });
+  }
+}
+
+// 輔助函數：檢查檔案是否存在
+function fileExists(filePath) {
+  try {
+    return fsSync.existsSync(filePath);
+  } catch {
+    return false;
+  }
+}
+
+// 輔助函數：下載圖片
+async function downloadImage(imageUrl, savePath) {
+  try {
+    // 確保圖片 URL 是完整的
+    let fullUrl = imageUrl;
+    if (imageUrl.startsWith('/')) {
+      // 假設圖片來自 gametora.com
+      fullUrl = `https://gametora.com${imageUrl}`;
+    }
+
+    const response = await axios.get(fullUrl, {
+      responseType: 'arraybuffer',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      },
+      timeout: 10000
+    });
+
+    // 確保目錄存在
+    const dir = path.dirname(savePath);
+    await ensureDirectoryExists(dir);
+
+    // 寫入圖片
+    await fs.writeFile(savePath, response.data);
+    return true;
+  } catch (error) {
+    console.error(`下載圖片失敗 ${imageUrl}:`, error.message);
+    return false;
+  }
+}
+
+// 輔助函數：儲存技能數據並下載圖片
+async function saveSkillsData(skillsData, language = 'tw') {
+  try {
+    // 確保 data/skills 目錄存在
+    await ensureDirectoryExists('./data/skills');
+
+    // 生成檔案名稱
+    const fileName = generateFileName(language);
+    const filePath = path.join('./data/skills', fileName);
+
+    // 只保留 skills 陣列，移除 debugInfo 等其他資訊
+    const cleanedData = {
+      skills: skillsData.skills || []
+    };
+
+    // 儲存 JSON 檔案
+    await fs.writeFile(filePath, JSON.stringify(cleanedData, null, 2), 'utf-8');
+    console.log(`已儲存技能數據: ${filePath}`);
+
+    // 下載所有技能圖示
+    if (skillsData.skills && Array.isArray(skillsData.skills)) {
+      let downloadCount = 0;
+      let skipCount = 0;
+
+      for (const skill of skillsData.skills) {
+        if (skill.icon) {
+          // 從 icon 路徑提取檔案名稱
+          const iconFileName = path.basename(skill.icon);
+          const imageSavePath = path.join('./data/images/umamusume/skill_icons', iconFileName);
+
+          // 檢查圖片是否已存在
+          if (fileExists(imageSavePath)) {
+            skipCount++;
+            console.log(`圖片已存在，略過: ${iconFileName}`);
+          } else {
+            // 下載圖片
+            const success = await downloadImage(skill.icon, imageSavePath);
+            if (success) {
+              downloadCount++;
+              console.log(`已下載圖片: ${iconFileName}`);
+            }
+          }
+        }
+      }
+
+      console.log(`圖片下載完成！新下載: ${downloadCount} 個，略過: ${skipCount} 個`);
+    }
+
+    return {
+      success: true,
+      filePath: filePath,
+      fileName: fileName
+    };
+  } catch (error) {
+    console.error('儲存技能數據時發生錯誤:', error);
+    return {
+      success: false,
+      error: error.message
+    };
+  }
+}
 
 app.use(express.json());
 app.use(express.static('public'));
@@ -366,12 +491,6 @@ app.post('/api/fetch-basic', async (req, res) => {
       timeout: 30000
     });
 
-    const fs = require('fs');
-    const logToFile = (msg) => {
-      fs.appendFileSync('server_log.txt', msg + '\n');
-      console.log(msg);
-    };
-
     console.log('頁面已載入,開始處理伺服器設定...');
 
     // 點擊右上角齒輪圖標並勾選台灣伺服器選項
@@ -474,12 +593,17 @@ app.post('/api/fetch-basic', async (req, res) => {
     // 解析技能數據
     const parsedData = parseSkillData(content);
 
+    // 自動儲存技能數據和下載圖片
+    const language = 'tw'; // 預設語系為台灣
+    const saveResult = await saveSkillsData(parsedData, language);
+
     res.json({
       success: true,
       content: content,
       status: 200,
       contentType: 'text/html',
-      parsed: parsedData
+      parsed: parsedData,
+      saved: saveResult
     });
 
   } catch (error) {
