@@ -303,11 +303,17 @@ function parseRaceCourseData(html) {
       while ((match = skillPattern.exec(scriptData)) !== null) {
         const [, id, rarity, groupId, groupRate, gradeValue, skillName, skillDesc] = match;
 
-        // 在匹配位置附近查找 iconId
+        // 在匹配位置附近查找 iconId 和 needSkillPoint
         const pos = match.index;
         const context = scriptData.substring(Math.max(0, pos - 100), Math.min(scriptData.length, pos + 500));
         const iconMatch = context.match(/\\"iconId\\":(\d+)/);
         const iconId = iconMatch ? iconMatch[1] : null;
+
+        const needSkillPointMatch = context.match(/\\"needSkillPoint\\":(\d+|null)/);
+        let needSkillPoint = null;
+        if (needSkillPointMatch) {
+          needSkillPoint = needSkillPointMatch[1] === 'null' ? null : parseInt(needSkillPointMatch[1]);
+        }
 
         const skill = {
           id: parseInt(id),
@@ -316,6 +322,7 @@ function parseRaceCourseData(html) {
           groupRate: parseInt(groupRate),
           gradeValue: parseInt(gradeValue),
           iconId: iconId ? parseInt(iconId) : null,
+          needSkillPoint: needSkillPoint,
           name: skillName,
           description: skillDesc.replace(/\\\\n/g, '\n')
         };
@@ -527,6 +534,16 @@ function parseRaceCourseData(html) {
       const mainSkillData = extractSkillInfo(mainSkillCard, containerIndex);
       mainSkillData.rarity = rarity;
 
+      // 從 HTML 提取 needSkillPoint（作為備用，如果 script 中沒有）
+      const spinnerInput = container.find('[class*="hintSpinner_component_spinner__input"] input');
+      if (spinnerInput.length > 0) {
+        const value = spinnerInput.attr('value');
+        // 只有當值不是 "-" 時才設置
+        if (value && value !== '-') {
+          mainSkillData.needSkillPointFromHTML = parseInt(value);
+        }
+      }
+
       // 檢查是否有巢狀元素（超過一個 skillCard）
       const hasNested = allSkillCards.length > 1;
       const nestedSkills = [];
@@ -624,6 +641,8 @@ function parseRaceCourseData(html) {
         groupRate: skill.groupRate,
         gradeValue: skill.gradeValue,
         iconId: skill.iconId,
+        // needSkillPoint: 優先使用 script 的值，如果沒有則使用 HTML 的備用值
+        needSkillPoint: skill.needSkillPoint !== null ? skill.needSkillPoint : (htmlSkill?.needSkillPointFromHTML || null),
 
         // 從 HTML 補充的數據（如果有的話）
         memo: htmlSkill?.memo || '',
