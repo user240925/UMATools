@@ -275,6 +275,71 @@ function parseSkillData(html) {
 function parseRaceCourseData(html) {
   const $ = cheerio.load(html);
 
+  // ========== 步驟 1: 從 <script> 標籤提取完整技能 JSON 數據 ==========
+  let scriptSkillsMap = new Map(); // id -> skill data
+  let groupIdMap = new Map(); // groupId -> [skill ids]
+
+  try {
+    // 尋找包含技能數據的 script 標籤
+    let scriptData = null;
+    $('script').each(function() {
+      const content = $(this).html();
+      if (content && content.includes('skillName') && content.includes('groupId') && content.length > 100000) {
+        scriptData = content;
+        return false; // 找到後停止
+      }
+    });
+
+    if (scriptData) {
+      console.log('[Script解析] 找到技能數據 script，長度:', scriptData.length);
+
+      // 使用正則提取所有技能物件
+      // 匹配模式：{"id":數字,"rarity":數字,...}
+      const skillPattern = /\\"id\\":(\d+),\\"rarity\\":(\d+),\\"groupId\\":(\d+),\\"groupRate\\":(\d+),\\"gradeValue\\":(\d+)[^}]*\\"skillName\\":\\"([^"\\]+)[^}]*\\"skillDesc\\":\\"([^"\\]*)/g;
+
+      let match;
+      let skillCount = 0;
+
+      while ((match = skillPattern.exec(scriptData)) !== null) {
+        const [, id, rarity, groupId, groupRate, gradeValue, skillName, skillDesc] = match;
+
+        // 在匹配位置附近查找 iconId
+        const pos = match.index;
+        const context = scriptData.substring(Math.max(0, pos - 100), Math.min(scriptData.length, pos + 500));
+        const iconMatch = context.match(/\\"iconId\\":(\d+)/);
+        const iconId = iconMatch ? iconMatch[1] : null;
+
+        const skill = {
+          id: parseInt(id),
+          rarity: parseInt(rarity),
+          groupId: parseInt(groupId),
+          groupRate: parseInt(groupRate),
+          gradeValue: parseInt(gradeValue),
+          iconId: iconId ? parseInt(iconId) : null,
+          name: skillName,
+          description: skillDesc.replace(/\\\\n/g, '\n')
+        };
+
+        scriptSkillsMap.set(skill.id, skill);
+
+        // 建立 groupId 索引
+        if (!groupIdMap.has(skill.groupId)) {
+          groupIdMap.set(skill.groupId, []);
+        }
+        groupIdMap.get(skill.groupId).push(skill.id);
+
+        skillCount++;
+      }
+
+      console.log(`[Script解析] 成功提取 ${skillCount} 個技能`);
+      console.log(`[Script解析] 共 ${groupIdMap.size} 個不同的群組`);
+    } else {
+      console.log('[Script解析] 未找到技能數據 script，將只使用 HTML 解析');
+    }
+  } catch (error) {
+    console.error('[Script解析] 錯誤:', error.message);
+  }
+
   // 輔助函數：從 skillCard 元素提取技能資訊
   function extractSkillInfo(skillCard, containerIndex = 0) {
     // 基本資訊 - 使用多種可能的選擇器
@@ -441,14 +506,26 @@ function parseRaceCourseData(html) {
     $(this).find('[class*="courseSkillEffectTableRow_component_container"]').each(function (containerIndex) {
       const container = $(this);
 
-      // 找出 container 內的所有 skillCard
-      const allSkillCards = container.find('[class*="skillCard__body"], [class*="skillCard"][class*="normal"], [class*="skillCard"][class*="unique"]');
+      // 找出 container 內的所有 skillCard（包含所有稀有度類型）
+      // 優先查找帶稀有度標記的 skillCard (normal, unique, ur, ssr 等)
+      let allSkillCards = container.find('[class*="skillCard--"]');
+
+      // 如果沒找到帶稀有度標記的，則查找 skillCard__body
+      if (allSkillCards.length === 0) {
+        allSkillCards = container.find('[class*="skillCard__body"]');
+      }
 
       if (allSkillCards.length === 0) return; // 如果沒找到任何 skillCard，跳過
 
       // 提取主技能（第一個 skillCard）
       const mainSkillCard = allSkillCards.first();
+
+      // 提取稀有度類型（只保留類型名稱，去掉 CSS 模組後綴）
+      const rarityMatch = mainSkillCard.attr('class')?.match(/skillCard--(\w+?)(?:__|$)/);
+      const rarity = rarityMatch ? rarityMatch[1] : 'normal';
+
       const mainSkillData = extractSkillInfo(mainSkillCard, containerIndex);
+      mainSkillData.rarity = rarity;
 
       // 檢查是否有巢狀元素（超過一個 skillCard）
       const hasNested = allSkillCards.length > 1;
@@ -459,6 +536,10 @@ function parseRaceCourseData(html) {
         allSkillCards.slice(1).each(function () {
           const nestedSkillCard = $(this);
           const nestedSkillData = extractSkillInfo(nestedSkillCard, containerIndex);
+
+          // 提取巢狀技能的稀有度類型（只保留類型名稱，去掉 CSS 模組後綴）
+          const nestedRarityMatch = nestedSkillCard.attr('class')?.match(/skillCard--(\w+?)(?:__|$)/);
+          nestedSkillData.rarity = nestedRarityMatch ? nestedRarityMatch[1] : 'normal';
 
           // 只加入有實質內容的巢狀技能
           if (nestedSkillData.name || nestedSkillData.effect || nestedSkillData.description) {
@@ -481,9 +562,95 @@ function parseRaceCourseData(html) {
     });
   });
 
+  // ========== 步驟 2: 合併 script 數據與 HTML 數據 ==========
+  let finalSkillList = [];
+
+  if (scriptSkillsMap.size > 0) {
+    console.log('[數據合併] 使用 script 數據作為主要來源');
+
+    // 定義稀有度名稱映射
+    const rarityNames = {
+      0: 'common',
+      1: 'normal',
+      2: 'gold',
+      3: 'r',
+      4: 'sr',
+      5: 'ssr',
+      6: 'ur'
+    };
+
+    // 從 script 數據建立技能列表
+    scriptSkillsMap.forEach((skill) => {
+      // 查找 HTML 中對應的技能資料（透過名稱匹配）來補充額外資訊
+      const htmlSkill = skillList.find(s => s.name === skill.name);
+
+      // 建立稀有度關聯資訊
+      const relatedSkills = [];
+      const seenIds = new Set(); // 用於去重
+
+      if (groupIdMap.has(skill.groupId)) {
+        const groupSkillIds = groupIdMap.get(skill.groupId);
+
+        groupSkillIds.forEach(relatedId => {
+          if (relatedId !== skill.id && !seenIds.has(relatedId)) {
+            seenIds.add(relatedId);
+            const relatedSkill = scriptSkillsMap.get(relatedId);
+            if (relatedSkill) {
+              relatedSkills.push({
+                id: relatedSkill.id,
+                name: relatedSkill.name,
+                rarity: rarityNames[relatedSkill.rarity] || `unknown_${relatedSkill.rarity}`,
+                rarityValue: relatedSkill.rarity,
+                groupRate: relatedSkill.groupRate,
+                gradeValue: relatedSkill.gradeValue
+              });
+            }
+          }
+        });
+
+        // 按稀有度從高到低排序
+        relatedSkills.sort((a, b) => b.rarityValue - a.rarityValue);
+      }
+
+      // 構建最終的技能物件
+      const finalSkill = {
+        // 主要來自 script 的數據
+        id: skill.id,
+        name: skill.name,
+        description: skill.description,
+        rarity: rarityNames[skill.rarity] || `unknown_${skill.rarity}`,
+        rarityValue: skill.rarity,
+        groupId: skill.groupId,
+        groupRate: skill.groupRate,
+        gradeValue: skill.gradeValue,
+        iconId: skill.iconId,
+
+        // 從 HTML 補充的數據（如果有的話）
+        memo: htmlSkill?.memo || '',
+        effect: htmlSkill?.effect || '',
+        icon: htmlSkill?.icon || '',
+
+        // 稀有度關聯
+        relatedSkills: relatedSkills,
+        relatedSkillsCount: relatedSkills.length
+      };
+
+      finalSkillList.push(finalSkill);
+    });
+
+    console.log(`[數據合併] 完成，共 ${finalSkillList.length} 個技能`);
+
+  } else {
+    // 如果沒有 script 數據，使用原始的 HTML 解析結果
+    console.log('[數據合併] 使用 HTML 數據作為來源');
+    finalSkillList = skillList;
+  }
+
   return {
     headline: headline || '未找到標題',
-    skillList: skillList
+    skillList: finalSkillList,
+    dataSource: scriptSkillsMap.size > 0 ? 'script' : 'html',
+    totalGroups: groupIdMap.size
   };
 }
 
