@@ -132,6 +132,48 @@ async function saveSkillsData(skillsData, language = 'tw') {
   }
 }
 
+// 輔助函數：儲存賽道資訊
+async function saveCourseData(parsedData) {
+  try {
+    const { headlineInfo } = parsedData;
+
+    if (!headlineInfo || !headlineInfo.courseName || !headlineInfo.distance || !headlineInfo.surface || !headlineInfo.runningStyle) {
+      console.log('標題資訊不完整，無法儲存賽道資料');
+      return {
+        success: false,
+        error: '標題資訊不完整'
+      };
+    }
+
+    const { courseName, distance, surface, runningStyle } = headlineInfo;
+
+    // 建立目錄路徑: data/courses/{賽道名稱}/{距離}({賽道類型})
+    const dirPath = path.join('./data/courses', courseName, `${distance}(${surface})`);
+    await ensureDirectoryExists(dirPath);
+
+    // 建立檔案名稱: {賽道名稱}_{距離}_{跑法}.json
+    const fileName = `${courseName}_${distance}_${runningStyle}.json`;
+    const filePath = path.join(dirPath, fileName);
+
+    // 儲存 JSON 檔案
+    await fs.writeFile(filePath, JSON.stringify(parsedData, null, 2), 'utf-8');
+    console.log(`已儲存賽道資料: ${filePath}`);
+
+    return {
+      success: true,
+      filePath: filePath,
+      fileName: fileName,
+      directory: dirPath
+    };
+  } catch (error) {
+    console.error('儲存賽道資料時發生錯誤:', error);
+    return {
+      success: false,
+      error: error.message
+    };
+  }
+}
+
 app.use(express.json());
 app.use(express.static('public'));
 
@@ -505,6 +547,108 @@ function parseRaceCourseData(html) {
   // 擷取 headlineDefault_component_headlineDefault__body 內的 text
   const headline = $('[class*="headlineDefault_component_headlineDefault__body"]').text().trim();
 
+  // 解析 effect 數據
+  function parseEffectData(effectString, needSkillPoint) {
+    if (!effectString) return null;
+
+    const parsed = {
+      raw: effectString,
+      effectValue: null,        // 效果值 (例: 0.37)
+      effectPerPoint: null,     // 每點效率 (例: 0.19)
+      effectRangeMin: null,     // 效果範圍最小值 (例: 0.14)
+      effectRangeMax: null,     // 效果範圍最大值 (例: 0.34)
+      calculatedEfficiency: null // 計算的效率 = effectValue / needSkillPoint * 100
+    };
+
+    try {
+      // 提取第一個數值 X.XX[バ] - 效果值
+      const effectValueMatch = effectString.match(/([0-9.]+)\[バ\]/);
+      if (effectValueMatch) {
+        parsed.effectValue = parseFloat(effectValueMatch[1]);
+      }
+
+      // 提取 X.XX[バ/Pt] - 每點效率
+      const effectPerPointMatch = effectString.match(/([0-9.]+)\[バ\/Pt\]/);
+      if (effectPerPointMatch) {
+        parsed.effectPerPoint = parseFloat(effectPerPointMatch[1]);
+      }
+
+      // 提取範圍 X.XX ~ X.XX[バ]
+      const rangeMatch = effectString.match(/([0-9.]+)\s*~\s*([0-9.]+)\[バ\]/);
+      if (rangeMatch) {
+        parsed.effectRangeMin = parseFloat(rangeMatch[1]);
+        parsed.effectRangeMax = parseFloat(rangeMatch[2]);
+      }
+
+      // 計算效率（如果有必要的數據）
+      if (parsed.effectValue !== null && needSkillPoint !== null && needSkillPoint > 0) {
+        parsed.calculatedEfficiency = parseFloat((parsed.effectValue / needSkillPoint * 100).toFixed(4));
+      }
+
+    } catch (error) {
+      console.error('[Effect解析] 錯誤:', error.message);
+    }
+
+    return parsed;
+  }
+
+  // 解析標題內容
+  function parseHeadline(headlineText) {
+    if (!headlineText) return null;
+
+    const parsed = {
+      raw: headlineText,
+      courseName: null,      // 賽道名稱 (例: 中京)
+      distance: null,        // 距離 (例: 1800m)
+      surface: null,         // 賽道類型 (例: ダート)
+      runningStyle: null,    // 跑法 (例: 先行)
+      additionalInfo: null   // 其他資訊
+    };
+
+    // 解析格式：賽道名稱 距離（賽道類型）跑法の...
+    // 例：中京 1800m（ダート）先行の有効加速/スキル効果值/Pt効率
+
+    try {
+      // 提取賽道名稱（開頭到第一個空格）
+      const courseNameMatch = headlineText.match(/^([^\s]+)/);
+      if (courseNameMatch) {
+        parsed.courseName = courseNameMatch[1];
+      }
+
+      // 提取距離（數字 + m）
+      const distanceMatch = headlineText.match(/(\d+m)/);
+      if (distanceMatch) {
+        parsed.distance = distanceMatch[1];
+      }
+
+      // 提取賽道類型（括號內的內容）
+      const surfaceMatch = headlineText.match(/[（(]([^)）]+)[)）]/);
+      if (surfaceMatch) {
+        parsed.surface = surfaceMatch[1];
+      }
+
+      // 提取跑法（距離和類型之後、"の"之前的內容）
+      // 跑法通常是：逃げ、先行、差し、追込
+      const runningStyleMatch = headlineText.match(/[)）]([^の]+)の/);
+      if (runningStyleMatch) {
+        parsed.runningStyle = runningStyleMatch[1];
+      }
+
+      // 提取其他資訊（"の"之後的所有內容）
+      const additionalInfoMatch = headlineText.match(/の(.+)$/);
+      if (additionalInfoMatch) {
+        parsed.additionalInfo = additionalInfoMatch[1];
+      }
+
+    } catch (error) {
+      console.error('[標題解析] 錯誤:', error.message);
+    }
+
+    return parsed;
+  }
+
+  const headlineInfo = parseHeadline(headline);
+
   // 擷取 courseSkillEffectTable 底下的所有資訊
   const skillList = [];
 
@@ -630,6 +774,12 @@ function parseRaceCourseData(html) {
       }
 
       // 構建最終的技能物件
+      const needSkillPointValue = skill.needSkillPoint !== null ? skill.needSkillPoint : (htmlSkill?.needSkillPointFromHTML || null);
+      const effectString = htmlSkill?.effect || '';
+
+      // 解析 effect 數據
+      const parsedEffect = parseEffectData(effectString, needSkillPointValue);
+
       const finalSkill = {
         // 主要來自 script 的數據
         id: skill.id,
@@ -642,12 +792,15 @@ function parseRaceCourseData(html) {
         gradeValue: skill.gradeValue,
         iconId: skill.iconId,
         // needSkillPoint: 優先使用 script 的值，如果沒有則使用 HTML 的備用值
-        needSkillPoint: skill.needSkillPoint !== null ? skill.needSkillPoint : (htmlSkill?.needSkillPointFromHTML || null),
+        needSkillPoint: needSkillPointValue,
 
         // 從 HTML 補充的數據（如果有的話）
         memo: htmlSkill?.memo || '',
-        effect: htmlSkill?.effect || '',
+        effect: effectString,
         icon: htmlSkill?.icon || '',
+
+        // 解析後的 effect 數據
+        effectData: parsedEffect,
 
         // 稀有度關聯
         relatedSkills: relatedSkills,
@@ -667,6 +820,7 @@ function parseRaceCourseData(html) {
 
   return {
     headline: headline || '未找到標題',
+    headlineInfo: headlineInfo,
     skillList: finalSkillList,
     dataSource: scriptSkillsMap.size > 0 ? 'script' : 'html',
     totalGroups: groupIdMap.size
@@ -691,13 +845,17 @@ app.post('/api/fetch', async (req, res) => {
     const urlParams = parseUrlParameters(url);
     const parsedData = parseRaceCourseData(response.data);
 
+    // 自動儲存賽道資料
+    const saveResult = await saveCourseData(parsedData);
+
     res.json({
       success: true,
       content: response.data,
       status: response.status,
       contentType: response.headers['content-type'],
       urlParams: urlParams,
-      parsed: parsedData
+      parsed: parsedData,
+      saved: saveResult  // 包含儲存結果資訊
     });
 
   } catch (error) {
