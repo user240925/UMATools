@@ -1023,6 +1023,160 @@ app.post('/api/fetch-basic', async (req, res) => {
   }
 });
 
+// 新增 API 端點：掃描並回傳可用的賽道資訊
+app.get('/api/courses', async (req, res) => {
+  try {
+    const coursesDir = path.join(__dirname, 'data', 'courses');
+
+    // 檢查目錄是否存在
+    try {
+      await fs.access(coursesDir);
+    } catch {
+      return res.json({
+        success: true,
+        courses: []
+      });
+    }
+
+    const courses = [];
+    const courseMap = new Map(); // 用於合併同一賽道的不同跑法
+
+    // 讀取所有場地目錄
+    const venues = await fs.readdir(coursesDir);
+
+    for (const venue of venues) {
+      const venuePath = path.join(coursesDir, venue);
+      const stat = await fs.stat(venuePath);
+
+      if (!stat.isDirectory()) continue;
+
+      // 讀取場地下的所有距離目錄
+      const distances = await fs.readdir(venuePath);
+
+      for (const distanceDir of distances) {
+        const distancePath = path.join(venuePath, distanceDir);
+        const distanceStat = await fs.stat(distancePath);
+
+        if (!distanceStat.isDirectory()) continue;
+
+        // 解析距離目錄名稱，例如：1800m(ダート)
+        const distanceMatch = distanceDir.match(/^(\d+m)\((.+)\)$/);
+        if (!distanceMatch) continue;
+
+        const distance = distanceMatch[1];
+        const surface = distanceMatch[2];
+
+        // 讀取該距離目錄下的所有 JSON 檔案
+        const files = await fs.readdir(distancePath);
+
+        for (const file of files) {
+          if (!file.endsWith('.json')) continue;
+
+          const filePath = path.join(distancePath, file);
+
+          // 解析檔名：{場地}_{距離}_{跑法}.json
+          const fileMatch = file.match(/^(.+)_(\d+m)_(.+)\.json$/);
+          if (!fileMatch) continue;
+
+          const runningStyle = fileMatch[3];
+
+          // 建立唯一的賽道 key
+          const courseKey = `${venue}_${distance}_${surface}`;
+
+          if (!courseMap.has(courseKey)) {
+            courseMap.set(courseKey, {
+              courseName: venue,
+              distance: distance,
+              surface: surface,
+              runningStyles: [],
+              displayName: `${venue} ${distance}`
+            });
+          }
+
+          // 新增跑法到該賽道
+          const course = courseMap.get(courseKey);
+          if (!course.runningStyles.includes(runningStyle)) {
+            course.runningStyles.push(runningStyle);
+          }
+        }
+      }
+    }
+
+    // 轉換 Map 為陣列
+    courses.push(...courseMap.values());
+
+    // 按距離排序（提取數字部分）
+    courses.sort((a, b) => {
+      const distA = parseInt(a.distance.replace(/\D/g, ''));
+      const distB = parseInt(b.distance.replace(/\D/g, ''));
+      return distA - distB;
+    });
+
+    res.json({
+      success: true,
+      courses: courses,
+      totalCourses: courses.length
+    });
+
+  } catch (error) {
+    console.error('掃描賽道目錄時發生錯誤:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
+
+// 新增 API 端點：根據賽道資訊回傳技能數據
+app.get('/api/course-skills', async (req, res) => {
+  try {
+    const { courseName, distance, surface, runningStyle } = req.query;
+
+    if (!courseName || !distance || !surface || !runningStyle) {
+      return res.status(400).json({
+        success: false,
+        error: '缺少必要參數'
+      });
+    }
+
+    // 建構檔案路徑
+    const filePath = path.join(
+      __dirname,
+      'data',
+      'courses',
+      courseName,
+      `${distance}(${surface})`,
+      `${courseName}_${distance}_${runningStyle}.json`
+    );
+
+    // 檢查檔案是否存在
+    try {
+      await fs.access(filePath);
+    } catch {
+      return res.status(404).json({
+        success: false,
+        error: '找不到對應的技能資料檔案'
+      });
+    }
+
+    // 讀取並解析 JSON 檔案
+    const fileContent = await fs.readFile(filePath, 'utf-8');
+    const skillData = JSON.parse(fileContent);
+
+    res.json({
+      success: true,
+      data: skillData
+    });
+
+  } catch (error) {
+    console.error('讀取技能資料時發生錯誤:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`伺服器運行在 http://localhost:${PORT}`);
 });
