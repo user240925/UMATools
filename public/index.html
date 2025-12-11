@@ -482,6 +482,100 @@
             color: white;
         }
 
+        /* 根據稀有度調整卡片背景色 */
+        .skill-card.rarity-normal,
+        .skill-card.rarity-common,
+        .skill-card.rarity-1 {
+            background: #f5f5f5;
+        }
+
+        .skill-card.rarity-gold,
+        .skill-card.rarity-2 {
+            background: linear-gradient(135deg, #fffaeb 0%, #fef3c7 100%);
+            border-color: #fbbf24;
+        }
+
+        .skill-card.rarity-r,
+        .skill-card.rarity-3 {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe4e6 100%);
+            border-color: #f87171;
+        }
+
+        .skill-card.rarity-sr,
+        .skill-card.rarity-4 {
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            border-color: #ef4444;
+        }
+
+        .skill-card.rarity-ssr,
+        .skill-card.rarity-5 {
+            background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+            border-color: #dc2626;
+        }
+
+        .skill-card.rarity-ur,
+        .skill-card.rarity-6 {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            border-color: #a855f7;
+        }
+
+        /* 技能價格與按鈕容器 */
+        .skill-cost-container {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+
+        .skill-cost-btn {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            border-radius: 50%;
+            border: none;
+            background: #e0e0e0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            color: rgba(0, 0, 0, 0.87);
+            padding: 0;
+            box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),
+                        0px 6px 10px 0px rgba(0,0,0,0.14),
+                        0px 1px 18px 0px rgba(0,0,0,0.12);
+        }
+
+        .skill-cost-btn:hover:not(:disabled) {
+            background: #f5f5f5;
+            box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),
+                        0px 8px 10px 1px rgba(0,0,0,0.14),
+                        0px 3px 14px 2px rgba(0,0,0,0.12);
+        }
+
+        .skill-cost-btn:active:not(:disabled) {
+            box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),
+                        0px 12px 17px 2px rgba(0,0,0,0.14),
+                        0px 5px 22px 4px rgba(0,0,0,0.12);
+        }
+
+        .skill-cost-btn:disabled {
+            background: rgba(0, 0, 0, 0.12);
+            color: rgba(0, 0, 0, 0.26);
+            cursor: default;
+            box-shadow: none;
+        }
+
+        .skill-cost-value {
+            min-width: 40px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #463f70;
+        }
+
         /* 箭頭按鈕 */
         .arrow-buttons {
             display: flex;
@@ -960,11 +1054,41 @@
         let selectedSkills = []; // D區：已選技能
         let selectedAvailableSkillIds = new Set(); // C區選中的技能ID
         let selectedSelectedSkillIds = new Set(); // D區選中的技能ID
+        let skillsDatabase = new Map(); // 技能資料庫查找表 (enName -> skill data)
+        let skillsDatabaseLoaded = false; // 技能資料庫是否已載入
+
+        // 載入技能資料庫
+        async function loadSkillsDatabase() {
+            if (skillsDatabaseLoaded) return;
+
+            try {
+                console.log('載入技能資料庫...');
+                const response = await fetch('/api/skills-database');
+                const data = await response.json();
+
+                if (data.success && data.skills) {
+                    // 建立查找表：enName -> skill data
+                    skillsDatabase.clear();
+                    data.skills.forEach(skill => {
+                        if (skill.enName) {
+                            skillsDatabase.set(skill.enName, skill);
+                        }
+                    });
+                    skillsDatabaseLoaded = true;
+                    console.log(`技能資料庫載入完成，共 ${skillsDatabase.size} 個技能`);
+                }
+            } catch (error) {
+                console.error('載入技能資料庫失敗:', error);
+            }
+        }
 
         // 載入賽道清單
         async function loadCourseList() {
             const container = document.getElementById('courseListContainer');
             container.innerHTML = '<div class="loading-placeholder">載入賽道資料中...</div>';
+
+            // 同時載入技能資料庫
+            loadSkillsDatabase();
 
             try {
                 const response = await fetch('/api/courses');
@@ -1144,10 +1268,30 @@
 
         // 建立技能卡片
         function createSkillCard(skill, area) {
+            // 嘗試從技能資料庫查找對應的資料
+            let displayName = skill.name;
+            let displayIcon = skill.icon;
+
+            if (skillsDatabase.has(skill.name)) {
+                const dbSkill = skillsDatabase.get(skill.name);
+                displayName = dbSkill.jpName || skill.name;
+                displayIcon = dbSkill.icon || skill.icon;
+            }
+
             const card = document.createElement('div');
             card.className = 'skill-card';
             card.dataset.skillId = skill.id;
             card.dataset.area = area;
+
+            // 根據稀有度添加對應的 class
+            // 支援字串型稀有度（normal, gold, ur等）和數字型稀有度（1-6）
+            if (skill.rarity !== undefined && skill.rarity !== null) {
+                card.classList.add(`rarity-${skill.rarity}`);
+            }
+            // 也支援 rarityValue（數字）
+            if (skill.rarityValue !== undefined && skill.rarityValue !== null) {
+                card.classList.add(`rarity-${skill.rarityValue}`);
+            }
 
             // 檢查是否已選中
             const isSelected = area === 'available'
@@ -1161,8 +1305,8 @@
             // 圖示
             const icon = document.createElement('img');
             icon.className = 'skill-icon';
-            icon.src = skill.icon || '';
-            icon.alt = skill.name || '';
+            icon.src = displayIcon || '';
+            icon.alt = displayName || '';
             icon.onerror = function() {
                 this.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><rect width="48" height="48" fill="%23f0f0f0"/></svg>';
             };
@@ -1173,7 +1317,7 @@
 
             const name = document.createElement('div');
             name.className = 'skill-name';
-            name.textContent = skill.name || '未知技能';
+            name.textContent = displayName || '未知技能';
 
             const effect = document.createElement('div');
             effect.className = 'skill-effect';
@@ -1182,20 +1326,72 @@
             info.appendChild(name);
             info.appendChild(effect);
 
-            // 稀有度徽章
-            const rarityBadge = document.createElement('div');
-            rarityBadge.className = `skill-rarity-badge ${skill.rarity || 'normal'}`;
-            rarityBadge.textContent = skill.rarity || 'N';
+            // 技能價格與按鈕容器
+            const costContainer = document.createElement('div');
+            costContainer.className = 'skill-cost-container';
+
+            // 減少按鈕
+            const minusBtn = document.createElement('button');
+            minusBtn.className = 'skill-cost-btn';
+            minusBtn.textContent = '−';
+            minusBtn.onclick = (e) => {
+                e.stopPropagation();
+                adjustSkillCost(skill.id, -1);
+            };
+
+            // 價格顯示
+            const costValue = document.createElement('div');
+            costValue.className = 'skill-cost-value';
+            costValue.textContent = skill.needSkillPoint || 0;
+            costValue.id = `cost-${skill.id}`;
+
+            // 增加按鈕
+            const plusBtn = document.createElement('button');
+            plusBtn.className = 'skill-cost-btn';
+            plusBtn.textContent = '+';
+            plusBtn.onclick = (e) => {
+                e.stopPropagation();
+                adjustSkillCost(skill.id, 1);
+            };
+
+            costContainer.appendChild(minusBtn);
+            costContainer.appendChild(costValue);
+            costContainer.appendChild(plusBtn);
 
             // 組裝卡片
             card.appendChild(icon);
             card.appendChild(info);
-            card.appendChild(rarityBadge);
+            card.appendChild(costContainer);
 
-            // 點擊事件
-            card.onclick = () => toggleSkillSelection(skill.id, area);
+            // 點擊事件（點擊卡片本身才選中，不包括按鈕）
+            card.onclick = (e) => {
+                if (!e.target.classList.contains('skill-cost-btn')) {
+                    toggleSkillSelection(skill.id, area);
+                }
+            };
 
             return card;
+        }
+
+        // 調整技能價格
+        function adjustSkillCost(skillId, delta) {
+            const costElement = document.getElementById(`cost-${skillId}`);
+            if (!costElement) return;
+
+            let currentCost = parseInt(costElement.textContent) || 0;
+            currentCost = Math.max(0, currentCost + delta);
+            costElement.textContent = currentCost;
+
+            // 更新技能資料
+            const updateSkillCost = (skillList) => {
+                const skill = skillList.find(s => s.id === skillId);
+                if (skill) {
+                    skill.needSkillPoint = currentCost;
+                }
+            };
+
+            updateSkillCost(availableSkills);
+            updateSkillCost(selectedSkills);
         }
 
         // 切換技能選擇狀態

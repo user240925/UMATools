@@ -177,6 +177,9 @@ async function saveCourseData(parsedData) {
 app.use(express.json());
 app.use(express.static('public'));
 
+// 提供圖片靜態文件服務
+app.use('/images', express.static(path.join(__dirname, 'data/images')));
+
 function parseUrlParameters(url) {
   try {
     // 解析 URL: https://xn--gck1f423k.xn--1bvt37a.tools/race/courses/10301/effects/betweener
@@ -1170,6 +1173,56 @@ app.get('/api/course-skills', async (req, res) => {
 
   } catch (error) {
     console.error('讀取技能資料時發生錯誤:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
+
+// 新增 API 端點：載入技能資料庫
+app.get('/api/skills-database', async (req, res) => {
+  try {
+    const skillsDir = path.join(__dirname, 'data', 'skills');
+
+    // 檢查目錄是否存在
+    try {
+      await fs.access(skillsDir);
+    } catch {
+      return res.json({
+        success: true,
+        skills: []
+      });
+    }
+
+    // 讀取技能目錄中的所有 JSON 檔案
+    const files = await fs.readdir(skillsDir);
+    const jsonFiles = files.filter(file => file.endsWith('.json'));
+
+    if (jsonFiles.length === 0) {
+      return res.json({
+        success: true,
+        skills: []
+      });
+    }
+
+    // 讀取最新的技能資料檔案（按檔名排序，取最後一個）
+    jsonFiles.sort();
+    const latestFile = jsonFiles[jsonFiles.length - 1];
+    const filePath = path.join(skillsDir, latestFile);
+
+    // 讀取並解析 JSON
+    const fileContent = await fs.readFile(filePath, 'utf-8');
+    const skillData = JSON.parse(fileContent);
+
+    res.json({
+      success: true,
+      skills: skillData.skills || [],
+      source: latestFile
+    });
+
+  } catch (error) {
+    console.error('讀取技能資料庫時發生錯誤:', error);
     res.status(500).json({
       success: false,
       error: error.message
