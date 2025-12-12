@@ -242,6 +242,27 @@
 
         /* ========== 賽道資訊分析頁簽樣式 ========== */
 
+        /* 說明區塊 */
+        .info-notice {
+            background: #fff9e6;
+            border-left: 4px solid #ff9800;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .info-notice-title {
+            font-weight: bold;
+            color: #ff9800;
+            margin-bottom: 6px;
+        }
+
+        .info-notice-content {
+            color: #666;
+        }
+
         /* 區段樣式 */
         .analysis-section {
             margin-bottom: 25px;
@@ -569,11 +590,42 @@
         }
 
         .skill-cost-value {
-            min-width: 40px;
+            min-width: 50px;
             text-align: center;
             font-size: 16px;
             font-weight: bold;
             color: #463f70;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .skill-level-badge {
+            font-size: 10px;
+            color: #667eea;
+            font-weight: bold;
+            background: rgba(102, 126, 234, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .skill-efficiency {
+            font-size: 11px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .skill-range-indicator {
+            display: inline-block;
+            font-size: 9px;
+            color: #ff9800;
+            background: rgba(255, 152, 0, 0.1);
+            padding: 1px 4px;
+            border-radius: 3px;
+            margin-left: 4px;
+            border: 1px solid rgba(255, 152, 0, 0.3);
+            font-weight: bold;
         }
 
         /* 箭頭按鈕 */
@@ -760,6 +812,16 @@
 
         <!-- 賽道資訊分析頁簽 -->
         <div id="analysisTab" class="main-tab-content">
+            <!-- 說明區塊 -->
+            <div class="info-notice">
+                <div class="info-notice-title">📌 技能效率計算說明</div>
+                <div class="info-notice-content">
+                    • 技能等級系統：點擊 +/- 按鈕可調整技能等級（Lv0-Lv5），享有 10%/20%/30%/35%/40% 的點數折扣<br>
+                    • 效率計算公式：[バ/Pt] = 基礎效率 ÷ (1 - 折扣)<br>
+                    • <span style="color: #ff9800;">⚠️ 帶有「範圍」標籤的技能</span>：因效果值為範圍型（如 0.99~2.42[バ]），計算結果可能與參考網站略有差異
+                </div>
+            </div>
+
             <!-- A區：賽道選擇 -->
             <div class="analysis-section">
                 <h3 class="section-title">📍 選擇賽道</h3>
@@ -1057,6 +1119,78 @@
         let skillsDatabase = new Map(); // 技能資料庫查找表 (enName -> skill data)
         let skillsDatabaseLoaded = false; // 技能資料庫是否已載入
 
+        // 技能等級折扣表
+        const SKILL_DISCOUNTS = [0, 0.10, 0.20, 0.30, 0.35, 0.40];
+        const MAX_SKILL_LEVEL = 5;
+
+        // 計算技能的實際消耗和效率
+        function calculateSkillStats(skill) {
+            const level = skill.level || 0;
+            const originalCost = skill.originalCost || skill.needSkillPoint || 0;
+            const discount = SKILL_DISCOUNTS[level];
+            const actualCost = Math.round(originalCost * (1 - discount) * 10) / 10;
+
+            // 計算效率值（バ/Pt）
+            let efficiency = 0;
+            let baseEfficiency = 0;
+
+            // 1. 優先從 effectData.effectPerPoint 獲取基礎效率
+            if (skill.effectData && skill.effectData.effectPerPoint) {
+                baseEfficiency = skill.effectData.effectPerPoint;
+            }
+            // 2. 如果沒有，嘗試從 effect 字串解析
+            else if (skill.effect && skill.effect.includes('[バ/Pt]')) {
+                const match = skill.effect.match(/(\d+\.?\d*)\[バ\/Pt\]/);
+                if (match) {
+                    baseEfficiency = parseFloat(match[1]);
+                }
+            }
+
+            // 根據等級調整效率（統一使用公式）
+            if (baseEfficiency > 0) {
+                if (level === 0) {
+                    efficiency = baseEfficiency;
+                } else {
+                    // 效率 = 基礎效率 / (1 - 折扣)
+                    efficiency = baseEfficiency / (1 - discount);
+                }
+            }
+
+            // 判斷是否為範圍效果技能
+            const hasEffectRange = skill.effectData &&
+                                  (skill.effectData.effectRangeMin !== null ||
+                                   skill.effectData.effectRangeMax !== null);
+
+            return {
+                level,
+                originalCost,
+                actualCost,
+                efficiency,
+                discount,
+                hasEffectRange
+            };
+        }
+
+        // 調整技能等級
+        function adjustSkillLevel(skillId, delta, area) {
+            // 找到技能
+            const skillList = area === 'available' ? availableSkills : selectedSkills;
+            const skill = skillList.find(s => s.id === skillId);
+
+            if (!skill) return;
+
+            // 更新等級（範圍：0 到 MAX_SKILL_LEVEL）
+            const newLevel = Math.max(0, Math.min(MAX_SKILL_LEVEL, (skill.level || 0) + delta));
+            skill.level = newLevel;
+
+            // 重新渲染對應的技能清單
+            if (area === 'available') {
+                renderAvailableSkills();
+            } else {
+                renderSelectedSkills();
+            }
+        }
+
         // 載入技能資料庫
         async function loadSkillsDatabase() {
             if (skillsDatabaseLoaded) return;
@@ -1213,6 +1347,9 @@
                     const uniqueSkillsMap = new Map();
                     data.skillList.forEach(skill => {
                         if (skill.id && !uniqueSkillsMap.has(skill.id)) {
+                            // 初始化技能等級屬性
+                            skill.level = 0;
+                            skill.originalCost = skill.needSkillPoint || 0;
                             uniqueSkillsMap.set(skill.id, skill);
                         }
                     });
@@ -1330,28 +1467,67 @@
             const costContainer = document.createElement('div');
             costContainer.className = 'skill-cost-container';
 
+            // 計算當前技能狀態
+            const stats = calculateSkillStats(skill);
+
+            // 添加範圍效果標示
+            if (stats.hasEffectRange) {
+                const rangeIndicator = document.createElement('span');
+                rangeIndicator.className = 'skill-range-indicator';
+                rangeIndicator.textContent = '範圍';
+                rangeIndicator.title = '此技能為範圍效果技能，效率值計算可能與參考網站略有差異';
+                name.appendChild(rangeIndicator);
+            }
+
             // 減少按鈕
             const minusBtn = document.createElement('button');
             minusBtn.className = 'skill-cost-btn';
             minusBtn.textContent = '−';
+            minusBtn.disabled = stats.level === 0;
+            minusBtn.id = `minus-${skill.id}`;
             minusBtn.onclick = (e) => {
                 e.stopPropagation();
-                adjustSkillCost(skill.id, -1);
+                adjustSkillLevel(skill.id, -1, area);
             };
 
             // 價格顯示
             const costValue = document.createElement('div');
             costValue.className = 'skill-cost-value';
-            costValue.textContent = skill.needSkillPoint || 0;
             costValue.id = `cost-${skill.id}`;
+
+            // Lv 標籤
+            if (stats.level > 0) {
+                const levelBadge = document.createElement('div');
+                levelBadge.className = 'skill-level-badge';
+                levelBadge.textContent = `Lv${stats.level}`;
+                levelBadge.id = `level-${skill.id}`;
+                costValue.appendChild(levelBadge);
+            }
+
+            // 實際點數
+            const costText = document.createElement('div');
+            costText.textContent = Math.round(stats.actualCost);
+            costText.id = `cost-text-${skill.id}`;
+            costValue.appendChild(costText);
+
+            // 效率值
+            if (stats.efficiency > 0) {
+                const efficiencyText = document.createElement('div');
+                efficiencyText.className = 'skill-efficiency';
+                efficiencyText.textContent = `${stats.efficiency.toFixed(2)}[バ/Pt]`;
+                efficiencyText.id = `efficiency-${skill.id}`;
+                costValue.appendChild(efficiencyText);
+            }
 
             // 增加按鈕
             const plusBtn = document.createElement('button');
             plusBtn.className = 'skill-cost-btn';
             plusBtn.textContent = '+';
+            plusBtn.disabled = stats.level >= MAX_SKILL_LEVEL;
+            plusBtn.id = `plus-${skill.id}`;
             plusBtn.onclick = (e) => {
                 e.stopPropagation();
-                adjustSkillCost(skill.id, 1);
+                adjustSkillLevel(skill.id, 1, area);
             };
 
             costContainer.appendChild(minusBtn);
