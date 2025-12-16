@@ -438,15 +438,10 @@
         }
 
         .skill-card.selected {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-color: #667eea;
-        }
-
-        .skill-card.selected .skill-name,
-        .skill-card.selected .skill-effect,
-        .skill-card.selected .skill-rarity-badge {
-            color: white;
+            border: 3px solid #667eea;
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2),
+                        0 4px 12px rgba(102, 126, 234, 0.3);
+            transform: translateY(-2px);
         }
 
         .skill-icon {
@@ -1412,7 +1407,8 @@
             if (skillsDatabase.has(skill.name)) {
                 const dbSkill = skillsDatabase.get(skill.name);
                 displayName = dbSkill.jpName || skill.name;
-                displayIcon = dbSkill.icon || skill.icon;
+                // 優先使用賽道資料的圖示路徑（本地），再使用資料庫的路徑
+                displayIcon = skill.icon || dbSkill.icon;
             }
 
             const card = document.createElement('div');

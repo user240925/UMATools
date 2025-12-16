@@ -22,7 +22,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -64,7 +65,8 @@
       "needSkillPoint": 90,
       "memo": "",
       "effect": "0.25[バ]、0.28[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.28[バ/Pt]",
         "effectValue": 0.25,
@@ -106,7 +108,8 @@
       "needSkillPoint": 130,
       "memo": "",
       "effect": "0.72[バ]、0.22[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.72[バ]、0.22[バ/Pt]",
         "effectValue": 0.72,
@@ -148,7 +151,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.34[バ]、0.17[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10031.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10031.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10031.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.17[バ/Pt]",
         "effectValue": 0.34,
@@ -190,7 +194,8 @@
       "needSkillPoint": 90,
       "memo": "",
       "effect": "0.23[バ]、0.26[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10031.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10031.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10031.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.23[バ]、0.26[バ/Pt]",
         "effectValue": 0.23,
@@ -232,7 +237,8 @@
       "needSkillPoint": 130,
       "memo": "",
       "effect": "0.72[バ]、0.22[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10032.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10032.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10032.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.72[バ]、0.22[バ/Pt]",
         "effectValue": 0.72,
@@ -274,7 +280,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -316,7 +323,8 @@
       "needSkillPoint": 90,
       "memo": "",
       "effect": "0.25[バ]、0.28[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.28[バ/Pt]",
         "effectValue": 0.25,
@@ -358,7 +366,8 @@
       "needSkillPoint": 130,
       "memo": "",
       "effect": "0.72[バ]、0.22[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.72[バ]、0.22[バ/Pt]",
         "effectValue": 0.72,
@@ -400,7 +409,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.05[バ]、0.02[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.05[バ]、0.02[バ/Pt]",
         "effectValue": 0.05,
@@ -434,7 +444,8 @@
       "needSkillPoint": 90,
       "memo": "",
       "effect": "0.03[バ]、0.03[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.03[バ]、0.03[バ/Pt]",
         "effectValue": 0.03,
@@ -468,7 +479,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.22[バ]、0.11[バ/Pt]、58.3%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.22[バ]、0.11[バ/Pt]、58.3%",
         "effectValue": 0.22,
@@ -502,7 +514,8 @@
       "needSkillPoint": 90,
       "memo": "",
       "effect": "0.15[バ]、0.16[バ/Pt]、58.3%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.16[バ/Pt]、58.3%",
         "effectValue": 0.15,
@@ -536,7 +549,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.49[バ]、0.25[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.49[バ]、0.25[バ/Pt]",
         "effectValue": 0.49,
@@ -570,7 +584,8 @@
       "needSkillPoint": 90,
       "memo": "",
       "effect": "0.37[バ]、0.41[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.41[バ/Pt]",
         "effectValue": 0.37,
@@ -604,7 +619,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.34[バ]、0.17[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10031.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10031.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10031.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.17[バ/Pt]",
         "effectValue": 0.34,
@@ -638,7 +654,8 @@
       "needSkillPoint": 90,
       "memo": "",
       "effect": "0.23[バ]、0.26[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10031.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10031.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10031.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.23[バ]、0.26[バ/Pt]",
         "effectValue": 0.23,
@@ -672,7 +689,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.05[バ]、0.02[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.05[バ]、0.02[バ/Pt]",
         "effectValue": 0.05,
@@ -706,7 +724,8 @@
       "needSkillPoint": 90,
       "memo": "",
       "effect": "0.03[バ]、0.03[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.03[バ]、0.03[バ/Pt]",
         "effectValue": 0.03,
@@ -740,7 +759,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -774,7 +794,8 @@
       "needSkillPoint": 90,
       "memo": "",
       "effect": "0.25[バ]、0.28[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.28[バ/Pt]",
         "effectValue": 0.25,
@@ -808,7 +829,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.62[バ]、0.17[バ/Pt]、0 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.62[バ]、0.17[バ/Pt]、0 ~ 2.10[バ]",
         "effectValue": 0.62,
@@ -842,7 +864,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.27[バ]、0.15[バ/Pt]、0 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.27[バ]、0.15[バ/Pt]、0 ~ 0.94[バ]",
         "effectValue": 0.27,
@@ -876,7 +899,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.92[バ]、0.26[バ/Pt]、0 ~ 5.28[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.92[バ]、0.26[バ/Pt]、0 ~ 5.28[バ]",
         "effectValue": 0.92,
@@ -910,7 +934,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.54[バ]、0.30[バ/Pt]、0 ~ 3.11[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.54[バ]、0.30[バ/Pt]、0 ~ 3.11[バ]",
         "effectValue": 0.54,
@@ -944,7 +969,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.77[バ]、0.23[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.23[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.77,
@@ -986,7 +1012,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.41[バ]、0.24[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.41[バ]、0.24[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.41,
@@ -1028,7 +1055,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.56[バ]、0.16[バ/Pt]、0.02 ~ 3.84[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.56[バ]、0.16[バ/Pt]、0.02 ~ 3.84[バ]",
         "effectValue": 0.56,
@@ -1062,7 +1090,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.06[バ]、0.03[バ/Pt]、0 ~ 0.47[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.06[バ]、0.03[バ/Pt]、0 ~ 0.47[バ]",
         "effectValue": 0.06,
@@ -1096,7 +1125,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.50[バ]、0.15[バ/Pt]、0.45 ~ 1.93[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.50[バ]、0.15[バ/Pt]、0.45 ~ 1.93[バ]",
         "effectValue": 0.5,
@@ -1130,7 +1160,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.22[バ]、0.13[バ/Pt]、0.20 ~ 0.86[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.22[バ]、0.13[バ/Pt]、0.20 ~ 0.86[バ]",
         "effectValue": 0.22,
@@ -1164,7 +1195,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "1.11[バ]、0.37[バ/Pt]、0 ~ 5.28[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.11[バ]、0.37[バ/Pt]、0 ~ 5.28[バ]",
         "effectValue": 1.11,
@@ -1198,7 +1230,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.69[バ]、0.46[バ/Pt]、0 ~ 3.11[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.69[バ]、0.46[バ/Pt]、0 ~ 3.11[バ]",
         "effectValue": 0.69,
@@ -1232,7 +1265,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.51[バ]、0.15[バ/Pt]、0.51 ~ 0.58[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.51[バ]、0.15[バ/Pt]、0.51 ~ 0.58[バ]",
         "effectValue": 0.51,
@@ -1266,7 +1300,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.23[バ]、0.14[バ/Pt]、0.23 ~ 0.25[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.23[バ]、0.14[バ/Pt]、0.23 ~ 0.25[バ]",
         "effectValue": 0.23,
@@ -1300,7 +1335,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.86[バ]、0.27[バ/Pt]、0.90 ~ 0.95[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.86[バ]、0.27[バ/Pt]、0.90 ~ 0.95[バ]",
         "effectValue": 0.86,
@@ -1334,7 +1370,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.38[バ]、0.24[バ/Pt]、0.40 ~ 0.41[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.24[バ/Pt]、0.40 ~ 0.41[バ]",
         "effectValue": 0.38,
@@ -1368,7 +1405,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "1.37[バ]、0.43[バ/Pt]、0.00 ~ 5.28[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.37[バ]、0.43[バ/Pt]、0.00 ~ 5.28[バ]",
         "effectValue": 1.37,
@@ -1402,7 +1440,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.85[バ]、0.53[バ/Pt]、0.00 ~ 3.11[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.85[バ]、0.53[バ/Pt]、0.00 ~ 3.11[バ]",
         "effectValue": 0.85,
@@ -1436,7 +1475,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.59[バ]、0.28[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.59[バ]、0.28[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.59,
@@ -1478,7 +1518,8 @@
       "needSkillPoint": 100,
       "memo": "",
       "effect": "0.41[バ]、0.41[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.41[バ]、0.41[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.41,
@@ -1520,7 +1561,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.77[バ]、0.21[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.21[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.77,
@@ -1562,7 +1604,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.56[バ]、0.27[バ/Pt]、0 ~ 1.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.56[バ]、0.27[バ/Pt]、0 ~ 1.65[バ]",
         "effectValue": 0.56,
@@ -1604,7 +1647,8 @@
       "needSkillPoint": 100,
       "memo": "",
       "effect": "0.34[バ]、0.34[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.34[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.34,
@@ -1646,7 +1690,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.78[バ]、0.22[バ/Pt]、0 ~ 2.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.78[バ]、0.22[バ/Pt]、0 ~ 2.34[バ]",
         "effectValue": 0.78,
@@ -1688,7 +1733,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.77[バ]、0.24[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.24[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -1722,7 +1768,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.34[バ]、0.21[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.21[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -1756,7 +1803,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "1.33[バ]、0.41[バ/Pt]、0 ~ 5.28[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.33[バ]、0.41[バ/Pt]、0 ~ 5.28[バ]",
         "effectValue": 1.33,
@@ -1790,7 +1838,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.77[バ]、0.48[バ/Pt]、0 ~ 3.11[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.48[バ/Pt]、0 ~ 3.11[バ]",
         "effectValue": 0.77,
@@ -1824,7 +1873,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.48[バ]、0.20[バ/Pt]、0 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.48[バ]、0.20[バ/Pt]、0 ~ 2.10[バ]",
         "effectValue": 0.48,
@@ -1858,7 +1908,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.21[バ]、0.18[バ/Pt]、0 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.21[バ]、0.18[バ/Pt]、0 ~ 0.94[バ]",
         "effectValue": 0.21,
@@ -1892,7 +1943,8 @@
       "needSkillPoint": 140,
       "memo": "",
       "effect": "0.59[バ]、0.22[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.59[バ]、0.22[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.59,
@@ -1934,7 +1986,8 @@
       "needSkillPoint": 130,
       "memo": "",
       "effect": "0.41[バ]、0.31[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.41[バ]、0.31[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.41,
@@ -1976,7 +2029,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.77[バ]、0.18[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.18[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.77,
@@ -2018,7 +2072,8 @@
       "needSkillPoint": 140,
       "memo": "",
       "effect": "0.56[バ]、0.21[バ/Pt]、0 ~ 1.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.56[バ]、0.21[バ/Pt]、0 ~ 1.65[バ]",
         "effectValue": 0.56,
@@ -2060,7 +2115,8 @@
       "needSkillPoint": 130,
       "memo": "",
       "effect": "0.34[バ]、0.26[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.26[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.34,
@@ -2102,7 +2158,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.78[バ]、0.18[バ/Pt]、0 ~ 2.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.78[バ]、0.18[バ/Pt]、0 ~ 2.34[バ]",
         "effectValue": 0.78,
@@ -2144,7 +2201,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.37[バ]、0.16[バ/Pt]、0 ~ 4.32[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.16[バ/Pt]、0 ~ 4.32[バ]",
         "effectValue": 0.37,
@@ -2178,7 +2236,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.27[バ]、0.22[バ/Pt]、0 ~ 3.11[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.27[バ]、0.22[バ/Pt]、0 ~ 3.11[バ]",
         "effectValue": 0.27,
@@ -2212,7 +2271,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.97[バ]、0.40[バ/Pt]、0 ~ 4.24[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.97[バ]、0.40[バ/Pt]、0 ~ 4.24[バ]",
         "effectValue": 0.97,
@@ -2246,7 +2306,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.70[バ]、0.58[バ/Pt]、0 ~ 3.03[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.70[バ]、0.58[バ/Pt]、0 ~ 3.03[バ]",
         "effectValue": 0.7,
@@ -2280,7 +2341,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.27[バ]、0.11[バ/Pt]、0 ~ 4.15[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.27[バ]、0.11[バ/Pt]、0 ~ 4.15[バ]",
         "effectValue": 0.27,
@@ -2314,7 +2376,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.19[バ]、0.15[バ/Pt]、0 ~ 2.95[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.15[バ/Pt]、0 ~ 2.95[バ]",
         "effectValue": 0.19,
@@ -2348,7 +2411,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.03[バ]、0.01[バ/Pt]、3.9%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10062.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10062.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10062.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.03[バ]、0.01[バ/Pt]、3.9%",
         "effectValue": 0.03,
@@ -2382,7 +2446,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.02[バ]、0.02[バ/Pt]、3.9%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10061.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10061.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10061.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.02[バ]、0.02[バ/Pt]、3.9%",
         "effectValue": 0.02,
@@ -2416,7 +2481,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.21[バ]、0.13[バ/Pt]、0.01 ~ 0.47[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.21[バ]、0.13[バ/Pt]、0.01 ~ 0.47[バ]",
         "effectValue": 0.21,
@@ -2450,7 +2516,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.33[バ]、0.10[バ/Pt]、0.01 ~ 0.73[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.33[バ]、0.10[バ/Pt]、0.01 ~ 0.73[バ]",
         "effectValue": 0.33,
@@ -2484,7 +2551,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.16[バ]、0.10[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.10[バ/Pt]",
         "effectValue": 0.16,
@@ -2518,7 +2586,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.35[バ]、0.11[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.35[バ]、0.11[バ/Pt]",
         "effectValue": 0.35,
@@ -2552,7 +2621,8 @@
       "needSkillPoint": 100,
       "memo": "",
       "effect": "0.30[バ]、0.30[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.30[バ/Pt]",
         "effectValue": 0.3,
@@ -2586,7 +2656,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.55[バ]、0.20[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.55[バ]、0.20[バ/Pt]",
         "effectValue": 0.55,
@@ -2620,7 +2691,8 @@
       "needSkillPoint": 100,
       "memo": "",
       "effect": "0.43[バ]、0.43[バ/Pt]、0.40 ~ 1.04[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.43[バ]、0.43[バ/Pt]、0.40 ~ 1.04[バ]",
         "effectValue": 0.43,
@@ -2654,7 +2726,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.98[バ]、0.35[バ/Pt]、0.93 ~ 2.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.98[バ]、0.35[バ/Pt]、0.93 ~ 2.34[バ]",
         "effectValue": 0.98,
@@ -2688,7 +2761,8 @@
       "needSkillPoint": 70,
       "memo": "",
       "effect": "0.25[バ]、0.36[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.36[バ/Pt]",
         "effectValue": 0.25,
@@ -2713,7 +2787,8 @@
       "needSkillPoint": 70,
       "memo": "",
       "effect": "0.25[バ]、0.36[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.36[バ/Pt]",
         "effectValue": 0.25,
@@ -2738,7 +2813,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.18[バ]、0.11[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.18[バ]、0.11[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.18,
@@ -2772,7 +2848,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.42[バ]、0.13[バ/Pt]、0 ~ 2.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.42[バ]、0.13[バ/Pt]、0 ~ 2.34[バ]",
         "effectValue": 0.42,
@@ -2806,7 +2883,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.18[バ]、0.11[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.18[バ]、0.11[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.18,
@@ -2848,7 +2926,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.42[バ]、0.13[バ/Pt]、0 ~ 2.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.42[バ]、0.13[バ/Pt]、0 ~ 2.34[バ]",
         "effectValue": 0.42,
@@ -2890,7 +2969,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.49[バ]、0.14[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.49[バ]、0.14[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.49,
@@ -2924,7 +3004,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.21[バ]、0.12[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.21[バ]、0.12[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.21,
@@ -2958,7 +3039,8 @@
       "needSkillPoint": 140,
       "memo": "",
       "effect": "1.14[バ]、0.41[バ/Pt]、0.00 ~ 4.32[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20052.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20052.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20052.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.14[バ]、0.41[バ/Pt]、0.00 ~ 4.32[バ]",
         "effectValue": 1.14,
@@ -2992,7 +3074,8 @@
       "needSkillPoint": 140,
       "memo": "",
       "effect": "0.85[バ]、0.60[バ/Pt]、0.00 ~ 3.11[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20051.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20051.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20051.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.85[バ]、0.60[バ/Pt]、0.00 ~ 3.11[バ]",
         "effectValue": 0.85,
@@ -3026,7 +3109,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "2.28[バ]、0.63[バ/Pt]、0.89 ~ 4.18[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "2.28[バ]、0.63[バ/Pt]、0.89 ~ 4.18[バ]",
         "effectValue": 2.28,
@@ -3060,7 +3144,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "1.28[バ]、0.71[バ/Pt]、0.56 ~ 2.24[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.28[バ]、0.71[バ/Pt]、0.56 ~ 2.24[バ]",
         "effectValue": 1.28,
@@ -3094,7 +3179,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.58[バ]、0.15[バ/Pt]、0.45 ~ 1.93[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20022.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20022.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20022.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.58[バ]、0.15[バ/Pt]、0.45 ~ 1.93[バ]",
         "effectValue": 0.58,
@@ -3128,7 +3214,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "",
-      "icon": "",
+      "icon": "/images/umamusume/skill_icons/20021.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
       "effectData": null,
       "relatedSkills": [
         {
@@ -3155,7 +3242,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.49[バ]、0.20[バ/Pt]、0 ~ 2.43[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.49[バ]、0.20[バ/Pt]、0 ~ 2.43[バ]",
         "effectValue": 0.49,
@@ -3189,7 +3277,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.28[バ]、0.24[バ/Pt]、0 ~ 1.41[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.28[バ]、0.24[バ/Pt]、0 ~ 1.41[バ]",
         "effectValue": 0.28,
@@ -3223,7 +3312,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.59[バ]、0.17[バ/Pt]、0 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.59[バ]、0.17[バ/Pt]、0 ~ 2.14[バ]",
         "effectValue": 0.59,
@@ -3257,7 +3347,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.26[バ]、0.16[バ/Pt]、0 ~ 0.95[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.26[バ]、0.16[バ/Pt]、0 ~ 0.95[バ]",
         "effectValue": 0.26,
@@ -3291,7 +3382,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.87[バ]、0.24[バ/Pt]、0.74 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.87[バ]、0.24[バ/Pt]、0.74 ~ 2.10[バ]",
         "effectValue": 0.87,
@@ -3325,7 +3417,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.38[バ]、0.21[バ/Pt]、0.32 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.21[バ/Pt]、0.32 ~ 0.94[バ]",
         "effectValue": 0.38,
@@ -3359,7 +3452,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -3393,7 +3487,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -3427,7 +3522,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.50[バ]、0.14[バ/Pt]、0.01 ~ 0.73[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.50[バ]、0.14[バ/Pt]、0.01 ~ 0.73[バ]",
         "effectValue": 0.5,
@@ -3461,7 +3557,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.23[バ]、0.13[バ/Pt]、0.01 ~ 0.32[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.23[バ]、0.13[バ/Pt]、0.01 ~ 0.32[バ]",
         "effectValue": 0.23,
@@ -3495,7 +3592,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.40[バ]、0.13[バ/Pt]、0 ~ 2.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.40[バ]、0.13[バ/Pt]、0 ~ 2.34[バ]",
         "effectValue": 0.4,
@@ -3529,7 +3627,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.18[バ]、0.11[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.18[バ]、0.11[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.18,
@@ -3563,7 +3662,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "1.37[バ]、0.38[バ/Pt]、0.00 ~ 5.28[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.37[バ]、0.38[バ/Pt]、0.00 ~ 5.28[バ]",
         "effectValue": 1.37,
@@ -3597,7 +3697,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.85[バ]、0.47[バ/Pt]、0.00 ~ 3.11[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.85[バ]、0.47[バ/Pt]、0.00 ~ 3.11[バ]",
         "effectValue": 0.85,
@@ -3631,7 +3732,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "1.37[バ]、0.38[バ/Pt]、0.00 ~ 5.28[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.37[バ]、0.38[バ/Pt]、0.00 ~ 5.28[バ]",
         "effectValue": 1.37,
@@ -3665,7 +3767,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.85[バ]、0.47[バ/Pt]、0.00 ~ 3.11[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.85[バ]、0.47[バ/Pt]、0.00 ~ 3.11[バ]",
         "effectValue": 0.85,
@@ -3699,7 +3802,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.49[バ]、0.20[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.49[バ]、0.20[バ/Pt]",
         "effectValue": 0.49,
@@ -3733,7 +3837,8 @@
       "needSkillPoint": 120,
       "memo": "",
       "effect": "0.25[バ]、0.21[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.21[バ/Pt]",
         "effectValue": 0.25,
@@ -3767,7 +3872,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -3801,7 +3907,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -3835,7 +3942,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "1.33[バ]、0.37[バ/Pt]、0 ~ 4.46[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.33[バ]、0.37[バ/Pt]、0 ~ 4.46[バ]",
         "effectValue": 1.33,
@@ -3869,7 +3977,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.76[バ]、0.42[バ/Pt]、0 ~ 2.42[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.76[バ]、0.42[バ/Pt]、0 ~ 2.42[バ]",
         "effectValue": 0.76,
@@ -3903,7 +4012,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "1.65[バ]、0.46[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.65[バ]、0.46[バ/Pt]",
         "effectValue": 1.65,
@@ -3937,7 +4047,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.34[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.19[バ/Pt]",
         "effectValue": 0.34,
@@ -3971,7 +4082,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.61[バ]、0.17[バ/Pt]、60.0%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.61[バ]、0.17[バ/Pt]、60.0%",
         "effectValue": 0.61,
@@ -4005,7 +4117,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.15[バ]、0.09[バ/Pt]、30.0%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.09[バ/Pt]、30.0%",
         "effectValue": 0.15,
@@ -4039,7 +4152,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.56[バ]、0.16[バ/Pt]、0 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.56[バ]、0.16[バ/Pt]、0 ~ 2.10[バ]",
         "effectValue": 0.56,
@@ -4073,7 +4187,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.24[バ]、0.14[バ/Pt]、0 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.24[バ]、0.14[バ/Pt]、0 ~ 0.94[バ]",
         "effectValue": 0.24,
@@ -4107,7 +4222,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.87[バ]、0.24[バ/Pt]、0.74 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.87[バ]、0.24[バ/Pt]、0.74 ~ 2.10[バ]",
         "effectValue": 0.87,
@@ -4141,7 +4257,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.38[バ]、0.21[バ/Pt]、0.32 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.21[バ/Pt]、0.32 ~ 0.94[バ]",
         "effectValue": 0.38,
@@ -4175,7 +4292,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -4209,7 +4327,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -4243,7 +4362,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.89[バ]、0.22[バ/Pt]、0.05 ~ 2.42[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.89[バ]、0.22[バ/Pt]、0.05 ~ 2.42[バ]",
         "effectValue": 0.89,
@@ -4277,7 +4397,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.38[バ]、0.19[バ/Pt]、0.02 ~ 1.02[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.19[バ/Pt]、0.02 ~ 1.02[バ]",
         "effectValue": 0.38,
@@ -4311,7 +4432,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.72[バ]、0.20[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.72[バ]、0.20[バ/Pt]",
         "effectValue": 0.72,
@@ -4345,7 +4467,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.24[バ]、0.13[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/10011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/10011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.24[バ]、0.13[バ/Pt]",
         "effectValue": 0.24,
@@ -4379,7 +4502,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "2.28[バ]、0.71[バ/Pt]、0.89 ~ 4.18[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "2.28[バ]、0.71[バ/Pt]、0.89 ~ 4.18[バ]",
         "effectValue": 2.28,
@@ -4413,7 +4537,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "1.28[バ]、0.80[バ/Pt]、0.56 ~ 2.24[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.28[バ]、0.80[バ/Pt]、0.56 ~ 2.24[バ]",
         "effectValue": 1.28,
@@ -4447,7 +4572,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.99[バ]、0.28[バ/Pt]、0.83 ~ 1.90[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.99[バ]、0.28[バ/Pt]、0.83 ~ 1.90[バ]",
         "effectValue": 0.99,
@@ -4481,7 +4607,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.20[バ]、0.11[バ/Pt]、0.17 ~ 0.39[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.20[バ]、0.11[バ/Pt]、0.17 ~ 0.39[バ]",
         "effectValue": 0.2,
@@ -4515,7 +4642,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "1.43[バ]、0.40[バ/Pt]、0.99 ~ 2.42[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.43[バ]、0.40[バ/Pt]、0.99 ~ 2.42[バ]",
         "effectValue": 1.43,
@@ -4549,7 +4677,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.61[バ]、0.34[バ/Pt]、0.42 ~ 1.02[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.61[バ]、0.34[バ/Pt]、0.42 ~ 1.02[バ]",
         "effectValue": 0.61,
@@ -4583,7 +4712,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.92[バ]、0.26[バ/Pt]、0.83 ~ 1.90[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.92[バ]、0.26[バ/Pt]、0.83 ~ 1.90[バ]",
         "effectValue": 0.92,
@@ -4617,7 +4747,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.19[バ]、0.10[バ/Pt]、0.17 ~ 0.39[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.10[バ/Pt]、0.17 ~ 0.39[バ]",
         "effectValue": 0.19,
@@ -4651,7 +4782,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.58[バ]、0.18[バ/Pt]、0.45 ~ 1.93[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.58[バ]、0.18[バ/Pt]、0.45 ~ 1.93[バ]",
         "effectValue": 0.58,
@@ -4701,7 +4833,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.25[バ]、0.16[バ/Pt]、0.20 ~ 0.86[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.16[バ/Pt]、0.20 ~ 0.86[バ]",
         "effectValue": 0.25,
@@ -4751,7 +4884,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.50[バ]、0.16[バ/Pt]、0.51 ~ 0.55[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.50[バ]、0.16[バ/Pt]、0.51 ~ 0.55[バ]",
         "effectValue": 0.5,
@@ -4785,7 +4919,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.22[バ]、0.14[バ/Pt]、0.24 ~ 0.25[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.22[バ]、0.14[バ/Pt]、0.24 ~ 0.25[バ]",
         "effectValue": 0.22,
@@ -4819,7 +4954,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "",
-      "icon": "",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": null,
       "relatedSkills": [
         {
@@ -4846,7 +4982,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.30[バ]、0.15[バ/Pt]、0.31 ~ 0.33[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]、0.31 ~ 0.33[バ]",
         "effectValue": 0.3,
@@ -4880,7 +5017,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.58[バ]、0.15[バ/Pt]、0.45 ~ 1.93[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20022.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20022.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20022.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.58[バ]、0.15[バ/Pt]、0.45 ~ 1.93[バ]",
         "effectValue": 0.58,
@@ -4914,7 +5052,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "",
-      "icon": "",
+      "icon": "/images/umamusume/skill_icons/20021.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
       "effectData": null,
       "relatedSkills": [
         {
@@ -4941,7 +5080,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.86[バ]、0.27[バ/Pt]、0.90 ~ 0.95[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.86[バ]、0.27[バ/Pt]、0.90 ~ 0.95[バ]",
         "effectValue": 0.86,
@@ -4975,7 +5115,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.38[バ]、0.24[バ/Pt]、0.40 ~ 0.41[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.24[バ/Pt]、0.40 ~ 0.41[バ]",
         "effectValue": 0.38,
@@ -5009,7 +5150,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.87[バ]、0.24[バ/Pt]、0.74 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.87[バ]、0.24[バ/Pt]、0.74 ~ 2.10[バ]",
         "effectValue": 0.87,
@@ -5043,7 +5185,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.38[バ]、0.21[バ/Pt]、0.32 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.21[バ/Pt]、0.32 ~ 0.94[バ]",
         "effectValue": 0.38,
@@ -5077,7 +5220,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.87[バ]、0.24[バ/Pt]、0.74 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.87[バ]、0.24[バ/Pt]、0.74 ~ 2.10[バ]",
         "effectValue": 0.87,
@@ -5111,7 +5255,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.38[バ]、0.21[バ/Pt]、0.32 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.21[バ/Pt]、0.32 ~ 0.94[バ]",
         "effectValue": 0.38,
@@ -5145,7 +5290,8 @@
       "needSkillPoint": 140,
       "memo": "",
       "effect": "0.58[バ]、0.21[バ/Pt]、0.45 ~ 1.93[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.58[バ]、0.21[バ/Pt]、0.45 ~ 1.93[バ]",
         "effectValue": 0.58,
@@ -5179,7 +5325,8 @@
       "needSkillPoint": 140,
       "memo": "",
       "effect": "0.25[バ]、0.18[バ/Pt]、0.20 ~ 0.86[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.18[バ/Pt]、0.20 ~ 0.86[バ]",
         "effectValue": 0.25,
@@ -5213,7 +5360,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -5247,7 +5395,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -5281,7 +5430,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.93[バ]、0.26[バ/Pt]、0.63 ~ 1.47[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.93[バ]、0.26[バ/Pt]、0.63 ~ 1.47[バ]",
         "effectValue": 0.93,
@@ -5315,7 +5465,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.41[バ]、0.23[バ/Pt]、0.26 ~ 0.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.41[バ]、0.23[バ/Pt]、0.26 ~ 0.65[バ]",
         "effectValue": 0.41,
@@ -5349,7 +5500,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "2.28[バ]、0.67[バ/Pt]、0.89 ~ 4.18[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "2.28[バ]、0.67[バ/Pt]、0.89 ~ 4.18[バ]",
         "effectValue": 2.28,
@@ -5383,7 +5535,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "1.28[バ]、0.75[バ/Pt]、0.56 ~ 2.24[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.28[バ]、0.75[バ/Pt]、0.56 ~ 2.24[バ]",
         "effectValue": 1.28,
@@ -5417,7 +5570,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.77[バ]、0.21[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.21[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.77,
@@ -5459,7 +5613,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.59[バ]、0.28[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.59[バ]、0.28[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.59,
@@ -5501,7 +5656,8 @@
       "needSkillPoint": 100,
       "memo": "",
       "effect": "0.41[バ]、0.41[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.41[バ]、0.41[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.41,
@@ -5543,7 +5699,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.78[バ]、0.22[バ/Pt]、0 ~ 2.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.78[バ]、0.22[バ/Pt]、0 ~ 2.34[バ]",
         "effectValue": 0.78,
@@ -5585,7 +5742,8 @@
       "needSkillPoint": 110,
       "memo": "",
       "effect": "0.56[バ]、0.27[バ/Pt]、0 ~ 1.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.56[バ]、0.27[バ/Pt]、0 ~ 1.65[バ]",
         "effectValue": 0.56,
@@ -5627,7 +5785,8 @@
       "needSkillPoint": 100,
       "memo": "",
       "effect": "0.34[バ]、0.34[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.34[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.34,
@@ -5669,7 +5828,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.25[バ]、0.07[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.07[バ/Pt]",
         "effectValue": 0.25,
@@ -5703,7 +5863,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.16[バ]、0.09[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.09[バ/Pt]",
         "effectValue": 0.16,
@@ -5737,7 +5898,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.98[バ]、0.31[バ/Pt]、0.81 ~ 2.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.98[バ]、0.31[バ/Pt]、0.81 ~ 2.65[バ]",
         "effectValue": 0.98,
@@ -5771,7 +5933,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.56[バ]、0.35[バ/Pt]、0.46 ~ 1.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.56[バ]、0.35[バ/Pt]、0.46 ~ 1.53[バ]",
         "effectValue": 0.56,
@@ -5805,7 +5968,8 @@
       "needSkillPoint": 190,
       "memo": "",
       "effect": "0.77[バ]、0.20[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.20[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -5839,7 +6003,8 @@
       "needSkillPoint": 190,
       "memo": "",
       "effect": "0.34[バ]、0.18[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.18[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -5873,7 +6038,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.98[バ]、0.31[バ/Pt]、0.81 ~ 2.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.98[バ]、0.31[バ/Pt]、0.81 ~ 2.65[バ]",
         "effectValue": 0.98,
@@ -5907,7 +6073,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.56[バ]、0.35[バ/Pt]、0.46 ~ 1.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.56[バ]、0.35[バ/Pt]、0.46 ~ 1.53[バ]",
         "effectValue": 0.56,
@@ -5941,7 +6108,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.30[バ]、0.17[バ/Pt]、0.32 ~ 0.33[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.17[バ/Pt]、0.32 ~ 0.33[バ]",
         "effectValue": 0.3,
@@ -5966,7 +6134,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.31[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20022.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20022.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20022.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.31[バ]、0.08[バ/Pt]",
         "effectValue": 0.31,
@@ -6000,7 +6169,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.07[バ]、0.04[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20021.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.07[バ]、0.04[バ/Pt]",
         "effectValue": 0.07,
@@ -6034,7 +6204,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.98[バ]、0.31[バ/Pt]、0.81 ~ 2.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.98[バ]、0.31[バ/Pt]、0.81 ~ 2.65[バ]",
         "effectValue": 0.98,
@@ -6068,7 +6239,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.56[バ]、0.35[バ/Pt]、0.46 ~ 1.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.56[バ]、0.35[バ/Pt]、0.46 ~ 1.53[バ]",
         "effectValue": 0.56,
@@ -6102,7 +6274,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -6136,7 +6309,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -6170,7 +6344,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.65[バ]、0.18[バ/Pt]、0.66 ~ 0.73[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.65[バ]、0.18[バ/Pt]、0.66 ~ 0.73[バ]",
         "effectValue": 0.65,
@@ -6204,7 +6379,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.29[バ]、0.16[バ/Pt]、0.30 ~ 0.32[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.29[バ]、0.16[バ/Pt]、0.30 ~ 0.32[バ]",
         "effectValue": 0.29,
@@ -6238,7 +6414,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.58[バ]、0.16[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.58[バ]、0.16[バ/Pt]",
         "effectValue": 0.58,
@@ -6272,7 +6449,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.24[バ]、0.14[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.24[バ]、0.14[バ/Pt]",
         "effectValue": 0.24,
@@ -6306,7 +6484,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "1.03[バ]、0.26[バ/Pt]、0.99 ~ 2.42[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.03[バ]、0.26[バ/Pt]、0.99 ~ 2.42[バ]",
         "effectValue": 1.03,
@@ -6348,7 +6527,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.43[バ]、0.22[バ/Pt]、0.42 ~ 1.02[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.43[バ]、0.22[バ/Pt]、0.42 ~ 1.02[バ]",
         "effectValue": 0.43,
@@ -6390,7 +6570,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "2.28[バ]、0.71[バ/Pt]、0.89 ~ 4.18[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "2.28[バ]、0.71[バ/Pt]、0.89 ~ 4.18[バ]",
         "effectValue": 2.28,
@@ -6424,7 +6605,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "1.28[バ]、0.80[バ/Pt]、0.56 ~ 2.24[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.28[バ]、0.80[バ/Pt]、0.56 ~ 2.24[バ]",
         "effectValue": 1.28,
@@ -6458,7 +6640,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.34[バ]、0.21[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.21[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -6483,7 +6666,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.40[バ]、0.13[バ/Pt]、0 ~ 2.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.40[バ]、0.13[バ/Pt]、0 ~ 2.34[バ]",
         "effectValue": 0.4,
@@ -6517,7 +6701,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.18[バ]、0.11[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.18[バ]、0.11[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.18,
@@ -6551,7 +6736,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.65[バ]、0.19[バ/Pt]、0.66 ~ 0.73[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.65[バ]、0.19[バ/Pt]、0.66 ~ 0.73[バ]",
         "effectValue": 0.65,
@@ -6585,7 +6771,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.29[バ]、0.17[バ/Pt]、0.30 ~ 0.32[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.29[バ]、0.17[バ/Pt]、0.30 ~ 0.32[バ]",
         "effectValue": 0.29,
@@ -6619,7 +6806,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.21[バ]、0.06[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20042.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20042.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.21[バ]、0.06[バ/Pt]",
         "effectValue": 0.21,
@@ -6653,7 +6841,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.12[バ]、0.07[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.12[バ]、0.07[バ/Pt]",
         "effectValue": 0.12,
@@ -6687,7 +6876,8 @@
       "needSkillPoint": 360,
       "memo": "",
       "effect": "0.89[バ]、0.25[バ/Pt]、0.05 ~ 2.42[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/2010010.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/2010010.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/2010010.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.89[バ]、0.25[バ/Pt]、0.05 ~ 2.42[バ]",
         "effectValue": 0.89,
@@ -6712,7 +6902,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "1.43[バ]、0.40[バ/Pt]、0.99 ~ 2.42[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.43[バ]、0.40[バ/Pt]、0.99 ~ 2.42[バ]",
         "effectValue": 1.43,
@@ -6746,7 +6937,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.61[バ]、0.34[バ/Pt]、0.42 ~ 1.02[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.61[バ]、0.34[バ/Pt]、0.42 ~ 1.02[バ]",
         "effectValue": 0.61,
@@ -6780,7 +6972,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "1.54[バ]、0.39[バ/Pt]、1.53 ~ 2.54[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.54[バ]、0.39[バ/Pt]、1.53 ~ 2.54[バ]",
         "effectValue": 1.54,
@@ -6814,7 +7007,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.32[バ]、0.16[バ/Pt]、0.31 ~ 0.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.32[バ]、0.16[バ/Pt]、0.31 ~ 0.53[バ]",
         "effectValue": 0.32,
@@ -6848,7 +7042,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -6882,7 +7077,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -6916,7 +7112,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -6950,7 +7147,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -6984,7 +7182,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.97[バ]、0.28[バ/Pt]、0.83 ~ 2.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.97[バ]、0.28[バ/Pt]、0.83 ~ 2.34[バ]",
         "effectValue": 0.97,
@@ -7018,7 +7217,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.42[バ]、0.25[バ/Pt]、0.36 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.42[バ]、0.25[バ/Pt]、0.36 ~ 1.01[バ]",
         "effectValue": 0.42,
@@ -7052,7 +7252,8 @@
       "needSkillPoint": 160,
       "memo": "",
       "effect": "0.56[バ]、0.35[バ/Pt]、0.46 ~ 1.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.56[バ]、0.35[バ/Pt]、0.46 ~ 1.53[バ]",
         "effectValue": 0.56,
@@ -7077,7 +7278,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "1.43[バ]、0.40[バ/Pt]、0.99 ~ 2.42[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.43[バ]、0.40[バ/Pt]、0.99 ~ 2.42[バ]",
         "effectValue": 1.43,
@@ -7111,7 +7313,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.61[バ]、0.34[バ/Pt]、0.42 ~ 1.02[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.61[バ]、0.34[バ/Pt]、0.42 ~ 1.02[バ]",
         "effectValue": 0.61,
@@ -7145,7 +7348,8 @@
       "needSkillPoint": 180,
       "memo": "即時速度上昇",
       "effect": "0.84[バ]、0.23[バ/Pt]、0.80 ~ 2.16[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.84[バ]、0.23[バ/Pt]、0.80 ~ 2.16[バ]",
         "effectValue": 0.84,
@@ -7179,7 +7383,8 @@
       "needSkillPoint": 180,
       "memo": "即時速度上昇",
       "effect": "0.35[バ]、0.19[バ/Pt]、0.33 ~ 0.95[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.35[バ]、0.19[バ/Pt]、0.33 ~ 0.95[バ]",
         "effectValue": 0.35,
@@ -7213,7 +7418,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.92[バ]、0.26[バ/Pt]、0.99 ~ 2.42[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.92[バ]、0.26[バ/Pt]、0.99 ~ 2.42[バ]",
         "effectValue": 0.92,
@@ -7255,7 +7461,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.39[バ]、0.21[バ/Pt]、0.42 ~ 1.02[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.39[バ]、0.21[バ/Pt]、0.42 ~ 1.02[バ]",
         "effectValue": 0.39,
@@ -7297,7 +7504,8 @@
       "needSkillPoint": 190,
       "memo": "",
       "effect": "0.70[バ]、0.37[バ/Pt]、0.60 ~ 1.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.70[バ]、0.37[バ/Pt]、0.60 ~ 1.65[バ]",
         "effectValue": 0.7,
@@ -7322,7 +7530,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.93[バ]、0.26[バ/Pt]、0.63 ~ 1.47[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.93[バ]、0.26[バ/Pt]、0.63 ~ 1.47[バ]",
         "effectValue": 0.93,
@@ -7356,7 +7565,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.41[バ]、0.23[バ/Pt]、0.26 ~ 0.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.41[バ]、0.23[バ/Pt]、0.26 ~ 0.65[バ]",
         "effectValue": 0.41,
@@ -7378,6 +7588,32 @@
       "relatedSkillsCount": 1
     },
     {
+      "id": 204082,
+      "name": "余勢を駆って",
+      "description": "上り坂で速度がわずかに上がる",
+      "rarity": "normal",
+      "rarityValue": 1,
+      "groupId": 20408,
+      "groupRate": 1,
+      "gradeValue": 217,
+      "iconId": 20011,
+      "needSkillPoint": 120,
+      "memo": "",
+      "effect": "0.93[バ]、0.77[バ/Pt]、0.20 ~ 2.12[バ]",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "effectData": {
+        "raw": "0.93[バ]、0.77[バ/Pt]、0.20 ~ 2.12[バ]",
+        "effectValue": 0.93,
+        "effectPerPoint": 0.77,
+        "effectRangeMin": 0.2,
+        "effectRangeMax": 2.12,
+        "calculatedEfficiency": 0.775
+      },
+      "relatedSkills": [],
+      "relatedSkillsCount": 0
+    },
+    {
       "id": 204101,
       "name": "震天動地",
       "description": "ラストスパートで追い抜くか競り合うと",
@@ -7390,7 +7626,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.80[バ]、0.24[バ/Pt]、0.05 ~ 1.47[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.80[バ]、0.24[バ/Pt]、0.05 ~ 1.47[バ]",
         "effectValue": 0.8,
@@ -7424,7 +7661,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.35[バ]、0.20[バ/Pt]、0.02 ~ 0.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.35[バ]、0.20[バ/Pt]、0.02 ~ 0.65[バ]",
         "effectValue": 0.35,
@@ -7458,7 +7696,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20012.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20012.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.77[バ]、0.22[バ/Pt]、0.64 ~ 2.10[バ]",
         "effectValue": 0.77,
@@ -7492,7 +7731,8 @@
       "needSkillPoint": 180,
       "memo": "",
       "effect": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.19[バ/Pt]、0.28 ~ 0.94[バ]",
         "effectValue": 0.34,
@@ -7526,7 +7766,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.30[バ]、0.15[バ/Pt]、0.24 ~ 1.03[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20101.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20101.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20101.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]、0.24 ~ 1.03[バ]",
         "effectValue": 0.3,
@@ -7551,7 +7792,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.62[バ]、0.31[バ/Pt]、0 ~ 1.92[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20121.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20121.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20121.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.62[バ]、0.31[バ/Pt]、0 ~ 1.92[バ]",
         "effectValue": 0.62,
@@ -7576,7 +7818,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.45[バ]、0.23[バ/Pt]、0.07 ~ 1.37[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20101.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20101.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20101.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.45[バ]、0.23[バ/Pt]、0.07 ~ 1.37[バ]",
         "effectValue": 0.45,
@@ -7601,7 +7844,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.16[バ]、0.08[バ/Pt]、0.01 ~ 0.92[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20141.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20141.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20141.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]、0.01 ~ 0.92[バ]",
         "effectValue": 0.16,
@@ -7626,7 +7870,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.22[バ]、0.11[バ/Pt]、0.02 ~ 1.25[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20151.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20151.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20151.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.22[バ]、0.11[バ/Pt]、0.02 ~ 1.25[バ]",
         "effectValue": 0.22,
@@ -7651,7 +7896,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.19[バ]、0.10[バ/Pt]、0.01 ~ 0.25[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20161.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.10[バ/Pt]、0.01 ~ 0.25[バ]",
         "effectValue": 0.19,
@@ -7676,7 +7922,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.32[バ]、0.21[バ/Pt]、0.27 ~ 0.90[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20161.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.32[バ]、0.21[バ/Pt]、0.27 ~ 0.90[バ]",
         "effectValue": 0.32,
@@ -7701,7 +7948,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.37[バ]、0.25[バ/Pt]、0.01 ~ 0.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20161.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.25[バ/Pt]、0.01 ~ 0.53[バ]",
         "effectValue": 0.37,
@@ -7726,7 +7974,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.27[バ]、0.18[バ/Pt]、0.01 ~ 0.43[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20161.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.27[バ]、0.18[バ/Pt]、0.01 ~ 0.43[バ]",
         "effectValue": 0.27,
@@ -7751,7 +8000,8 @@
       "needSkillPoint": 150,
       "memo": "",
       "effect": "0.25[バ]、0.17[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20161.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20161.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.17[バ/Pt]",
         "effectValue": 0.25,
@@ -7776,7 +8026,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.19[バ]、0.10[バ/Pt]、0.24 ~ 1.03[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20191.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20191.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20191.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.10[バ/Pt]、0.24 ~ 1.03[バ]",
         "effectValue": 0.19,
@@ -7801,7 +8052,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.19[バ]、0.09[バ/Pt]、0.00 ~ 0.52[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20201.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20201.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20201.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.09[バ/Pt]、0.00 ~ 0.52[バ]",
         "effectValue": 0.19,
@@ -7826,7 +8078,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.18[バ]、0.09[バ/Pt]、0.01 ~ 0.30[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20191.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20191.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20191.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.18[バ]、0.09[バ/Pt]、0.01 ~ 0.30[バ]",
         "effectValue": 0.18,
@@ -7851,7 +8104,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.10[バ]、0.05[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20211.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20211.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20211.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.10[バ]、0.05[バ/Pt]",
         "effectValue": 0.1,
@@ -7876,7 +8130,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.69[バ]、0.17[バ/Pt]、0.53 ~ 2.28[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20222.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20222.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20222.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.69[バ]、0.17[バ/Pt]、0.53 ~ 2.28[バ]",
         "effectValue": 0.69,
@@ -7910,7 +8165,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.25[バ]、0.13[バ/Pt]、0.20 ~ 0.86[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20221.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20221.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20221.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.25[バ]、0.13[バ/Pt]、0.20 ~ 0.86[バ]",
         "effectValue": 0.25,
@@ -7944,7 +8200,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.34[バ]、0.20[バ/Pt]、0.04 ~ 1.31[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20231.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20231.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20231.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.20[バ/Pt]、0.04 ~ 1.31[バ]",
         "effectValue": 0.34,
@@ -7969,7 +8226,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.58[バ]、0.14[バ/Pt]、0.07 ~ 0.77[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20242.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20242.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20242.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.58[バ]、0.14[バ/Pt]、0.07 ~ 0.77[バ]",
         "effectValue": 0.58,
@@ -8003,7 +8261,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.20[バ]、0.10[バ/Pt]、0.02 ~ 0.27[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20241.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20241.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20241.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.20[バ]、0.10[バ/Pt]、0.02 ~ 0.27[バ]",
         "effectValue": 0.2,
@@ -8037,7 +8296,8 @@
       "needSkillPoint": 170,
       "memo": "",
       "effect": "0.31[バ]、0.18[バ/Pt]、0.29 ~ 1.31[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20251.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20251.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20251.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.31[バ]、0.18[バ/Pt]、0.29 ~ 1.31[バ]",
         "effectValue": 0.31,
@@ -8062,7 +8322,8 @@
       "needSkillPoint": 200,
       "memo": "最大",
       "effect": "0.61[バ]、0.15[バ/Pt]、0.60 ~ 0.69[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20292.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20292.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20292.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.61[バ]、0.15[バ/Pt]、0.60 ~ 0.69[バ]",
         "effectValue": 0.61,
@@ -8096,7 +8357,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.23[バ]、0.12[バ/Pt]、0.23 ~ 0.25[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20291.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20291.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20291.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.23[バ]、0.12[バ/Pt]、0.23 ~ 0.25[バ]",
         "effectValue": 0.23,
@@ -8130,7 +8392,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.51[バ]、0.13[バ/Pt]、0.51 ~ 0.58[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20322.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20322.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20322.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.51[バ]、0.13[バ/Pt]、0.51 ~ 0.58[バ]",
         "effectValue": 0.51,
@@ -8164,7 +8427,8 @@
       "needSkillPoint": 200,
       "memo": "",
       "effect": "0.23[バ]、0.12[バ/Pt]、0.23 ~ 0.25[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20321.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20321.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20321.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.23[バ]、0.12[バ/Pt]、0.23 ~ 0.25[バ]",
         "effectValue": 0.23,
@@ -8198,7 +8462,8 @@
       "needSkillPoint": 0,
       "memo": "",
       "effect": "1.34[バ]、0.33[バ/Pt]、1.31 ~ 2.69[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20296.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20296.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20296.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.34[バ]、0.33[バ/Pt]、1.31 ~ 2.69[バ]",
         "effectValue": 1.34,
@@ -8240,7 +8505,8 @@
       "needSkillPoint": 0,
       "memo": "",
       "effect": "0.94[バ]、0.28[バ/Pt]、0.01 ~ 2.14[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20296.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20296.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20296.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.94[バ]、0.28[バ/Pt]、0.01 ~ 2.14[バ]",
         "effectValue": 0.94,
@@ -8282,7 +8548,8 @@
       "needSkillPoint": 0,
       "memo": "",
       "effect": "0.73[バ]、0.23[バ/Pt]、0.57 ~ 2.43[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20296.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20296.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20296.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.73[バ]、0.23[バ/Pt]、0.57 ~ 2.43[バ]",
         "effectValue": 0.73,
@@ -8332,7 +8599,8 @@
       "needSkillPoint": 0,
       "memo": "",
       "effect": "0.54[バ]、0.17[バ/Pt]、0 ~ 2.99[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20326.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20326.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20326.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.54[バ]、0.17[バ/Pt]、0 ~ 2.99[バ]",
         "effectValue": 0.54,
@@ -8374,7 +8642,8 @@
       "needSkillPoint": 0,
       "memo": "",
       "effect": "1.20[バ]、0.33[バ/Pt]、1.29 ~ 3.09[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20326.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20326.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20326.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.20[バ]、0.33[バ/Pt]、1.29 ~ 3.09[バ]",
         "effectValue": 1.2,
@@ -8416,7 +8685,8 @@
       "needSkillPoint": 0,
       "memo": "",
       "effect": "0.73[バ]、0.23[バ/Pt]、0.57 ~ 2.43[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20326.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20326.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20326.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.73[バ]、0.23[バ/Pt]、0.57 ~ 2.43[バ]",
         "effectValue": 0.73,
@@ -8466,7 +8736,8 @@
       "needSkillPoint": 200,
       "memo": "通常スペ",
       "effect": "0.52[バ]、0.26[バ/Pt]、0.02 ~ 1.46[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.52[バ]、0.26[バ/Pt]、0.02 ~ 1.46[バ]",
         "effectValue": 0.52,
@@ -8491,7 +8762,8 @@
       "needSkillPoint": 200,
       "memo": "通常テイオー",
       "effect": "0.26[バ]、0.13[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.26[バ]、0.13[バ/Pt]",
         "effectValue": 0.26,
@@ -8516,7 +8788,8 @@
       "needSkillPoint": 200,
       "memo": "通常マルゼン",
       "effect": "2.53[バ]、1.27[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "2.53[バ]、1.27[バ/Pt]",
         "effectValue": 2.53,
@@ -8541,7 +8814,8 @@
       "needSkillPoint": 200,
       "memo": "通常フジキ",
       "effect": "0.48[バ]、0.24[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.48[バ]、0.24[バ/Pt]",
         "effectValue": 0.48,
@@ -8566,7 +8840,8 @@
       "needSkillPoint": 200,
       "memo": "通常オグリ",
       "effect": "0.49[バ]、0.24[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.49[バ]、0.24[バ/Pt]",
         "effectValue": 0.49,
@@ -8591,7 +8866,8 @@
       "needSkillPoint": 200,
       "memo": "通常ゴルシ",
       "effect": "0.15[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.08[バ/Pt]",
         "effectValue": 0.15,
@@ -8616,7 +8892,8 @@
       "needSkillPoint": 200,
       "memo": "通常ウオッカ",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -8641,7 +8918,8 @@
       "needSkillPoint": 200,
       "memo": "通常タイキ",
       "effect": "1.10[バ]、0.55[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.10[バ]、0.55[バ/Pt]",
         "effectValue": 1.1,
@@ -8666,7 +8944,8 @@
       "needSkillPoint": 200,
       "memo": "通常グラス",
       "effect": "0.28[バ]、0.14[バ/Pt]、0.01 ~ 0.32[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.28[バ]、0.14[バ/Pt]、0.01 ~ 0.32[バ]",
         "effectValue": 0.28,
@@ -8691,7 +8970,8 @@
       "needSkillPoint": 200,
       "memo": "通常ヒシアマ",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -8716,7 +8996,8 @@
       "needSkillPoint": 200,
       "memo": "通常ナリブ",
       "effect": "0.23[バ]、0.11[バ/Pt]、0 ~ 0.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.23[バ]、0.11[バ/Pt]、0 ~ 0.53[バ]",
         "effectValue": 0.23,
@@ -8741,7 +9022,8 @@
       "needSkillPoint": 200,
       "memo": "通常ルドルフ",
       "effect": "0.26[バ]、0.13[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.26[バ]、0.13[バ/Pt]",
         "effectValue": 0.26,
@@ -8766,7 +9048,8 @@
       "needSkillPoint": 200,
       "memo": "通常タマモ",
       "effect": "0.38[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.19[バ/Pt]",
         "effectValue": 0.38,
@@ -8791,7 +9074,8 @@
       "needSkillPoint": 200,
       "memo": "通常ファイン",
       "effect": "0.31[バ]、0.16[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.31[バ]、0.16[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.31,
@@ -8816,7 +9100,8 @@
       "needSkillPoint": 200,
       "memo": "通常マヤノ",
       "effect": "0.50[バ]、0.25[バ/Pt]、0.01 ~ 1.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.50[バ]、0.25[バ/Pt]、0.01 ~ 1.65[バ]",
         "effectValue": 0.5,
@@ -8841,7 +9126,8 @@
       "needSkillPoint": 200,
       "memo": "通常ブルボン",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -8866,7 +9152,8 @@
       "needSkillPoint": 200,
       "memo": "通常ボーノ",
       "effect": "0.13[バ]、0.06[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.13[バ]、0.06[バ/Pt]",
         "effectValue": 0.13,
@@ -8891,7 +9178,8 @@
       "needSkillPoint": 200,
       "memo": "通常ユキノ",
       "effect": "0.29[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.29[バ]、0.15[バ/Pt]",
         "effectValue": 0.29,
@@ -8916,7 +9204,8 @@
       "needSkillPoint": 200,
       "memo": "通常ライス",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -8941,7 +9230,8 @@
       "needSkillPoint": 200,
       "memo": "通常タキオン",
       "effect": "0.10[バ]、0.05[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20021.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.10[バ]、0.05[バ/Pt]",
         "effectValue": 0.1,
@@ -8966,7 +9256,8 @@
       "needSkillPoint": 200,
       "memo": "通常アヤベ",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -8991,7 +9282,8 @@
       "needSkillPoint": 200,
       "memo": "通常イナリ",
       "effect": "0.34[バ]、0.17[バ/Pt]、0.01 ~ 0.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.17[バ/Pt]、0.01 ~ 0.53[バ]",
         "effectValue": 0.34,
@@ -9016,7 +9308,8 @@
       "needSkillPoint": 200,
       "memo": "通常赤チケ",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -9041,7 +9334,8 @@
       "needSkillPoint": 200,
       "memo": "通常シャカール",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -9066,7 +9360,8 @@
       "needSkillPoint": 200,
       "memo": "通常フラッシュ",
       "effect": "0.24[バ]、0.12[バ/Pt]、83.6%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.24[バ]、0.12[バ/Pt]、83.6%",
         "effectValue": 0.24,
@@ -9091,7 +9386,8 @@
       "needSkillPoint": 200,
       "memo": "通常カレン",
       "effect": "0.15[バ]、0.08[バ/Pt]、0.14 ~ 1.45[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.08[バ/Pt]、0.14 ~ 1.45[バ]",
         "effectValue": 0.15,
@@ -9116,7 +9412,8 @@
       "needSkillPoint": 200,
       "memo": "通常カワカミ",
       "effect": "0.19[バ]、0.10[バ/Pt]、0.01 ~ 0.32[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.10[バ/Pt]、0.01 ~ 0.32[バ]",
         "effectValue": 0.19,
@@ -9141,7 +9438,8 @@
       "needSkillPoint": 200,
       "memo": "通常シチー",
       "effect": "0.13[バ]、0.06[バ/Pt]、0 ~ 0.38[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.13[バ]、0.06[バ/Pt]、0 ~ 0.38[バ]",
         "effectValue": 0.13,
@@ -9166,7 +9464,8 @@
       "needSkillPoint": 200,
       "memo": "通常バクシン",
       "effect": "0.31[バ]、0.16[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.31[バ]、0.16[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.31,
@@ -9191,7 +9490,8 @@
       "needSkillPoint": 200,
       "memo": "通常ザパール",
       "effect": "0.49[バ]、0.24[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.49[バ]、0.24[バ/Pt]",
         "effectValue": 0.49,
@@ -9216,7 +9516,8 @@
       "needSkillPoint": 200,
       "memo": "通常ウインディ / 加速度",
       "effect": "0.08[バ]、0.04[バ/Pt]、0.01 ~ 0.12[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.08[バ]、0.04[バ/Pt]、0.01 ~ 0.12[バ]",
         "effectValue": 0.08,
@@ -9241,7 +9542,8 @@
       "needSkillPoint": 200,
       "memo": "通常スイープ",
       "effect": "0.32[バ]、0.16[バ/Pt]、83.6%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.32[バ]、0.16[バ/Pt]、83.6%",
         "effectValue": 0.32,
@@ -9266,7 +9568,8 @@
       "needSkillPoint": 200,
       "memo": "通常ロブロイ",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -9291,7 +9594,8 @@
       "needSkillPoint": 200,
       "memo": "通常ジョーダン",
       "effect": "0.27[バ]、0.13[バ/Pt]、0.01 ~ 0.32[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.27[バ]、0.13[バ/Pt]、0.01 ~ 0.32[バ]",
         "effectValue": 0.27,
@@ -9316,7 +9620,8 @@
       "needSkillPoint": 200,
       "memo": "通常ナカヤマ",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -9341,7 +9646,8 @@
       "needSkillPoint": 200,
       "memo": "通常タイシン",
       "effect": "0.03[バ]、0.02[バ/Pt]、0 ~ 0.32[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.03[バ]、0.02[バ/Pt]、0 ~ 0.32[バ]",
         "effectValue": 0.03,
@@ -9366,7 +9672,8 @@
       "needSkillPoint": 200,
       "memo": "通常ニシノ",
       "effect": "1.09[バ]、0.55[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.09[バ]、0.55[バ/Pt]",
         "effectValue": 1.09,
@@ -9391,7 +9698,8 @@
       "needSkillPoint": 200,
       "memo": "通常バンブー / 追い抜き_最大",
       "effect": "0.64[バ]、0.32[バ/Pt]、0 ~ 3.11[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.64[バ]、0.32[バ/Pt]、0 ~ 3.11[バ]",
         "effectValue": 0.64,
@@ -9416,7 +9724,8 @@
       "needSkillPoint": 200,
       "memo": "通常ビコペ",
       "effect": "0.39[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.39[バ]、0.19[バ/Pt]",
         "effectValue": 0.39,
@@ -9441,7 +9750,8 @@
       "needSkillPoint": 200,
       "memo": "通常マベサン",
       "effect": "0.50[バ]、0.25[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.50[バ]、0.25[バ/Pt]",
         "effectValue": 0.5,
@@ -9466,7 +9776,8 @@
       "needSkillPoint": 200,
       "memo": "通常フクキタル",
       "effect": "0.21[バ]、0.11[バ/Pt]、0.02 ~ 0.85[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.21[バ]、0.11[バ/Pt]、0.02 ~ 0.85[バ]",
         "effectValue": 0.21,
@@ -9491,7 +9802,8 @@
       "needSkillPoint": 200,
       "memo": "通常シービー / 最大",
       "effect": "0.19[バ]、0.09[バ/Pt]、0.16 ~ 0.38[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.09[バ/Pt]、0.16 ~ 0.38[バ]",
         "effectValue": 0.19,
@@ -9516,7 +9828,8 @@
       "needSkillPoint": 200,
       "memo": "通常ドトウ",
       "effect": "0.40[バ]、0.20[バ/Pt]、0.01 ~ 1.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.40[バ]、0.20[バ/Pt]、0.01 ~ 1.65[バ]",
         "effectValue": 0.4,
@@ -9541,7 +9854,8 @@
       "needSkillPoint": 200,
       "memo": "通常ドーベル",
       "effect": "2.29[バ]、1.15[バ/Pt]、83.6%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "2.29[バ]、1.15[バ/Pt]、83.6%",
         "effectValue": 2.29,
@@ -9566,7 +9880,8 @@
       "needSkillPoint": 200,
       "memo": "通常キング",
       "effect": "0.44[バ]、0.22[バ/Pt]、83.6%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.44[バ]、0.22[バ/Pt]、83.6%",
         "effectValue": 0.44,
@@ -9591,7 +9906,8 @@
       "needSkillPoint": 200,
       "memo": "通常マチタン",
       "effect": "0.13[バ]、0.06[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20021.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.13[バ]、0.06[バ/Pt]",
         "effectValue": 0.13,
@@ -9616,7 +9932,8 @@
       "needSkillPoint": 200,
       "memo": "通常イクノ",
       "effect": "0.11[バ]、0.05[バ/Pt]、83.6%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.11[バ]、0.05[バ/Pt]、83.6%",
         "effectValue": 0.11,
@@ -9641,7 +9958,8 @@
       "needSkillPoint": 200,
       "memo": "通常ヘリオス",
       "effect": "0.19[バ]、0.09[バ/Pt]、0.16 ~ 0.38[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.09[バ/Pt]、0.16 ~ 0.38[バ]",
         "effectValue": 0.19,
@@ -9666,7 +9984,8 @@
       "needSkillPoint": 200,
       "memo": "通常ダイヤ",
       "effect": "0.26[バ]、0.13[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.26[バ]、0.13[バ/Pt]",
         "effectValue": 0.26,
@@ -9691,7 +10010,8 @@
       "needSkillPoint": 200,
       "memo": "通常チヨノオー",
       "effect": "0.29[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.29[バ]、0.15[バ/Pt]",
         "effectValue": 0.29,
@@ -9716,7 +10036,8 @@
       "needSkillPoint": 200,
       "memo": "通常アルダン",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -9741,7 +10062,8 @@
       "needSkillPoint": 200,
       "memo": "通常ヤエノ",
       "effect": "0.29[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.29[バ]、0.15[バ/Pt]",
         "effectValue": 0.29,
@@ -9766,7 +10088,8 @@
       "needSkillPoint": 200,
       "memo": "通常ツヨシ",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -9791,7 +10114,8 @@
       "needSkillPoint": 200,
       "memo": "通常ブライト / 最大",
       "effect": "0.39[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.39[バ]、0.19[バ/Pt]",
         "effectValue": 0.39,
@@ -9816,7 +10140,8 @@
       "needSkillPoint": 200,
       "memo": "通常ローレル",
       "effect": "0.13[バ]、0.06[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.13[バ]、0.06[バ/Pt]",
         "effectValue": 0.13,
@@ -9841,7 +10166,8 @@
       "needSkillPoint": 200,
       "memo": "通常トプロ",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -9866,7 +10192,8 @@
       "needSkillPoint": 200,
       "memo": "通常ゼファー",
       "effect": "0.33[バ]、0.17[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.33[バ]、0.17[バ/Pt]",
         "effectValue": 0.33,
@@ -9891,7 +10218,8 @@
       "needSkillPoint": 200,
       "memo": "通常フリオ",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -9916,7 +10244,8 @@
       "needSkillPoint": 200,
       "memo": "通常エスポ",
       "effect": "0.20[バ]、0.10[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.20[バ]、0.10[バ/Pt]",
         "effectValue": 0.2,
@@ -9941,7 +10270,8 @@
       "needSkillPoint": 200,
       "memo": "通常ボリクリ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -9966,7 +10296,8 @@
       "needSkillPoint": 200,
       "memo": "通常ギムレット",
       "effect": "0.31[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.31[バ]、0.15[バ/Pt]",
         "effectValue": 0.31,
@@ -9991,7 +10322,8 @@
       "needSkillPoint": 200,
       "memo": "通常ラモーヌ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -10016,7 +10348,8 @@
       "needSkillPoint": 200,
       "memo": "通常クラウン",
       "effect": "0.19[バ]、0.09[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.09[バ/Pt]",
         "effectValue": 0.19,
@@ -10041,7 +10374,8 @@
       "needSkillPoint": 200,
       "memo": "通常シュヴァル",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -10066,7 +10400,8 @@
       "needSkillPoint": 200,
       "memo": "通常ヴィブロス",
       "effect": "0.43[バ]、0.22[バ/Pt]、83.6%",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.43[バ]、0.22[バ/Pt]、83.6%",
         "effectValue": 0.43,
@@ -10091,7 +10426,8 @@
       "needSkillPoint": 200,
       "memo": "通常ダンツ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -10116,7 +10452,8 @@
       "needSkillPoint": 200,
       "memo": "通常ケイエス",
       "effect": "0.42[バ]、0.21[バ/Pt]、0.33 ~ 0.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.42[バ]、0.21[バ/Pt]、0.33 ~ 0.65[バ]",
         "effectValue": 0.42,
@@ -10141,7 +10478,8 @@
       "needSkillPoint": 200,
       "memo": "通常ポッケ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -10166,7 +10504,8 @@
       "needSkillPoint": 200,
       "memo": "通常ビリーヴ",
       "effect": "0.15[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.08[バ/Pt]",
         "effectValue": 0.15,
@@ -10191,7 +10530,8 @@
       "needSkillPoint": 200,
       "memo": "通常リーズン",
       "effect": "0.35[バ]、0.17[バ/Pt]、0.32 ~ 0.40[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.35[バ]、0.17[バ/Pt]、0.32 ~ 0.40[バ]",
         "effectValue": 0.35,
@@ -10216,7 +10556,8 @@
       "needSkillPoint": 200,
       "memo": "通常スティル",
       "effect": "0.48[バ]、0.24[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.48[バ]、0.24[バ/Pt]",
         "effectValue": 0.48,
@@ -10241,7 +10582,8 @@
       "needSkillPoint": 200,
       "memo": "通常リッキー",
       "effect": "0.16[バ]、0.08[バ/Pt]、0.14 ~ 0.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]、0.14 ~ 0.34[バ]",
         "effectValue": 0.16,
@@ -10266,7 +10608,8 @@
       "needSkillPoint": 200,
       "memo": "通常タルマエ",
       "effect": "0.94[バ]、0.47[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.94[バ]、0.47[バ/Pt]",
         "effectValue": 0.94,
@@ -10291,7 +10634,8 @@
       "needSkillPoint": 200,
       "memo": "通常アキュート / 即時速度上昇",
       "effect": "0.20[バ]、0.10[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.20[バ]、0.10[バ/Pt]",
         "effectValue": 0.2,
@@ -10316,7 +10660,8 @@
       "needSkillPoint": 200,
       "memo": "通常アース",
       "effect": "0.49[バ]、0.25[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20021.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.49[バ]、0.25[バ/Pt]",
         "effectValue": 0.49,
@@ -10341,7 +10686,8 @@
       "needSkillPoint": 200,
       "memo": "通常ネオユニ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -10366,7 +10712,8 @@
       "needSkillPoint": 200,
       "memo": "通常ドゥラ",
       "effect": "0.45[バ]、0.23[バ/Pt]、0.40 ~ 0.56[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.45[バ]、0.23[バ/Pt]、0.40 ~ 0.56[バ]",
         "effectValue": 0.45,
@@ -10391,7 +10738,8 @@
       "needSkillPoint": 200,
       "memo": "通常クラフト",
       "effect": "0.15[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.08[バ/Pt]",
         "effectValue": 0.15,
@@ -10416,7 +10764,8 @@
       "needSkillPoint": 200,
       "memo": "通常ザリオ",
       "effect": "0.10[バ]、0.05[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.10[バ]、0.05[バ/Pt]",
         "effectValue": 0.1,
@@ -10441,7 +10790,8 @@
       "needSkillPoint": 200,
       "memo": "通常メサイア",
       "effect": "0.15[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.08[バ/Pt]",
         "effectValue": 0.15,
@@ -10466,7 +10816,8 @@
       "needSkillPoint": 200,
       "memo": "通常パンドラ",
       "effect": "0.38[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.19[バ/Pt]",
         "effectValue": 0.38,
@@ -10491,7 +10842,8 @@
       "needSkillPoint": 200,
       "memo": "通常ブエナ",
       "effect": "0.13[バ]、0.06[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.13[バ]、0.06[バ/Pt]",
         "effectValue": 0.13,
@@ -10516,7 +10868,8 @@
       "needSkillPoint": 200,
       "memo": "通常ドンナ",
       "effect": "0.19[バ]、0.09[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.19[バ]、0.09[バ/Pt]",
         "effectValue": 0.19,
@@ -10541,7 +10894,8 @@
       "needSkillPoint": 200,
       "memo": "通常シオン",
       "effect": "0.10[バ]、0.05[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.10[バ]、0.05[バ/Pt]",
         "effectValue": 0.1,
@@ -10566,7 +10920,8 @@
       "needSkillPoint": 200,
       "memo": "通常ドリジャ",
       "effect": "0.22[バ]、0.11[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.22[バ]、0.11[バ/Pt]",
         "effectValue": 0.22,
@@ -10591,7 +10946,8 @@
       "needSkillPoint": 200,
       "memo": "通常ライトオ",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -10616,7 +10972,8 @@
       "needSkillPoint": 200,
       "memo": "通常デュラン",
       "effect": "0.48[バ]、0.24[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.48[バ]、0.24[バ/Pt]",
         "effectValue": 0.48,
@@ -10641,7 +10998,8 @@
       "needSkillPoint": 200,
       "memo": "通常バブル",
       "effect": "0.16[バ]、0.08[バ/Pt]、0.14 ~ 0.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]、0.14 ~ 0.34[バ]",
         "effectValue": 0.16,
@@ -10666,7 +11024,8 @@
       "needSkillPoint": 200,
       "memo": "通常メノ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -10691,7 +11050,8 @@
       "needSkillPoint": 200,
       "memo": "通常グラン",
       "effect": "0.54[バ]、0.27[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.54[バ]、0.27[バ/Pt]",
         "effectValue": 0.54,
@@ -10716,7 +11076,8 @@
       "needSkillPoint": 200,
       "memo": "水着スペ",
       "effect": "0.14[バ]、0.07[バ/Pt]、0.14 ~ 0.35[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20021.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.14[バ]、0.07[バ/Pt]、0.14 ~ 0.35[バ]",
         "effectValue": 0.14,
@@ -10741,7 +11102,8 @@
       "needSkillPoint": 200,
       "memo": "赤テイオー",
       "effect": "0.26[バ]、0.13[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.26[バ]、0.13[バ/Pt]",
         "effectValue": 0.26,
@@ -10766,7 +11128,8 @@
       "needSkillPoint": 200,
       "memo": "水着マルゼン / スリーセブン起動",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -10791,7 +11154,8 @@
       "needSkillPoint": 200,
       "memo": "ダンスフジキ",
       "effect": "0.17[バ]、0.08[バ/Pt]、0 ~ 0.42[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.17[バ]、0.08[バ/Pt]、0 ~ 0.42[バ]",
         "effectValue": 0.17,
@@ -10816,7 +11180,8 @@
       "needSkillPoint": 200,
       "memo": "クリオグリ / スリーセブン起動",
       "effect": "0.13[バ]、0.06[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.13[バ]、0.06[バ/Pt]",
         "effectValue": 0.13,
@@ -10841,7 +11206,8 @@
       "needSkillPoint": 200,
       "memo": "水着ゴルシ",
       "effect": "0.07[バ]、0.03[バ/Pt]、0 ~ 0.24[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.07[バ]、0.03[バ/Pt]、0 ~ 0.24[バ]",
         "effectValue": 0.07,
@@ -10866,7 +11232,8 @@
       "needSkillPoint": 200,
       "memo": "クリウオッカ",
       "effect": "0.18[バ]、0.09[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.18[バ]、0.09[バ/Pt]",
         "effectValue": 0.18,
@@ -10891,7 +11258,8 @@
       "needSkillPoint": 200,
       "memo": "夏タイキ / 即時速度上昇",
       "effect": "0.37[バ]、0.18[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.18[バ/Pt]",
         "effectValue": 0.37,
@@ -10916,7 +11284,8 @@
       "needSkillPoint": 200,
       "memo": "嫁アマ",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -10941,7 +11310,8 @@
       "needSkillPoint": 200,
       "memo": "白マック",
       "effect": "0.05[バ]、0.03[バ/Pt]、0 ~ 0.38[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.05[バ]、0.03[バ/Pt]、0 ~ 0.38[バ]",
         "effectValue": 0.05,
@@ -10966,7 +11336,8 @@
       "needSkillPoint": 200,
       "memo": "モンクエル",
       "effect": "1.27[バ]、0.64[バ/Pt]、0.19 ~ 2.74[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.27[バ]、0.64[バ/Pt]、0.19 ~ 2.74[バ]",
         "effectValue": 1.27,
@@ -10991,7 +11362,8 @@
       "needSkillPoint": 200,
       "memo": "正月オペ",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -11016,7 +11388,8 @@
       "needSkillPoint": 200,
       "memo": "嫁グルーヴ",
       "effect": "0.27[バ]、0.13[バ/Pt]、0.36 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.27[バ]、0.13[バ/Pt]、0.36 ~ 1.01[バ]",
         "effectValue": 0.27,
@@ -11041,7 +11414,8 @@
       "needSkillPoint": 200,
       "memo": "キョンデジ",
       "effect": "0.34[バ]、0.17[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.17[バ/Pt]",
         "effectValue": 0.34,
@@ -11056,7 +11430,7 @@
     {
       "id": 910211,
       "name": "火神鳴",
-      "description": "レース中盤にスキルを2つ発動すると",
+      "description": "レース中盤にスキルを2回発動すると",
       "rarity": "normal",
       "rarityValue": 1,
       "groupId": 91021,
@@ -11066,7 +11440,8 @@
       "needSkillPoint": 200,
       "memo": "秋タマモ",
       "effect": "0.26[バ]、0.13[バ/Pt]、0.24 ~ 0.56[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.26[バ]、0.13[バ/Pt]、0.24 ~ 0.56[バ]",
         "effectValue": 0.26,
@@ -11091,7 +11466,8 @@
       "needSkillPoint": 200,
       "memo": "嫁ファイン / 加速度",
       "effect": "0.79[バ]、0.39[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.79[バ]、0.39[バ/Pt]",
         "effectValue": 0.79,
@@ -11116,7 +11492,8 @@
       "needSkillPoint": 200,
       "memo": "クリヒデ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -11141,7 +11518,8 @@
       "needSkillPoint": 200,
       "memo": "嫁マヤ / 加速度",
       "effect": "0.60[バ]、0.30[バ/Pt]、0 ~ 2.74[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.60[バ]、0.30[バ/Pt]、0 ~ 2.74[バ]",
         "effectValue": 0.6,
@@ -11166,7 +11544,8 @@
       "needSkillPoint": 200,
       "memo": "猫カフェ",
       "effect": "0.20[バ]、0.10[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.20[バ]、0.10[バ/Pt]",
         "effectValue": 0.2,
@@ -11191,7 +11570,8 @@
       "needSkillPoint": 200,
       "memo": "チョコボン",
       "effect": "0.34[バ]、0.17[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.34[バ]、0.17[バ/Pt]",
         "effectValue": 0.34,
@@ -11216,7 +11596,8 @@
       "needSkillPoint": 200,
       "memo": "チョコアン",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -11241,7 +11622,8 @@
       "needSkillPoint": 200,
       "memo": "サーカスボノ",
       "effect": "0.30[バ]、0.15[バ/Pt]、0.32 ~ 0.33[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]、0.32 ~ 0.33[バ]",
         "effectValue": 0.3,
@@ -11266,7 +11648,8 @@
       "needSkillPoint": 200,
       "memo": "和ユキノ",
       "effect": "0.49[バ]、0.25[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.49[バ]、0.25[バ/Pt]",
         "effectValue": 0.49,
@@ -11291,7 +11674,8 @@
       "needSkillPoint": 200,
       "memo": "チョコネス",
       "effect": "0.15[バ]、0.08[バ/Pt]、0.15 ~ 0.16[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.08[バ/Pt]、0.15 ~ 0.16[バ]",
         "effectValue": 0.15,
@@ -11316,7 +11700,8 @@
       "needSkillPoint": 200,
       "memo": "水着タキオン / 最大",
       "effect": "0.49[バ]、0.25[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.49[バ]、0.25[バ/Pt]",
         "effectValue": 0.49,
@@ -11341,7 +11726,8 @@
       "needSkillPoint": 200,
       "memo": "神イナリ",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -11366,7 +11752,8 @@
       "needSkillPoint": 200,
       "memo": "白チケ",
       "effect": "0.15[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.08[バ/Pt]",
         "effectValue": 0.15,
@@ -11391,7 +11778,8 @@
       "needSkillPoint": 200,
       "memo": "ハロシャカ",
       "effect": "0.17[バ]、0.08[バ/Pt]、0 ~ 0.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.17[バ]、0.08[バ/Pt]、0 ~ 0.53[バ]",
         "effectValue": 0.17,
@@ -11416,7 +11804,8 @@
       "needSkillPoint": 200,
       "memo": "チョコフラ",
       "effect": "0.22[バ]、0.11[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.22[バ]、0.11[バ/Pt]",
         "effectValue": 0.22,
@@ -11441,7 +11830,8 @@
       "needSkillPoint": 200,
       "memo": "嫁カレン",
       "effect": "0.10[バ]、0.05[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.10[バ]、0.05[バ/Pt]",
         "effectValue": 0.1,
@@ -11466,7 +11856,8 @@
       "needSkillPoint": 200,
       "memo": "和装カワカミ",
       "effect": "0.27[バ]、0.13[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.27[バ]、0.13[バ/Pt]",
         "effectValue": 0.27,
@@ -11491,7 +11882,8 @@
       "needSkillPoint": 200,
       "memo": "秋シチー",
       "effect": "0.75[バ]、0.38[バ/Pt]、0.18 ~ 1.65[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.75[バ]、0.38[バ/Pt]、0.18 ~ 1.65[バ]",
         "effectValue": 0.75,
@@ -11516,7 +11908,8 @@
       "needSkillPoint": 200,
       "memo": "赤バク / 最大",
       "effect": "0.08[バ]、0.04[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.08[バ]、0.04[バ/Pt]",
         "effectValue": 0.08,
@@ -11541,7 +11934,8 @@
       "needSkillPoint": 200,
       "memo": "魔女パール",
       "effect": "0.11[バ]、0.06[バ/Pt]、0.01 ~ 0.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.11[バ]、0.06[バ/Pt]、0.01 ~ 0.34[バ]",
         "effectValue": 0.11,
@@ -11566,7 +11960,8 @@
       "needSkillPoint": 200,
       "memo": "嫁スイープ",
       "effect": "0.23[バ]、0.12[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.23[バ]、0.12[バ/Pt]",
         "effectValue": 0.23,
@@ -11591,7 +11986,8 @@
       "needSkillPoint": 200,
       "memo": "マミクリ",
       "effect": "0.14[バ]、0.07[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.14[バ]、0.07[バ/Pt]",
         "effectValue": 0.14,
@@ -11616,7 +12012,8 @@
       "needSkillPoint": 200,
       "memo": "黄ファルコ",
       "effect": "0.15[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.08[バ/Pt]",
         "effectValue": 0.15,
@@ -11641,7 +12038,8 @@
       "needSkillPoint": 200,
       "memo": "秋ロブロイ",
       "effect": "0.06[バ]、0.03[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.06[バ]、0.03[バ/Pt]",
         "effectValue": 0.06,
@@ -11666,7 +12064,8 @@
       "needSkillPoint": 200,
       "memo": "夏ジョーダン",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -11691,7 +12090,8 @@
       "needSkillPoint": 200,
       "memo": "嫁ニシノ / 即時速度上昇",
       "effect": "0.37[バ]、0.18[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.18[バ/Pt]",
         "effectValue": 0.37,
@@ -11716,7 +12116,8 @@
       "needSkillPoint": 200,
       "memo": "夏バンブー",
       "effect": "0.10[バ]、0.05[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.10[バ]、0.05[バ/Pt]",
         "effectValue": 0.1,
@@ -11741,7 +12142,8 @@
       "needSkillPoint": 200,
       "memo": "サーカスマベ / 即時速度上昇",
       "effect": "0.24[バ]、0.12[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.24[バ]、0.12[バ/Pt]",
         "effectValue": 0.24,
@@ -11766,7 +12168,8 @@
       "needSkillPoint": 200,
       "memo": "FAフクキタル",
       "effect": "0.31[バ]、0.16[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.31[バ]、0.16[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.31,
@@ -11791,7 +12194,8 @@
       "needSkillPoint": 200,
       "memo": "正月シービー / 最大",
       "effect": "0.39[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.39[バ]、0.19[バ/Pt]",
         "effectValue": 0.39,
@@ -11816,7 +12220,8 @@
       "needSkillPoint": 200,
       "memo": "夏ドーベル",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -11841,7 +12246,8 @@
       "needSkillPoint": 200,
       "memo": "チアネイチャ",
       "effect": "0.22[バ]、0.11[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.22[バ]、0.11[バ/Pt]",
         "effectValue": 0.22,
@@ -11866,7 +12272,8 @@
       "needSkillPoint": 200,
       "memo": "青マチ / 最大",
       "effect": "0.05[バ]、0.02[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.05[バ]、0.02[バ/Pt]",
         "effectValue": 0.05,
@@ -11891,7 +12298,8 @@
       "needSkillPoint": 200,
       "memo": "赤ヘリオス",
       "effect": "0.39[バ]、0.19[バ/Pt]、0.32 ~ 0.69[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.39[バ]、0.19[バ/Pt]、0.32 ~ 0.69[バ]",
         "effectValue": 0.39,
@@ -11916,7 +12324,8 @@
       "needSkillPoint": 200,
       "memo": "白ダイヤ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -11941,7 +12350,8 @@
       "needSkillPoint": 200,
       "memo": "ドレスチヨ",
       "effect": "1.90[バ]、0.95[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20041.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20041.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "1.90[バ]、0.95[バ/Pt]",
         "effectValue": 1.9,
@@ -11966,7 +12376,8 @@
       "needSkillPoint": 200,
       "memo": "青シリウス",
       "effect": "0.15[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.15[バ]、0.08[バ/Pt]",
         "effectValue": 0.15,
@@ -11991,7 +12402,8 @@
       "needSkillPoint": 200,
       "memo": "ダンスアルダン",
       "effect": "0.24[バ]、0.12[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.24[バ]、0.12[バ/Pt]",
         "effectValue": 0.24,
@@ -12016,7 +12428,8 @@
       "needSkillPoint": 200,
       "memo": "黒ヤエノ",
       "effect": "0.29[バ]、0.14[バ/Pt]、0 ~ 1.01[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.29[バ]、0.14[バ/Pt]、0 ~ 1.01[バ]",
         "effectValue": 0.29,
@@ -12041,7 +12454,8 @@
       "needSkillPoint": 200,
       "memo": "クリトプロ",
       "effect": "0.13[バ]、0.06[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.13[バ]、0.06[バ/Pt]",
         "effectValue": 0.13,
@@ -12066,7 +12480,8 @@
       "needSkillPoint": 200,
       "memo": "バレゼファー / 目標速度",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -12091,7 +12506,8 @@
       "needSkillPoint": 200,
       "memo": "温泉トラン",
       "effect": "0.46[バ]、0.23[バ/Pt]、0.39 ~ 0.53[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.46[バ]、0.23[バ/Pt]、0.39 ~ 0.53[バ]",
         "effectValue": 0.46,
@@ -12116,7 +12532,8 @@
       "needSkillPoint": 200,
       "memo": "ハロクリ",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -12141,7 +12558,8 @@
       "needSkillPoint": 200,
       "memo": "ダンスギムレット",
       "effect": "0.20[バ]、0.10[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.20[バ]、0.10[バ/Pt]",
         "effectValue": 0.2,
@@ -12166,7 +12584,8 @@
       "needSkillPoint": 200,
       "memo": "青ルビー",
       "effect": "0.45[バ]、0.22[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.45[バ]、0.22[バ/Pt]",
         "effectValue": 0.45,
@@ -12191,7 +12610,8 @@
       "needSkillPoint": 200,
       "memo": "嫁ラモ",
       "effect": "0.48[バ]、0.24[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.48[バ]、0.24[バ/Pt]",
         "effectValue": 0.48,
@@ -12216,7 +12636,8 @@
       "needSkillPoint": 200,
       "memo": "水着ヴィブロス",
       "effect": "0.13[バ]、0.06[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.13[バ]、0.06[バ/Pt]",
         "effectValue": 0.13,
@@ -12241,7 +12662,8 @@
       "needSkillPoint": 200,
       "memo": "秋ケイエス",
       "effect": "0.29[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.29[バ]、0.15[バ/Pt]",
         "effectValue": 0.29,
@@ -12266,7 +12688,8 @@
       "needSkillPoint": 200,
       "memo": "マーチリッキー",
       "effect": "0.60[バ]、0.30[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.60[バ]、0.30[バ/Pt]",
         "effectValue": 0.6,
@@ -12291,7 +12714,8 @@
       "needSkillPoint": 200,
       "memo": "水着タルマエ",
       "effect": "0.21[バ]、0.11[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.21[バ]、0.11[バ/Pt]",
         "effectValue": 0.21,
@@ -12316,7 +12740,8 @@
       "needSkillPoint": 200,
       "memo": "温泉アキュート",
       "effect": "0.31[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.31[バ]、0.15[バ/Pt]",
         "effectValue": 0.31,
@@ -12341,7 +12766,8 @@
       "needSkillPoint": 200,
       "memo": "メガユニ",
       "effect": "0.16[バ]、0.08[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]",
         "effectValue": 0.16,
@@ -12366,7 +12792,8 @@
       "needSkillPoint": 200,
       "memo": "秋ミラコ",
       "effect": "0.06[バ]、0.03[バ/Pt]、0.08 ~ 0.29[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.06[バ]、0.03[バ/Pt]、0.08 ~ 0.29[バ]",
         "effectValue": 0.06,
@@ -12391,7 +12818,8 @@
       "needSkillPoint": 200,
       "memo": "嫁ザリオ",
       "effect": "0.38[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.38[バ]、0.19[バ/Pt]",
         "effectValue": 0.38,
@@ -12416,7 +12844,8 @@
       "needSkillPoint": 200,
       "memo": "クリジャーニー",
       "effect": "0.10[バ]、0.05[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.10[バ]、0.05[バ/Pt]",
         "effectValue": 0.1,
@@ -12441,7 +12870,8 @@
       "needSkillPoint": 200,
       "memo": "正月マルゼン",
       "effect": "0.52[バ]、0.26[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.52[バ]、0.26[バ/Pt]",
         "effectValue": 0.52,
@@ -12449,6 +12879,32 @@
         "effectRangeMin": null,
         "effectRangeMax": null,
         "calculatedEfficiency": 0.26
+      },
+      "relatedSkills": [],
+      "relatedSkillsCount": 0
+    },
+    {
+      "id": 920061,
+      "name": "灰の光跡：シンデレラグレイ",
+      "description": "レース中間付近で中団だと速度が",
+      "rarity": "normal",
+      "rarityValue": 1,
+      "groupId": 92006,
+      "groupRate": 2,
+      "gradeValue": 180,
+      "iconId": 20011,
+      "needSkillPoint": 200,
+      "memo": "シングレオグリ",
+      "effect": "0.37[バ]、0.19[バ/Pt]",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "effectData": {
+        "raw": "0.37[バ]、0.19[バ/Pt]",
+        "effectValue": 0.37,
+        "effectPerPoint": 0.19,
+        "effectRangeMin": null,
+        "effectRangeMax": null,
+        "calculatedEfficiency": 0.185
       },
       "relatedSkills": [],
       "relatedSkillsCount": 0
@@ -12466,7 +12922,8 @@
       "needSkillPoint": 200,
       "memo": "蒼炎グラス",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -12491,7 +12948,8 @@
       "needSkillPoint": 200,
       "memo": "水着マック / 最大",
       "effect": "0.39[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.39[バ]、0.19[バ/Pt]",
         "effectValue": 0.39,
@@ -12516,7 +12974,8 @@
       "needSkillPoint": 200,
       "memo": "メカビワ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -12541,7 +13000,8 @@
       "needSkillPoint": 200,
       "memo": "猫マヤ",
       "effect": "0.11[バ]、0.06[バ/Pt]、0.01 ~ 0.38[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20021.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20021.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.11[バ]、0.06[バ/Pt]、0.01 ~ 0.38[バ]",
         "effectValue": 0.11,
@@ -12566,7 +13026,8 @@
       "needSkillPoint": 200,
       "memo": "島ネス",
       "effect": "0.09[バ]、0.04[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.09[バ]、0.04[バ/Pt]",
         "effectValue": 0.09,
@@ -12591,7 +13052,8 @@
       "needSkillPoint": 200,
       "memo": "黒チケ",
       "effect": "0.30[バ]、0.15[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.30[バ]、0.15[バ/Pt]",
         "effectValue": 0.3,
@@ -12616,7 +13078,8 @@
       "needSkillPoint": 200,
       "memo": "夏シチー",
       "effect": "0.35[バ]、0.18[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.35[バ]、0.18[バ/Pt]",
         "effectValue": 0.35,
@@ -12641,7 +13104,8 @@
       "needSkillPoint": 200,
       "memo": "青ファルコ",
       "effect": "0.37[バ]、0.19[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.37[バ]、0.19[バ/Pt]",
         "effectValue": 0.37,
@@ -12666,7 +13130,8 @@
       "needSkillPoint": 200,
       "memo": "嫁キング",
       "effect": "0.35[バ]、0.18[バ/Pt]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.35[バ]、0.18[バ/Pt]",
         "effectValue": 0.35,
@@ -12691,7 +13156,8 @@
       "needSkillPoint": 200,
       "memo": "凱旋門ダイヤ",
       "effect": "0.16[バ]、0.08[バ/Pt]、0.14 ~ 0.34[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.16[バ]、0.08[バ/Pt]、0.14 ~ 0.34[バ]",
         "effectValue": 0.16,
@@ -12716,7 +13182,8 @@
       "needSkillPoint": 200,
       "memo": "赤キタ",
       "effect": "0.21[バ]、0.11[バ/Pt]、0.03 ~ 0.86[バ]",
-      "icon": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
+      "icon": "/images/umamusume/skill_icons/20011.webp",
+      "iconUrl": "https://ktools.imgix.net/umamusume/images/skills/20011.webp?w=96&h=96&fit=clip",
       "effectData": {
         "raw": "0.21[バ]、0.11[バ/Pt]、0.03 ~ 0.86[バ]",
         "effectValue": 0.21,
@@ -12730,5 +13197,5 @@
     }
   ],
   "dataSource": "script",
-  "totalGroups": 297
+  "totalGroups": 299
 }

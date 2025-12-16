@@ -109,7 +109,9 @@ async function saveSkillsData(skillsData, language = 'tw') {
             const success = await downloadImage(skill.icon, imageSavePath);
             if (success) {
               downloadCount++;
-              console.log(`已下載圖片: ${iconFileName}`);
+              console.log(`已下載圖片 (${downloadCount}): ${iconFileName}`);
+              // 添加延遲，避免對目標網站造成負擔（500ms）
+              await delay(500);
             }
           }
         }
@@ -130,6 +132,11 @@ async function saveSkillsData(skillsData, language = 'tw') {
       error: error.message
     };
   }
+}
+
+// 輔助函數：延遲執行（毫秒）
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 // 輔助函數：儲存賽道資訊
@@ -159,11 +166,59 @@ async function saveCourseData(parsedData) {
     await fs.writeFile(filePath, JSON.stringify(parsedData, null, 2), 'utf-8');
     console.log(`已儲存賽道資料: ${filePath}`);
 
+    // 下載所有技能圖示
+    let downloadCount = 0;
+    let skipCount = 0;
+
+    if (parsedData.skillList && Array.isArray(parsedData.skillList)) {
+      console.log(`開始下載技能圖示，共 ${parsedData.skillList.length} 個技能...`);
+
+      for (const skill of parsedData.skillList) {
+        let iconUrl = null;
+        let iconFileName = null;
+
+        // 優先使用 iconUrl（遠端 URL）
+        if (skill.iconUrl) {
+          iconUrl = skill.iconUrl;
+          // 從 URL 中提取檔案名（去除查詢參數）
+          const urlWithoutQuery = skill.iconUrl.split('?')[0];
+          iconFileName = path.basename(urlWithoutQuery);
+        }
+        // 如果沒有 iconUrl，嘗試使用 iconId 構建 URL
+        else if (skill.iconId) {
+          iconFileName = `${skill.iconId}.webp`;
+          iconUrl = `https://ktools.imgix.net/umamusume/images/skills/${skill.iconId}.webp?w=96&h=96&fit=clip`;
+        }
+
+        if (iconUrl && iconFileName) {
+          const imageSavePath = path.join('./data/images/umamusume/skill_icons', iconFileName);
+
+          // 檢查圖片是否已存在
+          if (fileExists(imageSavePath)) {
+            skipCount++;
+          } else {
+            // 下載圖片
+            const success = await downloadImage(iconUrl, imageSavePath);
+            if (success) {
+              downloadCount++;
+              console.log(`已下載圖片 (${downloadCount}/${parsedData.skillList.length}): ${iconFileName}`);
+              // 添加延遲，避免對目標網站造成負擔（500ms）
+              await delay(500);
+            }
+          }
+        }
+      }
+
+      console.log(`圖片下載完成！新下載: ${downloadCount} 個，略過: ${skipCount} 個`);
+    }
+
     return {
       success: true,
       filePath: filePath,
       fileName: fileName,
-      directory: dirPath
+      directory: dirPath,
+      imagesDownloaded: downloadCount,
+      imagesSkipped: skipCount
     };
   } catch (error) {
     console.error('儲存賽道資料時發生錯誤:', error);
@@ -783,6 +838,23 @@ function parseRaceCourseData(html) {
       // 解析 effect 數據
       const parsedEffect = parseEffectData(effectString, needSkillPointValue);
 
+      // 構建 icon URL（用於下載）和本地路徑（用於前端顯示）
+      let iconUrl = htmlSkill?.icon || '';
+      let localIconPath = '';
+
+      if (htmlSkill?.icon) {
+        // 從 HTML icon URL 提取檔案名並構建本地路徑
+        const urlWithoutQuery = htmlSkill.icon.split('?')[0];
+        const filename = path.basename(urlWithoutQuery);
+        localIconPath = `/images/umamusume/skill_icons/${filename}`;
+        iconUrl = htmlSkill.icon;
+      } else if (skill.iconId) {
+        // 使用 iconId 構建本地路徑和遠端 URL
+        const filename = `${skill.iconId}.webp`;
+        localIconPath = `/images/umamusume/skill_icons/${filename}`;
+        iconUrl = `https://ktools.imgix.net/umamusume/images/skills/${skill.iconId}.webp?w=96&h=96&fit=clip`;
+      }
+
       const finalSkill = {
         // 主要來自 script 的數據
         id: skill.id,
@@ -800,7 +872,8 @@ function parseRaceCourseData(html) {
         // 從 HTML 補充的數據（如果有的話）
         memo: htmlSkill?.memo || '',
         effect: effectString,
-        icon: htmlSkill?.icon || '',
+        icon: localIconPath,  // 使用本地路徑供前端顯示
+        iconUrl: iconUrl,  // 保留遠端 URL 供下載使用
 
         // 解析後的 effect 數據
         effectData: parsedEffect,
