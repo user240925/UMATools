@@ -1130,19 +1130,41 @@
             const discount = SKILL_DISCOUNTS[level];
             const actualCost = Math.round(originalCost * (1 - discount) * 10) / 10;
 
-            // 檢查是否有前置技能（relatedSkills 中 rarityValue 較低的技能）
+            // 檢查是否有前置技能
+            // 優先順序：
+            // 1. 較低 rarityValue 的技能
+            // 2. 相同 rarityValue 但較低 groupRate 的技能（如 左回り○ → 左回り◎）
             let prerequisiteSkill = null;
             let prerequisiteLevel = 0;
             let prerequisiteCost = 0;
             let cumulativeCost = actualCost;
             let hasPrerequisite = false;
 
-            if (skill.relatedSkills && skill.relatedSkills.length > 0 && skill.rarityValue) {
-                // 找到 rarityValue 比當前技能低的相關技能（前置技能）
-                const lowerRaritySkills = skill.relatedSkills.filter(r => r.rarityValue < skill.rarityValue);
+            if (skill.relatedSkills && skill.relatedSkills.length > 0) {
+                let prerequisiteInfo = null;
 
-                if (lowerRaritySkills.length > 0) {
-                    const prerequisiteInfo = lowerRaritySkills[0];
+                // 策略1：尋找較低稀有度的前置技能
+                if (skill.rarityValue) {
+                    const lowerRaritySkills = skill.relatedSkills.filter(r => r.rarityValue < skill.rarityValue);
+                    if (lowerRaritySkills.length > 0) {
+                        // 選擇 groupRate 最高的（最接近當前技能的直接前置）
+                        prerequisiteInfo = lowerRaritySkills.sort((a, b) => b.groupRate - a.groupRate)[0];
+                    }
+                }
+
+                // 策略2：如果沒找到較低稀有度的，尋找相同稀有度但較低 groupRate 的
+                if (!prerequisiteInfo && skill.groupRate) {
+                    const lowerGroupRateSkills = skill.relatedSkills.filter(r =>
+                        r.rarityValue === skill.rarityValue && r.groupRate < skill.groupRate
+                    );
+                    if (lowerGroupRateSkills.length > 0) {
+                        // 選擇 groupRate 最高的（直接前置技能）
+                        prerequisiteInfo = lowerGroupRateSkills.sort((a, b) => b.groupRate - a.groupRate)[0];
+                    }
+                }
+
+                // 如果找到前置技能，計算累積成本
+                if (prerequisiteInfo) {
                     hasPrerequisite = true;
 
                     // 從所有技能中找到完整的前置技能資料
