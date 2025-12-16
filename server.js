@@ -88,37 +88,7 @@ async function saveSkillsData(skillsData, language = 'tw') {
     // 儲存 JSON 檔案
     await fs.writeFile(filePath, JSON.stringify(cleanedData, null, 2), 'utf-8');
     console.log(`已儲存技能數據: ${filePath}`);
-
-    // 下載所有技能圖示
-    if (skillsData.skills && Array.isArray(skillsData.skills)) {
-      let downloadCount = 0;
-      let skipCount = 0;
-
-      for (const skill of skillsData.skills) {
-        if (skill.icon) {
-          // 從 icon 路徑提取檔案名稱
-          const iconFileName = path.basename(skill.icon);
-          const imageSavePath = path.join('./data/images/umamusume/skill_icons', iconFileName);
-
-          // 檢查圖片是否已存在
-          if (fileExists(imageSavePath)) {
-            skipCount++;
-            console.log(`圖片已存在，略過: ${iconFileName}`);
-          } else {
-            // 下載圖片
-            const success = await downloadImage(skill.icon, imageSavePath);
-            if (success) {
-              downloadCount++;
-              console.log(`已下載圖片 (${downloadCount}): ${iconFileName}`);
-              // 添加延遲，避免對目標網站造成負擔（500ms）
-              await delay(500);
-            }
-          }
-        }
-      }
-
-      console.log(`圖片下載完成！新下載: ${downloadCount} 個，略過: ${skipCount} 個`);
-    }
+    console.log(`技能資訊收集不再下載圖片（圖片將由賽道資訊收集流程統一處理）`);
 
     return {
       success: true,
