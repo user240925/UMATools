@@ -813,11 +813,13 @@
                 <div class="info-notice-content">
                     • <strong>技能等級系統</strong>：點擊 +/- 按鈕可調整技能等級（Lv0-Lv5），享有 10%/20%/30%/35%/40% 的點數折扣<br>
                     • <strong>一般技能效率公式</strong>：[バ/Pt] = 基礎效率 ÷ (1 - 折扣)<br>
-                    • <strong>高階技能累積成本機制</strong>：<br>
-                    &nbsp;&nbsp;- 部分高稀有度技能（如「十全十美」、「風雲の志」）需要先獲得對應的低階技能（如「品行方正」、「向上心」）<br>
-                    &nbsp;&nbsp;- 這類技能的效率計算包含前置技能的成本<br>
-                    &nbsp;&nbsp;- 公式：[バ/Pt] = (技能效果值 × 100) ÷ (前置技能成本 + 當前技能成本)<br>
-                    &nbsp;&nbsp;- <span style="color: #4CAF50;">💡 提升前置技能等級可降低累積成本，從而提高高階技能的效率！</span><br>
+                    • <strong>高階技能遞迴前置技能鏈機制</strong>：<br>
+                    &nbsp;&nbsp;- 部分技能存在前置技能鏈（例如：左回り○ → 左回り◎ → 左回りの鬼）<br>
+                    &nbsp;&nbsp;- 要獲得高階技能，必須先獲得整條前置技能鏈的所有技能<br>
+                    &nbsp;&nbsp;- 效率計算會<strong>遞迴累積整條鏈的成本</strong><br>
+                    &nbsp;&nbsp;- 公式：[バ/Pt] = (技能效果值 × 100) ÷ (鏈上所有技能的累積成本)<br>
+                    &nbsp;&nbsp;- 範例：左回りの鬼 = 0.72 × 100 ÷ (左回り○成本 + 左回り◎成本 + 左回りの鬼成本)<br>
+                    &nbsp;&nbsp;- <span style="color: #4CAF50;">💡 提升前置技能鏈中任何一個技能的等級，都會提高最終高階技能的效率！</span><br>
                     • <span style="color: #ff9800;">⚠️ 帶有「範圍」標籤的技能</span>：因效果值為範圍型（如 0.99~2.42[バ]），計算結果可能與參考網站略有差異
                 </div>
             </div>
@@ -1123,23 +1125,19 @@
         const SKILL_DISCOUNTS = [0, 0.10, 0.20, 0.30, 0.35, 0.40];
         const MAX_SKILL_LEVEL = 5;
 
-        // 計算技能的實際消耗和效率
-        function calculateSkillStats(skill, allSkills = []) {
-            const level = skill.level || 0;
-            const originalCost = skill.originalCost || skill.needSkillPoint || 0;
-            const discount = SKILL_DISCOUNTS[level];
-            const actualCost = Math.round(originalCost * (1 - discount) * 10) / 10;
+        // 遞迴計算前置技能鏈的總成本
+        function calculatePrerequisiteChainCost(skill, allSkills, visited = new Set()) {
+            // 防止循環引用
+            if (visited.has(skill.id)) {
+                return { totalCost: 0, chain: [], directPrerequisite: null };
+            }
+            visited.add(skill.id);
 
-            // 檢查是否有前置技能
-            // 優先順序：
-            // 1. 較低 rarityValue 的技能
-            // 2. 相同 rarityValue 但較低 groupRate 的技能（如 左回り○ → 左回り◎）
-            let prerequisiteSkill = null;
-            let prerequisiteLevel = 0;
-            let prerequisiteCost = 0;
-            let cumulativeCost = actualCost;
-            let hasPrerequisite = false;
+            let chain = [];
+            let totalCost = 0;
+            let directPrerequisite = null;
 
+            // 尋找直接前置技能
             if (skill.relatedSkills && skill.relatedSkills.length > 0) {
                 let prerequisiteInfo = null;
 
@@ -1163,22 +1161,54 @@
                     }
                 }
 
-                // 如果找到前置技能，計算累積成本
+                // 如果找到前置技能，遞迴計算它的鏈成本
                 if (prerequisiteInfo) {
-                    hasPrerequisite = true;
-
-                    // 從所有技能中找到完整的前置技能資料
-                    prerequisiteSkill = allSkills.find(s => s.id === prerequisiteInfo.id);
-
+                    const prerequisiteSkill = allSkills.find(s => s.id === prerequisiteInfo.id);
                     if (prerequisiteSkill) {
-                        prerequisiteLevel = prerequisiteSkill.level || 0;
-                        const prereqDiscount = SKILL_DISCOUNTS[prerequisiteLevel];
+                        directPrerequisite = prerequisiteSkill;
+
+                        // 遞迴計算前置技能的鏈
+                        const prereqResult = calculatePrerequisiteChainCost(prerequisiteSkill, allSkills, visited);
+
+                        // 繼承前置技能的鏈
+                        chain = [...prereqResult.chain];
+                        totalCost = prereqResult.totalCost;
+
+                        // 加入當前前置技能的成本
+                        const prereqLevel = prerequisiteSkill.level || 0;
+                        const prereqDiscount = SKILL_DISCOUNTS[prereqLevel];
                         const prereqOriginalCost = prerequisiteSkill.needSkillPoint || 0;
-                        prerequisiteCost = Math.round(prereqOriginalCost * (1 - prereqDiscount) * 10) / 10;
-                        cumulativeCost = actualCost + prerequisiteCost;
+                        const prereqCost = Math.round(prereqOriginalCost * (1 - prereqDiscount) * 10) / 10;
+
+                        chain.push({
+                            id: prerequisiteSkill.id,
+                            name: prerequisiteSkill.name,
+                            level: prereqLevel,
+                            cost: prereqCost
+                        });
+
+                        totalCost += prereqCost;
                     }
                 }
             }
+
+            return { totalCost, chain, directPrerequisite };
+        }
+
+        // 計算技能的實際消耗和效率
+        function calculateSkillStats(skill, allSkills = []) {
+            const level = skill.level || 0;
+            const originalCost = skill.originalCost || skill.needSkillPoint || 0;
+            const discount = SKILL_DISCOUNTS[level];
+            const actualCost = Math.round(originalCost * (1 - discount) * 10) / 10;
+
+            // 遞迴計算前置技能鏈的總成本
+            const prerequisiteResult = calculatePrerequisiteChainCost(skill, allSkills);
+            const hasPrerequisite = prerequisiteResult.chain.length > 0;
+            const prerequisiteChainCost = prerequisiteResult.totalCost;
+            const cumulativeCost = actualCost + prerequisiteChainCost;
+            const prerequisiteSkill = prerequisiteResult.directPrerequisite;
+            const prerequisiteChain = prerequisiteResult.chain;
 
             // 計算效率值（バ/Pt）
             let efficiency = 0;
@@ -1231,9 +1261,10 @@
                 hasEffectRange,
                 hasPrerequisite,
                 prerequisiteSkill,
-                prerequisiteLevel,
-                prerequisiteCost,
-                cumulativeCost
+                prerequisiteLevel: prerequisiteSkill ? (prerequisiteSkill.level || 0) : 0,
+                prerequisiteCost: prerequisiteChainCost,
+                cumulativeCost,
+                prerequisiteChain
             };
         }
 
