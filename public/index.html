@@ -662,6 +662,62 @@
             background: #ccc;
         }
 
+        /* 技能搜尋框 */
+        .skill-search-container {
+            position: relative;
+            margin: 12px 0;
+            padding: 0 8px;
+        }
+
+        .skill-search-input {
+            width: 100%;
+            padding: 10px 36px 10px 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            outline: none;
+            background: white;
+        }
+
+        .skill-search-input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        /* 當有輸入內容時的明顯樣式變化 */
+        .skill-search-input.has-content {
+            border-color: #667eea;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+            font-weight: 500;
+        }
+
+        .clear-search-btn {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #e0e0e0;
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666;
+            transition: all 0.2s;
+        }
+
+        .clear-search-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
         /* 空白提示 */
         .empty-placeholder,
         .loading-placeholder {
@@ -848,6 +904,26 @@
                 <!-- C區：可選技能 -->
                 <div class="skills-panel">
                     <h3 class="section-title">⚡ 技能清單</h3>
+
+                    <!-- 技能搜尋框 -->
+                    <div class="skill-search-container">
+                        <input
+                            type="text"
+                            id="skillSearchInput"
+                            class="skill-search-input"
+                            placeholder="🔍 輸入技能名稱進行篩選..."
+                            oninput="filterSkills(this.value)"
+                        />
+                        <button
+                            id="clearSearchBtn"
+                            class="clear-search-btn"
+                            onclick="clearSearch()"
+                            style="display: none;"
+                            title="清除搜尋">
+                            ✕
+                        </button>
+                    </div>
+
                     <div id="availableSkillsContainer" class="skills-list">
                         <div class="empty-placeholder">請先選擇賽道與跑法</div>
                     </div>
@@ -1418,6 +1494,17 @@
         async function loadSkillsForCourse() {
             if (!selectedCourse || !selectedRunningStyle) return;
 
+            // 清除搜尋框
+            const searchInput = document.getElementById('skillSearchInput');
+            const clearBtn = document.getElementById('clearSearchBtn');
+            if (searchInput) {
+                searchInput.value = '';
+                searchInput.classList.remove('has-content');
+            }
+            if (clearBtn) {
+                clearBtn.style.display = 'none';
+            }
+
             const container = document.getElementById('availableSkillsContainer');
             container.innerHTML = '<div class="loading-placeholder">載入技能資料中...</div>';
 
@@ -1477,11 +1564,30 @@
                 return;
             }
 
+            // 取得搜尋關鍵字
+            const searchInput = document.getElementById('skillSearchInput');
+            const searchKeyword = searchInput ? searchInput.value.trim().toLowerCase() : '';
+
+            // 根據搜尋關鍵字過濾技能
+            let filteredSkills = availableSkills;
+            if (searchKeyword) {
+                filteredSkills = availableSkills.filter(skill => {
+                    const name = (skill.name || '').toLowerCase();
+                    return name.includes(searchKeyword);
+                });
+            }
+
             // 合併所有技能清單供計算使用
             const allSkills = [...availableSkills, ...selectedSkills];
 
+            // 如果過濾後沒有結果
+            if (filteredSkills.length === 0) {
+                container.innerHTML = '<div class="empty-placeholder">沒有符合的技能</div>';
+                return;
+            }
+
             container.innerHTML = '';
-            availableSkills.forEach(skill => {
+            filteredSkills.forEach(skill => {
                 const card = createSkillCard(skill, 'available', allSkills);
                 container.appendChild(card);
             });
@@ -1504,6 +1610,40 @@
                 const card = createSkillCard(skill, 'selected', allSkills);
                 container.appendChild(card);
             });
+        }
+
+        // 技能搜尋過濾
+        function filterSkills(keyword) {
+            const searchInput = document.getElementById('skillSearchInput');
+            const clearBtn = document.getElementById('clearSearchBtn');
+
+            // 更新輸入框樣式
+            if (keyword.trim()) {
+                searchInput.classList.add('has-content');
+                clearBtn.style.display = 'flex';
+            } else {
+                searchInput.classList.remove('has-content');
+                clearBtn.style.display = 'none';
+            }
+
+            // 重新渲染可選技能清單（會自動套用過濾）
+            renderAvailableSkills();
+        }
+
+        // 清除搜尋
+        function clearSearch() {
+            const searchInput = document.getElementById('skillSearchInput');
+            const clearBtn = document.getElementById('clearSearchBtn');
+
+            searchInput.value = '';
+            searchInput.classList.remove('has-content');
+            clearBtn.style.display = 'none';
+
+            // 重新渲染可選技能清單
+            renderAvailableSkills();
+
+            // 聚焦到搜尋框
+            searchInput.focus();
         }
 
         // 建立技能卡片
