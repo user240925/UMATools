@@ -1566,15 +1566,49 @@
 
             // 取得搜尋關鍵字
             const searchInput = document.getElementById('skillSearchInput');
-            const searchKeyword = searchInput ? searchInput.value.trim().toLowerCase() : '';
+            const searchKeyword = searchInput ? searchInput.value.trim() : '';
 
-            // 根據搜尋關鍵字過濾技能
+            // 根據搜尋關鍵字過濾技能（包含關聯技能）
             let filteredSkills = availableSkills;
             if (searchKeyword) {
-                filteredSkills = availableSkills.filter(skill => {
+                const keywordLower = searchKeyword.toLowerCase();
+                const matchedSkillIds = new Set();
+
+                // 第一步：找出所有名稱匹配的技能
+                availableSkills.forEach(skill => {
                     const name = (skill.name || '').toLowerCase();
-                    return name.includes(searchKeyword);
+                    if (name.includes(keywordLower)) {
+                        matchedSkillIds.add(skill.id);
+                    }
                 });
+
+                // 第二步：找出所有與匹配技能有關聯的技能
+                availableSkills.forEach(skill => {
+                    if (matchedSkillIds.has(skill.id)) {
+                        // 如果這個技能匹配，加入它的所有關聯技能
+                        if (skill.relatedSkills && Array.isArray(skill.relatedSkills)) {
+                            skill.relatedSkills.forEach(related => {
+                                const relatedSkill = availableSkills.find(s => s.id === related.id);
+                                if (relatedSkill) {
+                                    matchedSkillIds.add(related.id);
+                                }
+                            });
+                        }
+                    } else {
+                        // 如果這個技能不匹配，但它的關聯技能中有匹配的，也加入
+                        if (skill.relatedSkills && Array.isArray(skill.relatedSkills)) {
+                            const hasMatchedRelated = skill.relatedSkills.some(related =>
+                                matchedSkillIds.has(related.id)
+                            );
+                            if (hasMatchedRelated) {
+                                matchedSkillIds.add(skill.id);
+                            }
+                        }
+                    }
+                });
+
+                // 過濾出匹配的技能
+                filteredSkills = availableSkills.filter(skill => matchedSkillIds.has(skill.id));
             }
 
             // 合併所有技能清單供計算使用
@@ -1588,7 +1622,7 @@
 
             container.innerHTML = '';
             filteredSkills.forEach(skill => {
-                const card = createSkillCard(skill, 'available', allSkills);
+                const card = createSkillCard(skill, 'available', allSkills, searchKeyword);
                 container.appendChild(card);
             });
         }
@@ -1646,8 +1680,32 @@
             searchInput.focus();
         }
 
+        // 輔助函數：高亮顯示關鍵字
+        function highlightKeyword(text, keyword) {
+            if (!keyword || !keyword.trim()) {
+                return text;
+            }
+
+            // 不區分大小寫地查找關鍵字
+            const lowerText = text.toLowerCase();
+            const lowerKeyword = keyword.toLowerCase();
+            const index = lowerText.indexOf(lowerKeyword);
+
+            if (index === -1) {
+                return text;
+            }
+
+            // 提取原始文本中的匹配部分（保留原始大小寫）
+            const before = text.substring(0, index);
+            const match = text.substring(index, index + keyword.length);
+            const after = text.substring(index + keyword.length);
+
+            // 使用 span 包裹匹配的部分
+            return `${before}<span style="color: #667eea; font-weight: bold; background: rgba(102, 126, 234, 0.15); padding: 0 2px; border-radius: 2px;">${match}</span>${after}`;
+        }
+
         // 建立技能卡片
-        function createSkillCard(skill, area, allSkills = []) {
+        function createSkillCard(skill, area, allSkills = [], searchKeyword = '') {
             // 嘗試從技能資料庫查找對應的資料
             let displayName = skill.name;
             let displayIcon = skill.icon;
@@ -1698,7 +1756,12 @@
 
             const name = document.createElement('div');
             name.className = 'skill-name';
-            name.textContent = displayName || '未知技能';
+            // 使用 innerHTML 以支援高亮顯示
+            if (searchKeyword && displayName) {
+                name.innerHTML = highlightKeyword(displayName, searchKeyword);
+            } else {
+                name.textContent = displayName || '未知技能';
+            }
 
             const effect = document.createElement('div');
             effect.className = 'skill-effect';
