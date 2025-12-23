@@ -1574,10 +1574,19 @@
                 const keywordLower = searchKeyword.toLowerCase();
                 const matchedSkillIds = new Set();
 
-                // 第一步：找出所有名稱匹配的技能
+                // 第一步：找出所有名稱匹配的技能（同時搜索原始名稱和翻譯名稱）
                 availableSkills.forEach(skill => {
-                    const name = (skill.name || '').toLowerCase();
-                    if (name.includes(keywordLower)) {
+                    const originalName = (skill.name || '').toLowerCase();
+                    let translatedName = '';
+
+                    // 從技能資料庫獲取翻譯後的日文名稱
+                    if (skillsDatabase.has(skill.name)) {
+                        const dbSkill = skillsDatabase.get(skill.name);
+                        translatedName = (dbSkill.jpName || '').toLowerCase();
+                    }
+
+                    // 檢查原始名稱或翻譯名稱是否包含關鍵字
+                    if (originalName.includes(keywordLower) || translatedName.includes(keywordLower)) {
                         matchedSkillIds.add(skill.id);
                     }
                 });
