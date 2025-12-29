@@ -1370,7 +1370,7 @@
 
             try {
                 console.log('載入技能資料庫...');
-                const response = await fetch('/api/skills-database');
+                const response = await fetch('/api/skills-database.json');
                 const data = await response.json();
 
                 if (data.success && data.skills) {
@@ -1398,7 +1398,7 @@
             loadSkillsDatabase();
 
             try {
-                const response = await fetch('/api/courses');
+                const response = await fetch('/api/courses.json');
                 const data = await response.json();
 
                 if (data.success && data.courses && data.courses.length > 0) {
@@ -1509,22 +1509,20 @@
             container.innerHTML = '<div class="loading-placeholder">載入技能資料中...</div>';
 
             try {
-                // 使用 API 端點獲取技能資料
-                const params = new URLSearchParams({
-                    courseName: selectedCourse.courseName,
-                    distance: selectedCourse.distance,
-                    surface: selectedCourse.surface,
-                    runningStyle: selectedRunningStyle
-                });
+                // 靜態部署：直接讀取 JSON 檔案
+                const courseName = selectedCourse.courseName;
+                const distance = selectedCourse.distance;
+                const surface = selectedCourse.surface;
+                const runningStyle = selectedRunningStyle;
 
-                const response = await fetch(`/api/course-skills?${params}`);
-                const result = await response.json();
+                const filePath = `/data/courses/${courseName}/${distance}(${surface})/${courseName}_${distance}_${runningStyle}.json`;
 
-                if (!result.success) {
-                    throw new Error(result.error || '無法載入技能資料');
+                const response = await fetch(filePath);
+                if (!response.ok) {
+                    throw new Error('找不到對應的技能資料檔案');
                 }
 
-                const data = result.data;
+                const data = await response.json();
 
                 if (data.skillList && Array.isArray(data.skillList)) {
                     // 去重處理：使用 Map 以 id 為 key
