@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "courses": [
+    {
+      "courseName": "阪神",
+      "distance": "1200m",
+      "surface": "芝",
+      "runningStyles": ["差し"],
+      "displayName": "阪神 1200m"
+    },
+    {
+      "courseName": "中京",
+      "distance": "1800m",
+      "surface": "ダート",
+      "runningStyles": ["先行", "差し"],
+      "displayName": "中京 1800m"
+    }
+  ],
+  "totalCourses": 2
+}
