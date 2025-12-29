@@ -1,3 +1,32 @@
 node_modules/
 .DS_Store
 *.log
+
+# 测试文件
+test_*.js
+check_*.js
+analyze_*.js
+extract_*.js
+find_*.js
+search_*.js
+verify_*.js
+
+# 调试文件
+debug_*.json
+*_debug.json
+server_log.txt
+legend_*.txt
+legend_*.json
+race_*.json
+first_*.json
+
+# 截图和临时图片
+*.png
+!public/**/*.png
+!data/**/*.png
+
+# PowerShell 测试脚本
+test_*.ps1
+
+# Claude 本地设置
+.claude/settings.local.json
