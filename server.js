@@ -7,7 +7,7 @@ const fs = require('fs').promises;
 const fsSync = require('fs');
 
 const app = express();
-const PORT = 3000;
+const PORT = 10010;
 
 // 輔助函數：生成檔案名稱（時間戳記 + 語系）
 function generateFileName(language = 'tw') {
