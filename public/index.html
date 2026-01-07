@@ -611,6 +611,36 @@
             margin-top: 4px;
         }
 
+        /* 效率評級顏色樣式 */
+        .efficiency-tier-highest .skill-name,
+        .efficiency-tier-highest .skill-efficiency {
+            color: #d32f2f !important;
+            font-weight: bold;
+        }
+
+        .efficiency-tier-high .skill-name,
+        .efficiency-tier-high .skill-efficiency {
+            color: #f57c00 !important;
+            font-weight: bold;
+        }
+
+        .efficiency-tier-medium .skill-name,
+        .efficiency-tier-medium .skill-efficiency {
+            color: #7b1fa2 !important;
+            font-weight: bold;
+        }
+
+        .efficiency-tier-low .skill-name,
+        .efficiency-tier-low .skill-efficiency {
+            color: #1976d2 !important;
+            font-weight: bold;
+        }
+
+        .efficiency-tier-lowest .skill-name,
+        .efficiency-tier-lowest .skill-efficiency {
+            color: #333 !important;
+        }
+
         .skill-range-indicator {
             display: inline-block;
             font-size: 9px;
@@ -867,6 +897,7 @@
             <div class="info-notice">
                 <div class="info-notice-title">📌 技能效率計算說明</div>
                 <div class="info-notice-content">
+                    • <strong>數據來源為 ウマ娘.攻略.tools，賽道資訊可能會有誤差（例如季節、天氣）</strong><br>
                     • <strong>技能等級系統</strong>：點擊 +/- 按鈕可調整技能等級（Lv0-Lv5），享有 10%/20%/30%/35%/40% 的點數折扣<br>
                     • <strong>一般技能效率公式</strong>：[バ/Pt] = 基礎效率 ÷ (1 - 折扣)<br>
                     • <strong>高階技能遞迴前置技能鏈機制</strong>：<br>
@@ -876,7 +907,13 @@
                     &nbsp;&nbsp;- 公式：[バ/Pt] = (技能效果值 × 100) ÷ (鏈上所有技能的累積成本)<br>
                     &nbsp;&nbsp;- 範例：左回りの鬼 = 0.72 × 100 ÷ (左回り○成本 + 左回り◎成本 + 左回りの鬼成本)<br>
                     &nbsp;&nbsp;- <span style="color: #4CAF50;">💡 提升前置技能鏈中任何一個技能的等級，都會提高最終高階技能的效率！</span><br>
-                    • <span style="color: #ff9800;">⚠️ 帶有「範圍」標籤的技能</span>：因效果值為範圍型（如 0.99~2.42[バ]），計算結果可能與參考網站略有差異
+                    • <strong>效率價值顏色規則</strong>（僅在「已選技能」區生效）：<br>
+                    &nbsp;&nbsp;- <span style="color: #d32f2f; font-weight: bold;">極高（紅色）</span>：效率排名前 20%<br>
+                    &nbsp;&nbsp;- <span style="color: #f57c00; font-weight: bold;">高（橘色）</span>：效率排名 21-40%<br>
+                    &nbsp;&nbsp;- <span style="color: #7b1fa2; font-weight: bold;">普通（紫色）</span>：效率排名 41-60%<br>
+                    &nbsp;&nbsp;- <span style="color: #1976d2; font-weight: bold;">低（藍色）</span>：效率排名 61-80%<br>
+                    &nbsp;&nbsp;- <span style="color: #333;">極低（黑色）</span>：效率排名 81-100%<br>
+                    &nbsp;&nbsp;- 💡 技能數量較少時，優先從高等級顏色向下分布顯示
                 </div>
             </div>
 
@@ -1648,11 +1685,87 @@
             // 合併所有技能清單供計算使用
             const allSkills = [...availableSkills, ...selectedSkills];
 
+            // 計算效率分級
+            const efficiencyTiers = calculateEfficiencyTiers(selectedSkills, allSkills);
+
             container.innerHTML = '';
             selectedSkills.forEach(skill => {
-                const card = createSkillCard(skill, 'selected', allSkills);
+                const tier = efficiencyTiers.get(skill.id);
+                const card = createSkillCard(skill, 'selected', allSkills, '', tier);
                 container.appendChild(card);
             });
+        }
+
+        // 計算效率分級
+        function calculateEfficiencyTiers(skills, allSkills) {
+            const tierMap = new Map();
+
+            // 如果沒有技能，返回空 Map
+            if (skills.length === 0) {
+                return tierMap;
+            }
+
+            // 計算所有技能的效率並排序
+            const skillsWithEfficiency = skills.map(skill => {
+                const stats = calculateSkillStats(skill, allSkills);
+                return {
+                    id: skill.id,
+                    efficiency: stats.efficiency
+                };
+            }).filter(s => s.efficiency > 0); // 只考慮有效率值的技能
+
+            // 如果沒有有效率的技能，返回空 Map
+            if (skillsWithEfficiency.length === 0) {
+                return tierMap;
+            }
+
+            // 按效率降序排序
+            skillsWithEfficiency.sort((a, b) => b.efficiency - a.efficiency);
+
+            const totalCount = skillsWithEfficiency.length;
+
+            // 根據數量確定分級策略
+            if (totalCount === 1) {
+                // 只有1個技能，給予最高等級
+                tierMap.set(skillsWithEfficiency[0].id, 'highest');
+            } else if (totalCount === 2) {
+                // 2個技能：極高、高
+                tierMap.set(skillsWithEfficiency[0].id, 'highest');
+                tierMap.set(skillsWithEfficiency[1].id, 'high');
+            } else if (totalCount === 3) {
+                // 3個技能：極高、高、普通
+                tierMap.set(skillsWithEfficiency[0].id, 'highest');
+                tierMap.set(skillsWithEfficiency[1].id, 'high');
+                tierMap.set(skillsWithEfficiency[2].id, 'medium');
+            } else if (totalCount === 4) {
+                // 4個技能：極高、高、普通、低
+                tierMap.set(skillsWithEfficiency[0].id, 'highest');
+                tierMap.set(skillsWithEfficiency[1].id, 'high');
+                tierMap.set(skillsWithEfficiency[2].id, 'medium');
+                tierMap.set(skillsWithEfficiency[3].id, 'low');
+            } else {
+                // 5個以上技能：按百分位數分級
+                skillsWithEfficiency.forEach((skill, index) => {
+                    const percentile = (index / totalCount) * 100;
+
+                    let tier;
+                    if (percentile < 20) {
+                        tier = 'highest'; // 前20% - 極高（紅色）
+                    } else if (percentile < 40) {
+                        tier = 'high'; // 21-40% - 高（橘色）
+                    } else if (percentile < 60) {
+                        tier = 'medium'; // 41-60% - 普通（紫色）
+                    } else if (percentile < 80) {
+                        tier = 'low'; // 61-80% - 低（藍色）
+                    } else {
+                        tier = 'lowest'; // 81-100% - 極低（黑色）
+                    }
+
+                    tierMap.set(skill.id, tier);
+                });
+            }
+
+            return tierMap;
         }
 
         // 技能搜尋過濾
@@ -1714,7 +1827,7 @@
         }
 
         // 建立技能卡片
-        function createSkillCard(skill, area, allSkills = [], searchKeyword = '') {
+        function createSkillCard(skill, area, allSkills = [], searchKeyword = '', efficiencyTier = null) {
             // 嘗試從技能資料庫查找對應的資料
             let displayName = skill.name;
             let displayIcon = skill.icon;
@@ -1739,6 +1852,11 @@
             // 也支援 rarityValue（數字）
             if (skill.rarityValue !== undefined && skill.rarityValue !== null) {
                 card.classList.add(`rarity-${skill.rarityValue}`);
+            }
+
+            // 在已選技能區添加效率分級樣式
+            if (area === 'selected' && efficiencyTier) {
+                card.classList.add(`efficiency-tier-${efficiencyTier}`);
             }
 
             // 檢查是否已選中
