@@ -968,49 +968,59 @@ app.post('/api/fetch-basic', async (req, res) => {
         console.log('已點擊齒輪圖標');
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        // 勾選台灣伺服器選項
-        console.log('嘗試尋找並勾選台灣伺服器選項...');
-
+        // 在設定選單中勾選所有需要的選項
+        // 順序重要：先勾選 show all（本地設定，不觸發重新渲染），再勾選台灣伺服器（觸發重新渲染）
         try {
-          // 使用精確的 ID 選擇器
           await page.waitForSelector('#serverTwCheckbox', { timeout: 5000 });
 
-          // 點擊對應的 input
-          const taiwanChecked = await page.evaluate(() => {
-            const input = document.getElementById('serverTwCheckbox');
-            if (input) {
-              input.click();
-              return true;
-            }
+          // 先勾選「Always show all results」（避免台灣伺服器點擊後 DOM 重新渲染導致找不到）
+          const showAllResult = await page.evaluate(() => {
+            const cb = document.getElementById('alwaysShowAllCheckbox');
+            if (cb && !cb.checked) { cb.click(); return 'clicked'; }
+            if (cb && cb.checked) { return 'already_checked'; }
+            return 'not_found';
+          });
+
+          if (showAllResult === 'clicked') {
+            console.log('已勾選「Always show all results」選項');
+          } else if (showAllResult === 'already_checked') {
+            console.log('「Always show all results」選項已是勾選狀態');
+          } else {
+            console.log('未找到「Always show all results」選項（id: alwaysShowAllCheckbox），將繼續嘗試抓取');
+          }
+
+          // 再勾選台灣伺服器（這會觸發頁面重新渲染）
+          const taiwanResult = await page.evaluate(() => {
+            const cb = document.getElementById('serverTwCheckbox');
+            if (cb) { cb.click(); return true; }
             return false;
           });
 
-          if (taiwanChecked) {
+          if (taiwanResult) {
             console.log('已勾選台灣伺服器選項');
-
-            // 等待頁面更新 - 增加等待時間
-            await new Promise(resolve => setTimeout(resolve, 5000));
-
-            // 明確等待技能表格的 enName 元素出現並可見
-            try {
-              await page.waitForSelector('[class*="skills_table_enname"]', {
-                timeout: 10000,
-                visible: true
-              });
-              console.log('找到 skills_table_enname 元素');
-
-              // 額外等待確保所有元素都已渲染
-              await new Promise(resolve => setTimeout(resolve, 2000));
-
-            } catch (e) {
-              console.log('等待 enName 元素時發生錯誤: ' + e.message);
-              console.log('將繼續嘗試抓取資料...');
-            }
           } else {
-            throw new Error('無法點擊台灣伺服器選項');
+            console.log('未能勾選台灣伺服器選項');
+          }
+
+          // 等待頁面重新渲染
+          await new Promise(resolve => setTimeout(resolve, 5000));
+
+          // 等待技能表格的 enName 元素出現並可見
+          try {
+            await page.waitForSelector('[class*="skills_table_enname"]', {
+              timeout: 10000,
+              visible: true
+            });
+            console.log('找到 skills_table_enname 元素');
+
+            // 額外等待確保所有元素都已渲染
+            await new Promise(resolve => setTimeout(resolve, 2000));
+          } catch (e) {
+            console.log('等待 enName 元素時發生錯誤: ' + e.message);
+            console.log('將繼續嘗試抓取資料...');
           }
         } catch (e) {
-          console.log('勾選台灣伺服器失敗: ' + e.message);
+          console.log('設定選項處理失敗: ' + e.message);
         }
       } else {
         console.log('未找到齒輪圖標');
@@ -1022,8 +1032,8 @@ app.post('/api/fetch-basic', async (req, res) => {
 
     // 等待特定元素加載
     try {
-      await page.waitForSelector('.skills_skill_table__ZoEHP', { timeout: 10000 });
-      console.log('找到 skills_skill_table__ZoEHP');
+      await page.waitForSelector('[class*="skills_skill_table"]', { timeout: 10000 });
+      console.log('找到 skills_skill_table 元素');
 
       // 額外等待 enName 元素出現
       await page.waitForSelector('[class*="skills_table_enname"]', { timeout: 5000 });

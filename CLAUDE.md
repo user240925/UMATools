@@ -8,14 +8,16 @@ UMA Tools is a web scraping and analysis tool for Uma Musume race course and ski
 
 **Core Purpose**: Extract race course and skill data from dynamic Japanese websites, process multi-language content (Japanese/English), calculate skill efficiency metrics, and enable skill selection/comparison across different race courses.
 
-## Running the Application
+## Development Commands
 
-Start the server:
 ```bash
-npm start
+npm install    # Install dependencies (first time; downloads Chromium for Puppeteer)
+npm start      # Start the server (node server.js)
 ```
 
-Server runs on `http://localhost:3000` (configurable via PORT in server.js).
+Server runs on `http://localhost:10010` (hardcoded PORT in server.js).
+
+There are no test, lint, or build scripts configured. The frontend is vanilla HTML/JS served statically.
 
 ## Architecture Overview
 
