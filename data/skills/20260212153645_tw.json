@@ -1,0 +1,254 @@
+{
+  "skills": [
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "順時針◎",
+      "enName": "右回り◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "順時針○",
+      "enName": "右回り○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "逆時針◎",
+      "enName": "左回り◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "逆時針○",
+      "enName": "左回り○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "春賽馬娘◎",
+      "enName": "春ウマ娘◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "春賽馬娘○",
+      "enName": "春ウマ娘○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "夏賽馬娘◎",
+      "enName": "夏ウマ娘◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "夏賽馬娘○",
+      "enName": "夏ウマ娘○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "秋賽馬娘◎",
+      "enName": "秋ウマ娘◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "秋賽馬娘○",
+      "enName": "秋ウマ娘○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "冬賽馬娘◎",
+      "enName": "冬ウマ娘◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "冬賽馬娘○",
+      "enName": "冬ウマ娘○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "擅長外側閘位◎",
+      "enName": "外枠得意◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "擅長外側閘位○",
+      "enName": "外枠得意○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "喜歡獨處◎",
+      "enName": "おひとり様◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "喜歡獨處○",
+      "enName": "おひとり様○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "伏兵◎",
+      "enName": "伏兵◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "伏兵○",
+      "enName": "伏兵○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "同理心",
+      "enName": "シンパシー"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "獨行俠",
+      "enName": "一匹狼"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "奔向理想的景色",
+      "enName": "夢の景色へ"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "展現追尋未知的跑姿",
+      "enName": "未知への走りを見せてくれ"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "抬頭挺胸打比賽馬娘",
+      "enName": "胸を張れダービーウマ娘"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "交流主要競賽◎",
+      "enName": "交流重賞◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "交流主要競賽○",
+      "enName": "交流重賞○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "熟練邁步",
+      "enName": "踏み込み上手"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "玩泥巴◎",
+      "enName": "泥遊び◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "玩泥巴○",
+      "enName": "泥遊び○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "投機取巧",
+      "enName": "やまっけ"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "對短距離競賽的意志",
+      "enName": "短距離レースへの想い"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "自信家",
+      "enName": "自信家"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "探求心",
+      "enName": "探求心"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "直線賽道◎",
+      "enName": "直線コース◎"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
+      "jpName": "直線賽道○",
+      "enName": "直線コース○"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "始終如一",
+      "enName": "変わらぬままで"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "秋初強風",
+      "enName": "初嵐"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "春初暖風",
+      "enName": "春一番"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "順時針之鬼",
+      "enName": "右回りの鬼"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "超群的邁步",
+      "enName": "抜群の踏み込み"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "泥巴大師",
+      "enName": "泥んこマイスター"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "賭徒",
+      "enName": "勝負師"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "虎嘯風生",
+      "enName": "雲蒸竜変"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "青嵐",
+      "enName": "青嵐"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "奇異點",
+      "enName": "シンギュラリティ"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "冷冽之風",
+      "enName": "凍て風"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
+      "jpName": "連結",
+      "enName": "コネクト"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10014.png",
+      "jpName": "順時針×",
+      "enName": "右回り×"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10014.png",
+      "jpName": "逆時針×",
+      "enName": "左回り×"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10014.png",
+      "jpName": "春賽馬娘×",
+      "enName": "春ウマ娘×"
+    },
+    {
+      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10014.png",
+      "jpName": "夏賽馬娘×",
+      "enName": "夏ウマ娘×"
+    }
+  ]
+}
