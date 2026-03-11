@@ -2364,7 +2364,7 @@
             categoryOrder.forEach(type => {
                 if (!evalGroups[type]) return;
                 evalGroups[type].sort((a, b) => {
-                    return (evalStatsCache.get(b.id).efficiency || 0) - (evalStatsCache.get(a.id).efficiency || 0);
+                    return (evalStatsCache.get(b.id)?.efficiency || 0) - (evalStatsCache.get(a.id)?.efficiency || 0);
                 });
             });
 
