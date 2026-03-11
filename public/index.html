@@ -2247,6 +2247,120 @@
 
             updateArrowButtons();
         }
+
+        // 開啟技能評價 Popup
+        function openSkillEvaluationPopup() {
+            if (availableSkills.length === 0) return;
+
+            // 更新標題
+            const title = document.getElementById('evalModalTitle');
+            const courseLabel = selectedCourse
+                ? `${selectedCourse.courseName} ${selectedCourse.distance}(${selectedCourse.surface}) ${selectedRunningStyle}`
+                : '';
+            title.textContent = `📊 技能評價清單  ${courseLabel}`;
+
+            // 分類所有技能
+            const groups = {};
+            const allSkills = [...availableSkills, ...selectedSkills];
+
+            availableSkills.forEach(skill => {
+                const type = classifySkill(skill);
+                if (!groups[type]) groups[type] = [];
+                groups[type].push(skill);
+            });
+
+            // 各分類內依效率降序排序
+            Object.keys(groups).forEach(type => {
+                groups[type].sort((a, b) => {
+                    const sa = calculateSkillStats(a, allSkills);
+                    const sb = calculateSkillStats(b, allSkills);
+                    return sb.efficiency - sa.efficiency;
+                });
+            });
+
+            // 渲染 Modal 內容
+            const body = document.getElementById('evalModalBody');
+            body.innerHTML = '';
+
+            const categoryOrder = ['unique', 'accel', 'speed', 'inherited', 'combined', 'other'];
+            const fullWidthCategories = new Set(['inherited', 'other']);
+
+            categoryOrder.forEach(type => {
+                const skills = groups[type];
+                if (!skills || skills.length === 0) return;
+
+                // 計算此分類的效率分級
+                const tierMap = calculateEfficiencyTiers(skills, allSkills);
+
+                const section = document.createElement('div');
+                section.className = 'eval-category' + (fullWidthCategories.has(type) ? ' eval-category-full' : '');
+
+                const header = document.createElement('div');
+                header.className = 'eval-category-header';
+                header.textContent = SKILL_CATEGORIES[type];
+                section.appendChild(header);
+
+                const list = document.createElement('ul');
+                list.className = 'eval-category-list';
+
+                skills.forEach(skill => {
+                    const stats = calculateSkillStats(skill, allSkills);
+                    const tier = tierMap.get(skill.id);
+
+                    const row = document.createElement('li');
+                    row.className = 'eval-skill-row';
+
+                    // 圖示
+                    const img = document.createElement('img');
+                    img.className = 'eval-skill-icon';
+                    img.src = skill.icon || '';
+                    img.alt = skill.name || '';
+                    row.appendChild(img);
+
+                    // 技能名稱（套用效率顏色）
+                    const nameEl = document.createElement('span');
+                    nameEl.className = 'eval-skill-name' + (tier ? ` efficiency-tier-${tier}` : '');
+                    nameEl.textContent = skill.name || '';
+                    row.appendChild(nameEl);
+
+                    // 效率值
+                    if (stats.efficiency > 0) {
+                        const effEl = document.createElement('span');
+                        effEl.className = 'eval-skill-efficiency' + (tier ? ` efficiency-tier-${tier}` : '');
+                        effEl.textContent = `${stats.efficiency.toFixed(2)} [バ/Pt]`;
+                        row.appendChild(effEl);
+                    }
+
+                    // 繼承技能來源（memo）
+                    if (type === 'inherited' && skill.memo) {
+                        const memoEl = document.createElement('span');
+                        memoEl.className = 'eval-skill-memo';
+                        memoEl.textContent = skill.memo;
+                        row.appendChild(memoEl);
+                    }
+
+                    list.appendChild(row);
+                });
+
+                section.appendChild(list);
+                body.appendChild(section);
+            });
+
+            // 開啟 Modal
+            document.getElementById('skillEvalModal').classList.add('open');
+        }
+
+        // 關閉技能評價 Popup
+        function closeSkillEvaluationPopup() {
+            document.getElementById('skillEvalModal').classList.remove('open');
+        }
+
+        // 點擊遮罩關閉
+        function handleEvalOverlayClick(event) {
+            if (event.target === event.currentTarget) {
+                closeSkillEvaluationPopup();
+            }
+        }
     </script>
     <!-- 技能評價 Modal -->
     <div id="skillEvalModal" class="eval-modal-overlay" onclick="handleEvalOverlayClick(event)">
