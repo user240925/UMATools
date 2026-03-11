@@ -755,6 +755,7 @@
             padding: 0;
             overflow-y: auto;
             flex: 1;
+            min-height: 0;
         }
         .eval-tab-bar {
             display: flex;
@@ -795,16 +796,6 @@
         }
         .eval-tab-content {
             padding: 12px 20px;
-        }
-        .eval-category {
-            flex: 1 1 calc(50% - 8px);
-            min-width: 260px;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .eval-category-full {
-            flex: 1 1 100%;
         }
         .eval-category-header {
             padding: 8px 12px;
@@ -2477,6 +2468,7 @@
 
         // 關閉技能評價 Popup
         function closeSkillEvaluationPopup() {
+            evalActiveType = null;
             document.getElementById('skillEvalModal').classList.remove('open');
         }
 
