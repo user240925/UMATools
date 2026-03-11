@@ -2269,11 +2269,17 @@
                 groups[type].push(skill);
             });
 
+            // 預先計算所有技能的 stats（避免排序時重複計算）
+            const statsCache = new Map();
+            availableSkills.forEach(skill => {
+                statsCache.set(skill.id, calculateSkillStats(skill, allSkills));
+            });
+
             // 各分類內依效率降序排序
             Object.keys(groups).forEach(type => {
                 groups[type].sort((a, b) => {
-                    const sa = calculateSkillStats(a, allSkills);
-                    const sb = calculateSkillStats(b, allSkills);
+                    const sa = statsCache.get(a.id);
+                    const sb = statsCache.get(b.id);
                     return sb.efficiency - sa.efficiency;
                 });
             });
@@ -2304,7 +2310,7 @@
                 list.className = 'eval-category-list';
 
                 skills.forEach(skill => {
-                    const stats = calculateSkillStats(skill, allSkills);
+                    const stats = statsCache.get(skill.id);
                     const tier = tierMap.get(skill.id);
 
                     const row = document.createElement('li');
