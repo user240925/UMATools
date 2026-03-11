@@ -1899,6 +1899,28 @@
             return tierMap;
         }
 
+        // 技能分類函數
+        const SKILL_CATEGORIES = {
+            inherited: '繼承技能',
+            unique:    '固有技能',
+            accel:     '加速技能',
+            speed:     '速度技能',
+            combined:  '複合型技能',
+            other:     '其他'
+        };
+
+        function classifySkill(skill) {
+            const id = skill.id;
+            const iconId = skill.iconId;
+
+            if (id >= 900000)                                           return 'inherited';
+            if (iconId >= 10011 && iconId <= 10062)                     return 'unique';
+            if (iconId === 20041 || iconId === 20042)                   return 'accel';
+            if (iconId === 20011 || iconId === 20012)                   return 'speed';
+            if ([20051, 20052, 20021, 20022].includes(iconId))          return 'combined';
+            return 'other';
+        }
+
         // 技能搜尋過濾
         function filterSkills(keyword) {
             const searchInput = document.getElementById('skillSearchInput');
