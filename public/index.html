@@ -1060,6 +1060,13 @@
                 </div>
             </div>
 
+            <!-- 技能評價按鈕 -->
+            <div class="analysis-section" style="padding-top: 0;">
+                <button id="skillEvalBtn" class="eval-btn" disabled onclick="openSkillEvaluationPopup()">
+                    📊 技能評價
+                </button>
+            </div>
+
             <!-- C區 + 箭頭 + D區 -->
             <div class="skills-panel-container">
                 <!-- C區：可選技能 -->
@@ -1112,6 +1119,17 @@
                     </div>
                 </div>
             </div>
+        <!-- 技能評價 Modal -->
+        <div id="skillEvalModal" class="eval-modal-overlay" onclick="handleEvalOverlayClick(event)">
+            <div class="eval-modal">
+                <div class="eval-modal-header">
+                    <span class="eval-modal-title" id="evalModalTitle">📊 技能評價清單</span>
+                    <button class="eval-modal-close" onclick="closeSkillEvaluationPopup()">✕</button>
+                </div>
+                <div class="eval-modal-body" id="evalModalBody">
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 
