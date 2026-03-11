@@ -653,6 +653,130 @@
             font-weight: bold;
         }
 
+        /* 技能評價 Popup */
+        .eval-btn {
+            margin-top: 12px;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .eval-btn:hover:not(:disabled) {
+            opacity: 0.85;
+            transform: translateY(-1px);
+        }
+        .eval-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .eval-modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 16px;
+            overflow-y: auto;
+        }
+        .eval-modal-overlay.open {
+            display: flex;
+        }
+        .eval-modal {
+            background: white;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 900px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .eval-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .eval-modal-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+        .eval-modal-close {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #666;
+            padding: 4px 8px;
+            border-radius: 4px;
+            line-height: 1;
+        }
+        .eval-modal-close:hover { background: #f0f0f0; }
+        .eval-modal-body {
+            padding: 16px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .eval-category {
+            flex: 1 1 calc(50% - 8px);
+            min-width: 260px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .eval-category-full {
+            flex: 1 1 100%;
+        }
+        .eval-category-header {
+            padding: 8px 12px;
+            font-size: 13px;
+            font-weight: bold;
+            background: #f8f8f8;
+            border-bottom: 1px solid #eee;
+            color: #333;
+        }
+        .eval-category-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .eval-skill-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-bottom: 1px solid #f5f5f5;
+            font-size: 13px;
+        }
+        .eval-skill-row:last-child { border-bottom: none; }
+        .eval-skill-icon {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+        .eval-skill-name {
+            flex: 1;
+            color: #333;
+        }
+        .eval-skill-efficiency {
+            color: #666;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        .eval-skill-memo {
+            font-size: 10px;
+            color: #999;
+            white-space: nowrap;
+        }
+
         /* 箭頭按鈕 */
         .arrow-buttons {
             display: flex;
