@@ -1714,6 +1714,9 @@
                     renderAvailableSkills();
                     renderSelectedSkills();
                     updateArrowButtons();
+                    // 啟用技能評價按鈕
+                    const evalBtn = document.getElementById('skillEvalBtn');
+                    if (evalBtn) evalBtn.disabled = false;
                 } else {
                     container.innerHTML = '<div class="empty-placeholder">沒有找到技能資料</div>';
                 }
@@ -2246,6 +2249,9 @@
             selectedContainer.innerHTML = '<div class="empty-placeholder"></div>';
 
             updateArrowButtons();
+            // 停用技能評價按鈕
+            const evalBtn = document.getElementById('skillEvalBtn');
+            if (evalBtn) evalBtn.disabled = true;
         }
 
         // 開啟技能評價 Popup
