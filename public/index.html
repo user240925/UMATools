@@ -1432,6 +1432,11 @@
         let selectedRunningStyle = null; // 選中的跑法
         let availableSkills = []; // C區：可選技能
         let selectedSkills = []; // D區：已選技能
+        // 技能評價 Popup 狀態
+        let evalGroups = {};
+        let evalStatsCache = new Map();
+        let evalAllSkills = [];
+        let evalActiveType = null;
         let selectedAvailableSkillIds = new Set(); // C區選中的技能ID
         let selectedSelectedSkillIds = new Set(); // D區選中的技能ID
         let skillsDatabase = new Map(); // 技能資料庫查找表 (enName -> skill data)
@@ -2335,103 +2340,139 @@
             const courseLabel = selectedCourse
                 ? `${selectedCourse.courseName} ${selectedCourse.distance}(${selectedCourse.surface}) ${selectedRunningStyle}`
                 : '';
-            title.textContent = `📊 技能評價清單  ${courseLabel}`;
+            if (title) title.textContent = `📊 技能評價清單  ${courseLabel}`;
 
-            // 分類所有技能
-            const groups = {};
-            const allSkills = [...availableSkills, ...selectedSkills];
+            // 建立全技能池（供效率計算）
+            evalAllSkills = [...availableSkills, ...selectedSkills];
 
+            // 預先計算 stats 快取
+            evalStatsCache = new Map();
+            availableSkills.forEach(skill => {
+                evalStatsCache.set(skill.id, calculateSkillStats(skill, evalAllSkills));
+            });
+
+            // 分類
+            evalGroups = {};
             availableSkills.forEach(skill => {
                 const type = classifySkill(skill);
-                if (!groups[type]) groups[type] = [];
-                groups[type].push(skill);
+                if (!evalGroups[type]) evalGroups[type] = [];
+                evalGroups[type].push(skill);
             });
 
-            // 預先計算所有技能的 stats（避免排序時重複計算）
-            const statsCache = new Map();
-            availableSkills.forEach(skill => {
-                statsCache.set(skill.id, calculateSkillStats(skill, allSkills));
-            });
-
-            // 各分類內依效率降序排序
-            Object.keys(groups).forEach(type => {
-                groups[type].sort((a, b) => {
-                    const sa = statsCache.get(a.id);
-                    const sb = statsCache.get(b.id);
-                    return sb.efficiency - sa.efficiency;
-                });
-            });
-
-            // 渲染 Modal 內容
-            const body = document.getElementById('evalModalBody');
-            body.innerHTML = '';
-
+            // 各分類依效率降序排序
             const categoryOrder = ['unique', 'accel', 'speed', 'inherited', 'combined', 'other'];
-            const fullWidthCategories = new Set(['inherited', 'other']);
-
             categoryOrder.forEach(type => {
-                const skills = groups[type];
-                if (!skills || skills.length === 0) return;
-
-                // 計算此分類的效率分級
-                const tierMap = calculateEfficiencyTiers(skills, allSkills);
-
-                const section = document.createElement('div');
-                section.className = 'eval-category' + (fullWidthCategories.has(type) ? ' eval-category-full' : '');
-
-                const header = document.createElement('div');
-                header.className = 'eval-category-header';
-                header.textContent = SKILL_CATEGORIES[type];
-                section.appendChild(header);
-
-                const list = document.createElement('ul');
-                list.className = 'eval-category-list';
-
-                skills.forEach(skill => {
-                    const stats = statsCache.get(skill.id);
-                    const tier = tierMap.get(skill.id);
-
-                    const row = document.createElement('li');
-                    row.className = 'eval-skill-row';
-
-                    // 圖示
-                    const img = document.createElement('img');
-                    img.className = 'eval-skill-icon';
-                    img.src = skill.icon || '';
-                    img.alt = skill.name || '';
-                    row.appendChild(img);
-
-                    // 技能名稱（套用效率顏色）
-                    const nameEl = document.createElement('span');
-                    nameEl.className = 'eval-skill-name' + (tier ? ` efficiency-tier-${tier}` : '');
-                    nameEl.textContent = skill.name || '';
-                    row.appendChild(nameEl);
-
-                    // 效率值
-                    if (stats.efficiency > 0) {
-                        const effEl = document.createElement('span');
-                        effEl.className = 'eval-skill-efficiency' + (tier ? ` efficiency-tier-${tier}` : '');
-                        effEl.textContent = `${stats.efficiency.toFixed(2)} [バ/Pt]`;
-                        row.appendChild(effEl);
-                    }
-
-                    // 繼承技能來源（memo）
-                    if (type === 'inherited' && skill.memo) {
-                        const memoEl = document.createElement('span');
-                        memoEl.className = 'eval-skill-memo';
-                        memoEl.textContent = skill.memo;
-                        row.appendChild(memoEl);
-                    }
-
-                    list.appendChild(row);
+                if (!evalGroups[type]) return;
+                evalGroups[type].sort((a, b) => {
+                    return (evalStatsCache.get(b.id).efficiency || 0) - (evalStatsCache.get(a.id).efficiency || 0);
                 });
-
-                section.appendChild(list);
-                body.appendChild(section);
             });
+
+            // 渲染 Tab 按鈕列
+            const tabBar = document.getElementById('evalTabBar');
+            if (tabBar) {
+                tabBar.innerHTML = '';
+                categoryOrder.forEach(type => {
+                    if (!evalGroups[type] || evalGroups[type].length === 0) return;
+                    const btn = document.createElement('button');
+                    btn.className = 'eval-tab-btn';
+                    btn.dataset.type = type;
+                    btn.textContent = `${SKILL_CATEGORIES[type]} (${evalGroups[type].length})`;
+                    btn.onclick = () => switchEvalTab(type);
+                    tabBar.appendChild(btn);
+                });
+            }
+
+            // 選中第一個有技能的分類
+            const firstType = categoryOrder.find(t => evalGroups[t] && evalGroups[t].length > 0);
+            if (firstType) {
+                switchEvalTab(firstType);
+            }
 
             // 開啟 Modal
             document.getElementById('skillEvalModal').classList.add('open');
+        }
+
+        // 切換 Tab
+        function switchEvalTab(type) {
+            evalActiveType = type;
+
+            // 更新 Tab 按鈕 active 狀態
+            const tabBar = document.getElementById('evalTabBar');
+            if (tabBar) {
+                tabBar.querySelectorAll('.eval-tab-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.type === type);
+                });
+            }
+
+            // 渲染技能清單
+            renderEvalTab(type);
+        }
+
+        // 渲染指定分類的技能清單
+        function renderEvalTab(type) {
+            const body = document.getElementById('evalModalBody');
+            if (!body) return;
+
+            body.scrollTop = 0;
+            body.innerHTML = '';
+
+            const skills = evalGroups[type];
+            if (!skills || skills.length === 0) {
+                body.innerHTML = '<div style="padding: 20px; color: #999; text-align: center;">此分類無技能</div>';
+                return;
+            }
+
+            const tierMap = calculateEfficiencyTiers(skills, evalAllSkills);
+
+            const list = document.createElement('ul');
+            list.className = 'eval-category-list eval-tab-content';
+
+            skills.forEach(skill => {
+                const stats = evalStatsCache.get(skill.id);
+                const tier = tierMap.get(skill.id);
+
+                // 名稱轉換（查詢 skillsDatabase）
+                const displayName = skillsDatabase.has(skill.name)
+                    ? (skillsDatabase.get(skill.name).jpName || skill.name)
+                    : skill.name;
+
+                const row = document.createElement('li');
+                row.className = 'eval-skill-row';
+
+                // 圖示
+                const img = document.createElement('img');
+                img.className = 'eval-skill-icon';
+                img.src = skill.icon || '';
+                img.alt = displayName;
+                row.appendChild(img);
+
+                // 技能名稱（套用效率顏色）
+                const nameEl = document.createElement('span');
+                nameEl.className = 'eval-skill-name' + (tier ? ` efficiency-tier-${tier}` : '');
+                nameEl.textContent = displayName;
+                row.appendChild(nameEl);
+
+                // 效率值
+                if (stats && stats.efficiency > 0) {
+                    const effEl = document.createElement('span');
+                    effEl.className = 'eval-skill-efficiency' + (tier ? ` efficiency-tier-${tier}` : '');
+                    effEl.textContent = `${stats.efficiency.toFixed(2)} [バ/Pt]`;
+                    row.appendChild(effEl);
+                }
+
+                // 繼承技能來源（memo）
+                if (type === 'inherited' && skill.memo) {
+                    const memoEl = document.createElement('span');
+                    memoEl.className = 'eval-skill-memo';
+                    memoEl.textContent = skill.memo;
+                    row.appendChild(memoEl);
+                }
+
+                list.appendChild(row);
+            });
+
+            body.appendChild(list);
         }
 
         // 關閉技能評價 Popup
