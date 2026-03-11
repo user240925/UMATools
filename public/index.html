@@ -1910,6 +1910,7 @@
         };
 
         function classifySkill(skill) {
+            if (!skill) return 'other';
             const id = skill.id;
             const iconId = skill.iconId;
 
