@@ -171,11 +171,6 @@
       "enName": "直線コース○"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10011.png",
-      "jpName": "精神力",
-      "enName": "精神力"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
       "jpName": "始終如一",
       "enName": "変わらぬままで"
@@ -234,16 +229,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
       "jpName": "連結",
       "enName": "コネクト"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
-      "jpName": "左回りの鬼",
-      "enName": "左回りの鬼"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10012.png",
-      "jpName": "交流重賞の鬼",
-      "enName": "交流重賞の鬼"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10014.png",
@@ -384,11 +369,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10016.png",
       "jpName": "「METI」共鳴",
       "enName": "“METI”レゾナンス"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10016.png",
-      "jpName": "走る縁起物",
-      "enName": "走る縁起物"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10021.png",
@@ -576,11 +556,6 @@
       "enName": "ロンシャンレース場○"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10021.png",
-      "jpName": "あふれる活力",
-      "enName": "あふれる活力"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10022.png",
       "jpName": "淀之奇才",
       "enName": "淀の申し子"
@@ -599,11 +574,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10022.png",
       "jpName": "府中奇才",
       "enName": "府中の申し子"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10022.png",
-      "jpName": "気丈夫",
-      "enName": "気丈夫"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10024.png",
@@ -711,11 +681,6 @@
       "enName": "Ritter von Fuchu"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10026.png",
-      "jpName": "初空高く、花宴",
-      "enName": "初空高く、花宴"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10031.png",
       "jpName": "良好場地◎",
       "enName": "良バ場◎"
@@ -789,11 +754,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10036.png",
       "jpName": "喜愛驚濤密岩的黃金船",
       "enName": "荒磯好みの黄金船"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10036.png",
-      "jpName": "悪路のほうが好みでね",
-      "enName": "悪路のほうが好みでね"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10041.png",
@@ -941,16 +901,6 @@
       "enName": "小回り○"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10051.png",
-      "jpName": "天才肌",
-      "enName": "天才肌"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10052.png",
-      "jpName": "麒麟児",
-      "enName": "麒麟児"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10054.png",
       "jpName": "不擅長內側閘位",
       "enName": "内枠苦手"
@@ -971,24 +921,9 @@
       "enName": "1番人気でヤバたん"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10054.png",
-      "jpName": "ハイパーハイテンション☆",
-      "enName": "ハイパーハイテンション☆"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10056.png",
-      "jpName": "いざ、ショーベラスタイム♪",
-      "enName": "いざ、ショーベラスタイム♪"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10061.png",
       "jpName": "幸運7",
       "enName": "ラッキーセブン"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10061.png",
-      "jpName": "衝動",
-      "enName": "衝動"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10062.png",
@@ -999,11 +934,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_10066.png",
       "jpName": "七福即生",
       "enName": "七福即生"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_10066.png",
-      "jpName": "梅仰ぎ、漕ぐ計路",
-      "enName": "梅仰ぎ、漕ぐ計路"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20023.png",
@@ -1729,16 +1659,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20026.png",
       "jpName": "全力以赴的聖誕老人",
       "enName": "ひたむきサンタクロース"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20026.png",
-      "jpName": "あんぱんと牛乳",
-      "enName": "あんぱんと牛乳"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20022.png",
-      "jpName": "心頭滅却",
-      "enName": "心頭滅却"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
@@ -2526,236 +2446,6 @@
       "enName": "奮闘"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "足がかり",
-      "enName": "足がかり"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "捕捉",
-      "enName": "捕捉"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "押し通る！",
-      "enName": "押し通る！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "砂蹴り",
-      "enName": "砂蹴り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "精進",
-      "enName": "精進"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "真っ直ぐな走り",
-      "enName": "真っ直ぐな走り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "夢への挑戦",
-      "enName": "夢への挑戦"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "光明",
-      "enName": "光明"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "活路を拓く！",
-      "enName": "活路を拓く！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "健脚",
-      "enName": "健脚"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "静かな熱",
-      "enName": "静かな熱"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "不断の鍛錬",
-      "enName": "不断の鍛錬"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "思い切り",
-      "enName": "思い切り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "張り切り",
-      "enName": "張り切り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "間隙を突いて",
-      "enName": "間隙を突いて"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "影を追って",
-      "enName": "影を追って"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "追駆",
-      "enName": "追駆"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "臆せぬ心",
-      "enName": "臆せぬ心"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "好戦的",
-      "enName": "好戦的"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "想い焦がれて",
-      "enName": "想い焦がれて"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "内なる獣",
-      "enName": "内なる獣"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "優等生",
-      "enName": "優等生"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "心惹かれて",
-      "enName": "心惹かれて"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "気ままな足取り",
-      "enName": "気ままな足取り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "弾ける足取り",
-      "enName": "弾ける足取り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "待ったなし",
-      "enName": "待ったなし"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "誇りを抱いて",
-      "enName": "誇りを抱いて"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "プレリュード",
-      "enName": "プレリュード"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "なりふり構わず",
-      "enName": "なりふり構わず"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "バイタリティ",
-      "enName": "バイタリティ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "練達の一歩",
-      "enName": "練達の一歩"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "シビれる走り",
-      "enName": "シビれる走り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "気丈な姿勢",
-      "enName": "気丈な姿勢"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "目覚めの時",
-      "enName": "目覚めの時"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "灯を胸に",
-      "enName": "灯を胸に"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "意地っ張り",
-      "enName": "意地っ張り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "逃げるが勝ち！",
-      "enName": "逃げるが勝ち！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "轟く足音",
-      "enName": "轟く足音"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "淀みなし",
-      "enName": "淀みなし"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "凛然と",
-      "enName": "凛然と"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "力業",
-      "enName": "力業"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "余勢を駆って",
-      "enName": "余勢を駆って"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "勝負を懸けて",
-      "enName": "勝負を懸けて"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "労を惜しまず",
-      "enName": "労を惜しまず"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "華麗な足取り",
-      "enName": "華麗な足取り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20011.png",
-      "jpName": "気持ちを乗せて",
-      "enName": "気持ちを乗せて"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
       "jpName": "弧線的教授",
       "enName": "弧線のプロフェッサー"
@@ -3384,201 +3074,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
       "jpName": "睥睨",
       "enName": "睥睨"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "烈風円刃",
-      "enName": "烈風円刃"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "砂塵一閃",
-      "enName": "砂塵一閃"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "突破口",
-      "enName": "突破口"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "独立独歩",
-      "enName": "独立独歩"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "見事な砂蹴り",
-      "enName": "見事な砂蹴り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "点滴穿石",
-      "enName": "点滴穿石"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "ストレートハート",
-      "enName": "ストレートハート"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "唯一無二",
-      "enName": "唯一無二"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "真骨頂",
-      "enName": "真骨頂"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "パスファインダー",
-      "enName": "パスファインダー"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "悠久走破",
-      "enName": "悠久走破"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "陽炎",
-      "enName": "陽炎"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "秘めた闘魂",
-      "enName": "秘めた闘魂"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "エネルギッシュ",
-      "enName": "エネルギッシュ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "刹那の勝機",
-      "enName": "刹那の勝機"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "残影",
-      "enName": "残影"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "闘争本能",
-      "enName": "闘争本能"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "解き放つ情念",
-      "enName": "解き放つ情念"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "才色兼備",
-      "enName": "才色兼備"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "好奇心",
-      "enName": "好奇心"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "自由奔放",
-      "enName": "自由奔放"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "即断即決",
-      "enName": "即断即決"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "閃く雷光",
-      "enName": "閃く雷光"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "問答無用",
-      "enName": "問答無用"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "至宝の輝き",
-      "enName": "至宝の輝き"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "百戦錬磨",
-      "enName": "百戦錬磨"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "まばたき厳禁！",
-      "enName": "まばたき厳禁！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "不抜の気概",
-      "enName": "不抜の気概"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "開花",
-      "enName": "開花"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "燃ゆる魂",
-      "enName": "燃ゆる魂"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "勇壮活発",
-      "enName": "勇壮活発"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "迸る気迫",
-      "enName": "迸る気迫"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "震天動地",
-      "enName": "震天動地"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "行雲流水",
-      "enName": "行雲流水"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "勇気凛々",
-      "enName": "勇気凛々"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "遥か先へ",
-      "enName": "遥か先へ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "千鍛万錬",
-      "enName": "千鍛万錬"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "錦上添花",
-      "enName": "錦上添花"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20012.png",
-      "jpName": "順風満帆",
-      "enName": "順風満帆"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
@@ -4544,191 +4039,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
       "jpName": "¡Qué alegría!",
       "enName": "¡Qué alegría!"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "知宵欺敵、百戦不殆",
-      "enName": "知宵欺敵、百戦不殆"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "深淵のテルプシコラー",
-      "enName": "深淵のテルプシコラー"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "Romantic Horizon",
-      "enName": "Romantic Horizon"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "駆るは光、狩るは星々",
-      "enName": "駆るは光、狩るは星々"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "対象捕捉！正義遂行！",
-      "enName": "対象捕捉！正義遂行！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "五獣挙りて彩光奏づ",
-      "enName": "五獣挙りて彩光奏づ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "Forward March!",
-      "enName": "Forward March!"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "Queen's Rebirth",
-      "enName": "Queen's Rebirth"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "Circulating Love♡",
-      "enName": "Circulating Love♡"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "解けぬ結い目",
-      "enName": "解けぬ結い目"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "時かけるせせらぎ",
-      "enName": "時かけるせせらぎ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "Weaving History",
-      "enName": "Weaving History"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "Silent Sunset Gold",
-      "enName": "Silent Sunset Gold"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "全力全開！サイクロン",
-      "enName": "全力全開！サイクロン"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "ホップステップ・ゲッチュ♡",
-      "enName": "ホップステップ・ゲッチュ♡"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "ずっとずっと輝いて",
-      "enName": "ずっとずっと輝いて"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "夏雷カスケード！",
-      "enName": "夏雷カスケード！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "Tidebreaker",
-      "enName": "Tidebreaker"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "ジュ・テーム☆バカンス！",
-      "enName": "ジュ・テーム☆バカンス！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "スカーレットリリィの高揚",
-      "enName": "スカーレットリリィの高揚"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "きせき・おもい・かなで",
-      "enName": "きせき・おもい・かなで"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "小さな奇跡、フォーユー♪",
-      "enName": "小さな奇跡、フォーユー♪"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "Punkish Bite",
-      "enName": "Punkish Bite"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "念い、信ずればこそ",
-      "enName": "念い、信ずればこそ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "シュガーパレード・始動！",
-      "enName": "シュガーパレード・始動！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "喝采☆ワンダードール！",
-      "enName": "喝采☆ワンダードール！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "ヤバ技☆ジャグルビート",
-      "enName": "ヤバ技☆ジャグルビート"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "照らすのはわたしの焔",
-      "enName": "照らすのはわたしの焔"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "地熱解放オーヴァードライブ",
-      "enName": "地熱解放オーヴァードライブ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "湯守の和心",
-      "enName": "湯守の和心"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "To Our Vista",
-      "enName": "To Our Vista"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "運否、聖夜の星に賭ける",
-      "enName": "運否、聖夜の星に賭ける"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "夢寐に見る銀世界",
-      "enName": "夢寐に見る銀世界"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "灰の光跡：シンデレラグレイ",
-      "enName": "灰の光跡：シンデレラグレイ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "黄金を訪ねて",
-      "enName": "黄金を訪ねて"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "千歳、廻りて",
-      "enName": "千歳、廻りて"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20013.png",
-      "jpName": "春光・Bon appétit",
-      "enName": "春光・Bon appétit"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20014.png",
@@ -6006,326 +5316,6 @@
       "enName": "推してまいる！！"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "侵掠如火",
-      "enName": "侵掠如火"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "天下分け目",
-      "enName": "天下分け目"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "アルテミスの矢",
-      "enName": "アルテミスの矢"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "True Wire-to-Wire!",
-      "enName": "True Wire-to-Wire!"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "大航海、飄々と",
-      "enName": "大航海、飄々と"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "Beat the Stars",
-      "enName": "Beat the Stars"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "爆レスあげちゃう☆",
-      "enName": "爆レスあげちゃう☆"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "黄龍、天へと昇る",
-      "enName": "黄龍、天へと昇る"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "ひた走れ！苫小牧の星",
-      "enName": "ひた走れ！苫小牧の星"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "不撓不屈の女王",
-      "enName": "不撓不屈の女王"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "ストリーミング♡ラッシュ",
-      "enName": "ストリーミング♡ラッシュ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "応援コメントよろしく！",
-      "enName": "応援コメントよろしく！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "Limitless Love",
-      "enName": "Limitless Love"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "祝宴の征服者",
-      "enName": "祝宴の征服者"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "栄華の歩み、誰ぞ遮る",
-      "enName": "栄華の歩み、誰ぞ遮る"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "白妙の約定",
-      "enName": "白妙の約定"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "永永無窮",
-      "enName": "永永無窮"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "踏み出す勇気をご覧あれ",
-      "enName": "踏み出す勇気をご覧あれ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "Wild Runway",
-      "enName": "Wild Runway"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "黄金の炎陽",
-      "enName": "黄金の炎陽"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "青空の下で待ってるよ！",
-      "enName": "青空の下で待ってるよ！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "ラブミー☆パレード",
-      "enName": "ラブミー☆パレード"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "緋色の光となって",
-      "enName": "緋色の光となって"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "煌めきのイリュージョン",
-      "enName": "煌めきのイリュージョン"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "波上のラストトリック",
-      "enName": "波上のラストトリック"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "マリンブルー・ライナー",
-      "enName": "マリンブルー・ライナー"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "エスプロズィオーネ",
-      "enName": "エスプロズィオーネ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "デザートジュエルに魅せられ",
-      "enName": "デザートジュエルに魅せられ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "いざ征かん！マリンロード",
-      "enName": "いざ征かん！マリンロード"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "赫き胎動",
-      "enName": "赫き胎動"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "誰にも告げぬ誓い",
-      "enName": "誰にも告げぬ誓い"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "呼び覚まされし願い",
-      "enName": "呼び覚まされし願い"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "ディライトフルメモリー",
-      "enName": "ディライトフルメモリー"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "最っっっ高のプリンセス",
-      "enName": "最っっっ高のプリンセス"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "『見ていて、くださいね』",
-      "enName": "『見ていて、くださいね』"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "彗星色の羽搏き",
-      "enName": "彗星色の羽搏き"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "お邪魔しま～す♪",
-      "enName": "お邪魔しま～す♪"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "相手が誰でも関係ねーし！",
-      "enName": "相手が誰でも関係ねーし！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "無極",
-      "enName": "無極"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "徹骨徹髄",
-      "enName": "徹骨徹髄"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "手招きシュガーランタン",
-      "enName": "手招きシュガーランタン"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "煌めき☆ドーリィステージ",
-      "enName": "煌めき☆ドーリィステージ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "我が一族の玉条を胸に",
-      "enName": "我が一族の玉条を胸に"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "乗っとけ☆ぶち上げペース",
-      "enName": "乗っとけ☆ぶち上げペース"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "わたしだって、勝ちたい！！",
-      "enName": "わたしだって、勝ちたい！！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "Ignite this Stage",
-      "enName": "Ignite this Stage"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "レッドゾーンを突き抜けて",
-      "enName": "レッドゾーンを突き抜けて"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "ここ、逃す手はないってね☆",
-      "enName": "ここ、逃す手はないってね☆"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "大地轟く大噴湯",
-      "enName": "大地轟く大噴湯"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "風まかせ、お湯まかせ",
-      "enName": "風まかせ、お湯まかせ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "ふたりの約束、とどく時",
-      "enName": "ふたりの約束、とどく時"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "一点張りでいこう",
-      "enName": "一点張りでいこう"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "勝負師の才略",
-      "enName": "勝負師の才略"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "流れ星の軌跡",
-      "enName": "流れ星の軌跡"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "雪暗れに微笑む",
-      "enName": "雪暗れに微笑む"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "さて、収めに参りましょう",
-      "enName": "さて、収めに参りましょう"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "尽きぬ炎",
-      "enName": "尽きぬ炎"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "見果てぬ旅路",
-      "enName": "見果てぬ旅路"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "針が交わる時",
-      "enName": "針が交わる時"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "旅の心得",
-      "enName": "旅の心得"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "陰りなき王道",
-      "enName": "陰りなき王道"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "怒涛のラッキー大猛進！",
-      "enName": "怒涛のラッキー大猛進！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "春道踏破",
-      "enName": "春道踏破"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20016.png",
-      "jpName": "春めき、Lumière",
-      "enName": "春めき、Lumière"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20041.png",
       "jpName": "彎道加速○",
       "enName": "コーナー加速○"
@@ -6556,36 +5546,6 @@
       "enName": "足任せ"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20041.png",
-      "jpName": "勇気の一歩",
-      "enName": "勇気の一歩"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20041.png",
-      "jpName": "頂を目指して",
-      "enName": "頂を目指して"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20041.png",
-      "jpName": "ヒートアップ",
-      "enName": "ヒートアップ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20041.png",
-      "jpName": "急降下",
-      "enName": "急降下"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20041.png",
-      "jpName": "ここ一番",
-      "enName": "ここ一番"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20041.png",
-      "jpName": "押しの一手",
-      "enName": "押しの一手"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20042.png",
       "jpName": "曲線的侍酒師",
       "enName": "曲線のソムリエ"
@@ -6791,21 +5751,6 @@
       "enName": "天真爛漫"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20042.png",
-      "jpName": "夢の舞台へ",
-      "enName": "夢の舞台へ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20042.png",
-      "jpName": "ショーダウン",
-      "enName": "ショーダウン"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20042.png",
-      "jpName": "天賦の才",
-      "enName": "天賦の才"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20043.png",
       "jpName": "燃燒吧肌肉！",
       "enName": "燃えろ筋肉！"
@@ -6884,11 +5829,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20043.png",
       "jpName": "Crystal Mist",
       "enName": "Crystal Mist"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20043.png",
-      "jpName": "レジェンダリーアクセル",
-      "enName": "レジェンダリーアクセル"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20044.png",
@@ -7346,111 +6286,6 @@
       "enName": "万哩へ響け大歓声"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "韋駄天ノ襲脚",
-      "enName": "韋駄天ノ襲脚"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "アレスの進撃",
-      "enName": "アレスの進撃"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "猛き獣は太陽に吼える",
-      "enName": "猛き獣は太陽に吼える"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "『お姉ちゃん、だもの』",
-      "enName": "『お姉ちゃん、だもの』"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "盛り上げ上手",
-      "enName": "盛り上げ上手"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "創世の一頁",
-      "enName": "創世の一頁"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "誓いの一振り",
-      "enName": "誓いの一振り"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "一番眺めのいい場所へ！",
-      "enName": "一番眺めのいい場所へ！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "ティアラ・ダイブ！",
-      "enName": "ティアラ・ダイブ！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "ぜーったい譲って♡",
-      "enName": "ぜーったい譲って♡"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "いつもの僕じゃないから！",
-      "enName": "いつもの僕じゃないから！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "ノクス・ルミナ",
-      "enName": "ノクス・ルミナ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "まさかここから大逆転！？",
-      "enName": "まさかここから大逆転！？"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "ベッコベコに凹ます！",
-      "enName": "ベッコベコに凹ます！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "満たせ☆ぱんぷきんパワー！",
-      "enName": "満たせ☆ぱんぷきんパワー！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "ここ、カマしどきっしょ！",
-      "enName": "ここ、カマしどきっしょ！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "勝ち筋ドミネーション",
-      "enName": "勝ち筋ドミネーション"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "誠心たる光燿",
-      "enName": "誠心たる光燿"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "未来へ続く放物線",
-      "enName": "未来へ続く放物線"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "天地を揺らせ君の名で",
-      "enName": "天地を揺らせ君の名で"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20046.png",
-      "jpName": "灰の怪物",
-      "enName": "灰の怪物"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20051.png",
       "jpName": "取位天賦",
       "enName": "ポジションセンス"
@@ -7589,11 +6424,6 @@
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20066.png",
       "jpName": "點餐內容完美掌握！",
       "enName": "オーダーはバッチリ！"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20066.png",
-      "jpName": "立ち位置ゼロ番！",
-      "enName": "立ち位置ゼロ番！"
     },
     {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_20091.png",
@@ -7976,81 +6806,6 @@
       "enName": "幾星霜が導く一手"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20311.png",
-      "jpName": "あるがままに",
-      "enName": "あるがままに"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20312.png",
-      "jpName": "本能の懸け橋",
-      "enName": "本能の懸け橋"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20316.png",
-      "jpName": "開拓者の軌跡",
-      "enName": "開拓者の軌跡"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20316.png",
-      "jpName": "未知へのトライアル",
-      "enName": "未知へのトライアル"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20316.png",
-      "jpName": "不屈のサバイバル魂",
-      "enName": "不屈のサバイバル魂"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20316.png",
-      "jpName": "大地を揺るがす疾走",
-      "enName": "大地を揺るがす疾走"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20316.png",
-      "jpName": "ワイルドアットハート",
-      "enName": "ワイルドアットハート"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20316.png",
-      "jpName": "大自然の鼓動",
-      "enName": "大自然の鼓動"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20321.png",
-      "jpName": "本気で休んで、もう一度",
-      "enName": "本気で休んで、もう一度"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20322.png",
-      "jpName": "保養が導く奇跡",
-      "enName": "保養が導く奇跡"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20326.png",
-      "jpName": "走り湯ダッシュ",
-      "enName": "走り湯ダッシュ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20326.png",
-      "jpName": "噴泉スピリット",
-      "enName": "噴泉スピリット"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20326.png",
-      "jpName": "湯に入りて湯に入らざれ",
-      "enName": "湯に入りて湯に入らざれ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20326.png",
-      "jpName": "秘湯より湧くチカラ",
-      "enName": "秘湯より湧くチカラ"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_20336.png",
-      "jpName": "一番風呂いただきます！",
-      "enName": "一番風呂いただきます！"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_30011.png",
       "jpName": "使領頭遲疑",
       "enName": "逃げためらい"
@@ -8431,19 +7186,9 @@
       "enName": "日本一のウマ娘"
     },
     {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_2010010.png",
-      "jpName": "この手に掴んだ未来",
-      "enName": "この手に掴んだ未来"
-    },
-    {
       "icon": "/images/umamusume/skill_icons/utx_ico_skill_2010016.png",
       "jpName": "日之本第一的毅力",
       "enName": "日之本一のド根性"
-    },
-    {
-      "icon": "/images/umamusume/skill_icons/utx_ico_skill_2010016.png",
-      "jpName": "希望は巡る、何度でも",
-      "enName": "希望は巡る、何度でも"
     }
   ]
 }
