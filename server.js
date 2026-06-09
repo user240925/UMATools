@@ -938,8 +938,11 @@ app.post('/api/fetch-basic', async (req, res) => {
     await page.setViewport({ width: 1920, height: 1080 });
 
     // 訪問網頁
+    // 注意：gametora 頁面有持續的背景連線（廣告/分析），networkidle2 永遠不滿足會導致
+    // 30 秒後 Navigation timeout（整個抓取卡死）。改用 domcontentloaded：頁面內容在
+    // DOM 載入時即齊全，後續仍有 settings/checkbox/enname 的 selector 等待把關。
     await page.goto(url, {
-      waitUntil: 'networkidle2',
+      waitUntil: 'domcontentloaded',
       timeout: 30000
     });
 
