@@ -13,7 +13,11 @@
       "Bash(node:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(echo \"=== EXIT CODE: $? ===\")",
+      "Bash(where node *)",
+      "Bash(where npm *)",
+      "PowerShell(cmd /c \"cd /d C:\\\\Project\\\\UMATools && \\(echo n | more\\) >nul & set-nothing\" 2>$null; Write-Host \"--- Dry-run: verify node_modules + server.js exist ---\"; Test-Path C:\\\\Project\\\\UMATools\\\\node_modules; Test-Path C:\\\\Project\\\\UMATools\\\\server.js)"
     ],
     "deny": [],
     "ask": []
