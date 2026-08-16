@@ -15,6 +15,8 @@ npm install    # Install dependencies (first time; downloads Chromium for Puppet
 npm start      # Start the server (node server.js)
 ```
 
+On Windows, `start.bat` (double-click) is the intended launcher: it verifies Node is installed, runs `npm install` if `node_modules` is missing, opens `http://localhost:10010` in the browser, then runs `node server.js`.
+
 Server runs on `http://localhost:10010` (hardcoded PORT in server.js).
 
 There are no test, lint, or build scripts configured. The frontend is vanilla HTML/JS served statically.
@@ -229,13 +231,15 @@ Frontend uses `[class*="partial_match"]` selectors because:
 1. Launch with `--no-sandbox --disable-setuid-sandbox` (containerized environments)
 2. Incognito context to avoid cache/cookies
 3. Viewport: 1920×1080, standard User-Agent
-4. Navigate with `networkidle2` (waits for network to be idle)
+4. Navigate with `domcontentloaded` (NOT `networkidle2`). gametora keeps persistent background connections (ads/analytics) so `networkidle2` never resolves and the whole scrape hangs on a 30s navigation timeout. DOM content is complete at `domcontentloaded`; the selector waits below are what actually gate readiness. See the `git log` fix commit and the inline comment in `/api/fetch-basic`.
 5. Wait for `img[src*="settings.png"]` → Click
-6. Wait for `#serverTwCheckbox` → Click
+6. Wait for `#serverTwCheckbox` to exist, then click `#alwaysShowAllCheckbox` FIRST (local setting, no re-render), then `#serverTwCheckbox`. Order matters: the Taiwan checkbox triggers a DOM re-render, so any checkbox clicked after it may no longer be found.
 7. Wait 5s for AJAX re-render
 8. Wait for `[class*="skills_table_enname"]` to be visible
 9. Additional 2s buffer for final render
 10. Extract full HTML via `page.content()`
+
+Note: skill collection (`/api/fetch-basic`) no longer downloads icon images — icons are downloaded only by the race-course collection flow (`saveCourseData`).
 
 ### HTML Parsing Resilience
 - Cheerio selectors use partial class matching: `[class*="skills_table_row"]`
