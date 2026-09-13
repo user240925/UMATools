@@ -8,6 +8,109 @@ const fsSync = require('fs');
 
 const app = express();
 const PORT = 10010;
+const GAMETORA_ORIGIN = 'https://gametora.com';
+const GAMETORA_REQUEST_TIMEOUT_MS = 20000;
+const BROWSER_CLOSE_TIMEOUT_MS = 5000;
+
+function isGameToraSkillsUrl(value) {
+  try {
+    const parsedUrl = new URL(value);
+    const isGameTora = parsedUrl.hostname === 'gametora.com' || parsedUrl.hostname.endsWith('.gametora.com');
+    const normalizedPath = parsedUrl.pathname.replace(/\/+$/, '');
+    return isGameTora && normalizedPath.endsWith('/umamusume/skills');
+  } catch {
+    return false;
+  }
+}
+
+async function closeBrowserSafely(browser) {
+  if (!browser) return;
+
+  let timeoutId;
+  try {
+    await Promise.race([
+      browser.close(),
+      new Promise(resolve => {
+        timeoutId = setTimeout(() => {
+          browser.process()?.kill();
+          resolve();
+        }, BROWSER_CLOSE_TIMEOUT_MS);
+      })
+    ]);
+  } catch (error) {
+    browser.process()?.kill();
+    console.error('關閉瀏覽器時發生錯誤:', error.message);
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
+async function fetchGameToraSkillData(page) {
+  page.setDefaultNavigationTimeout(GAMETORA_REQUEST_TIMEOUT_MS);
+
+  const manifestUrl = `${GAMETORA_ORIGIN}/data/manifests/umamusume.json`;
+  const manifestResponse = await page.goto(manifestUrl, {
+    waitUntil: 'domcontentloaded',
+    timeout: GAMETORA_REQUEST_TIMEOUT_MS
+  });
+
+  if (!manifestResponse?.ok()) {
+    throw new Error(`GameTora manifest 載入失敗 (HTTP ${manifestResponse?.status() || 'unknown'})`);
+  }
+
+  const manifest = await page.evaluate(() => JSON.parse(document.body.textContent));
+  const skillHash = manifest.skills;
+  if (typeof skillHash !== 'string' || !/^[a-z0-9]+$/i.test(skillHash)) {
+    throw new Error('GameTora manifest 中找不到技能資料版本');
+  }
+
+  const sourceUrl = `${GAMETORA_ORIGIN}/data/umamusume/skills.${skillHash}.json`;
+  const result = await page.evaluate(async ({ sourceUrl, timeoutMs }) => {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+    try {
+      const response = await fetch(sourceUrl, { signal: controller.signal });
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      const sourceSkills = await response.json();
+      if (!Array.isArray(sourceSkills)) {
+        throw new Error('技能資料格式不是陣列');
+      }
+
+      const skills = sourceSkills
+        .filter(skill => typeof skill.name_tw === 'string' && skill.name_tw.trim()
+          && typeof skill.jpname === 'string' && skill.jpname.trim())
+        .map(skill => ({
+          icon: `https://media.gametora.com/umamusume/skills/icon/${skill.iconid}.png`,
+          jpName: skill.name_tw.trim(),
+          enName: skill.jpname.trim()
+        }));
+
+      return {
+        totalSourceSkills: sourceSkills.length,
+        skills
+      };
+    } finally {
+      clearTimeout(timeoutId);
+    }
+  }, { sourceUrl, timeoutMs: GAMETORA_REQUEST_TIMEOUT_MS });
+
+  if (result.skills.length === 0) {
+    throw new Error('GameTora 技能資料中沒有可用的台灣繁中名稱');
+  }
+
+  return {
+    sourceUrl,
+    totalSourceSkills: result.totalSourceSkills,
+    parsed: {
+      totalSkills: result.skills.length,
+      skills: result.skills
+    }
+  };
+}
 
 // 輔助函數：生成檔案名稱（時間戳記 + 語系）
 function generateFileName(language = 'tw') {
@@ -921,6 +1024,33 @@ app.post('/api/fetch-basic', async (req, res) => {
       return res.status(400).json({ error: '請提供網址' });
     }
 
+    // GameTora 新版頁面預設只渲染 50 筆，設定選單也可能被廣告腳本延遲。
+    // 直接讀取頁面本身使用的版本化資料檔，避免依賴 UI、CSS module 類名與固定等待時間。
+    if (isGameToraSkillsUrl(url)) {
+      browser = await puppeteer.launch({
+        headless: true,
+        timeout: GAMETORA_REQUEST_TIMEOUT_MS,
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+      });
+
+      const page = await browser.newPage();
+      const gameToraData = await fetchGameToraSkillData(page);
+      const saveResult = await saveSkillsData(gameToraData.parsed, 'tw');
+
+      return res.json({
+        success: true,
+        content: JSON.stringify({
+          source: gameToraData.sourceUrl,
+          totalSourceSkills: gameToraData.totalSourceSkills,
+          translatedSkills: gameToraData.parsed.totalSkills
+        }, null, 2),
+        status: 200,
+        contentType: 'application/json',
+        parsed: gameToraData.parsed,
+        saved: saveResult
+      });
+    }
+
     // 使用 Puppeteer 抓取動態渲染的網頁 (無痕模式)
     browser = await puppeteer.launch({
       headless: true,
@@ -1072,13 +1202,14 @@ app.post('/api/fetch-basic', async (req, res) => {
     });
 
   } catch (error) {
-    if (browser) {
-      await browser.close();
-    }
+    await closeBrowserSafely(browser);
+    browser = null;
     res.status(500).json({
       success: false,
       error: error.message
     });
+  } finally {
+    await closeBrowserSafely(browser);
   }
 });
 

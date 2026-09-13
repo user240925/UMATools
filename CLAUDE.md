@@ -38,9 +38,9 @@ There are no test, lint, or build scripts configured. The frontend is vanilla HT
 4. Auto-save to `data/courses/{venue}/{distance}({surface})/{venue}_{distance}_{runningStyle}.json`
 
 **Data Flow for Skill Collection**:
-1. User provides skill list URL → `POST /api/fetch-basic` (Puppeteer dynamic scraping)
-2. Automated browser interaction: click settings → enable Taiwan server → wait for re-render
-3. Extract dual-language skill names (jpName, enName) from dynamically rendered table
+1. User provides a GameTora skill list URL → `POST /api/fetch-basic`
+2. Open GameTora's data manifest and resolve the current versioned `skills.{hash}.json`
+3. Read Traditional Chinese (`name_tw`) and Japanese (`jpname`) names directly from the data file
 4. Auto-save to `data/skills/{timestamp}_{language}.json`
 
 **Data Flow for Analysis Tab**:
@@ -62,10 +62,11 @@ There are no test, lint, or build scripts configured. The frontend is vanilla HT
 - Auto-downloads skill icons to `data/images/umamusume/skill_icons/`
 - Returns merged data with rarity relationships and prerequisite chains
 
-**POST /api/fetch-basic** - Skill list collection (Puppeteer)
-- Headless browser automation with incognito mode
-- Multi-step interaction: settings icon → Taiwan server checkbox → wait for re-render
-- Waits for `skills_table_enname` elements (critical for English names)
+**POST /api/fetch-basic** - Skill list collection
+- GameTora URLs use its public, versioned JSON data file discovered through `/data/manifests/umamusume.json`
+- Filters to skills with both `name_tw` and `jpname`, preserving the existing `jpName`/`enName` output schema
+- Avoids the UI's default 50-row limit, delayed settings menu, and generated CSS class names
+- Non-GameTora URLs retain the older Puppeteer DOM extraction as a fallback
 - Auto-saves to timestamped JSON file
 
 **GET /api/courses** - Course directory scanner
@@ -95,6 +96,7 @@ There are no test, lint, or build scripts configured. The frontend is vanilla HT
 3. **Data merging**: Combines both sources for complete skill objects
 
 **parseSkillData(html)** - Dual-language skill extraction
+- Legacy fallback for non-GameTora pages
 - Targets: `[class*="skills_table_row"]` divs
 - Extracts icon, jpName, enName from table structure
 - Debug mode captures row HTML when parsing fails
@@ -227,17 +229,14 @@ Frontend uses `[class*="partial_match"]` selectors because:
 
 ## Critical Implementation Details
 
-### Puppeteer Automation Sequence
+### GameTora Skill Collection Sequence
 1. Launch with `--no-sandbox --disable-setuid-sandbox` (containerized environments)
-2. Incognito context to avoid cache/cookies
-3. Viewport: 1920×1080, standard User-Agent
-4. Navigate with `domcontentloaded` (NOT `networkidle2`). gametora keeps persistent background connections (ads/analytics) so `networkidle2` never resolves and the whole scrape hangs on a 30s navigation timeout. DOM content is complete at `domcontentloaded`; the selector waits below are what actually gate readiness. See the `git log` fix commit and the inline comment in `/api/fetch-basic`.
-5. Wait for `img[src*="settings.png"]` → Click
-6. Wait for `#serverTwCheckbox` to exist, then click `#alwaysShowAllCheckbox` FIRST (local setting, no re-render), then `#serverTwCheckbox`. Order matters: the Taiwan checkbox triggers a DOM re-render, so any checkbox clicked after it may no longer be found.
-7. Wait 5s for AJAX re-render
-8. Wait for `[class*="skills_table_enname"]` to be visible
-9. Additional 2s buffer for final render
-10. Extract full HTML via `page.content()`
+2. Navigate directly to `/data/manifests/umamusume.json` with a 20-second timeout
+3. Resolve the current `skills` hash and fetch `/data/umamusume/skills.{hash}.json`
+4. Keep entries with non-empty `name_tw` and `jpname`, and map them to the existing schema
+5. Close Chromium with a 5-second upper bound; kill its process if graceful close stalls
+
+The browser is retained to use the same TLS/browser environment as GameTora. It no longer waits for page hydration, advertising requests, settings controls, or skill-table rendering. The frontend also aborts requests after 45 seconds so its loading state cannot remain indefinitely.
 
 Note: skill collection (`/api/fetch-basic`) no longer downloads icon images — icons are downloaded only by the race-course collection flow (`saveCourseData`).
 
@@ -262,11 +261,10 @@ Note: skill collection (`/api/fetch-basic`) no longer downloads icon images — 
 
 ## Common Issues
 
-**Missing English Names (enName fields empty)**:
-1. Taiwan server checkbox automation may have failed
-2. Increase wait times: 5s delay → 7s, or 2s buffer → 3s
-3. Check selector: `#serverTwCheckbox` must match current HTML
-4. Verify `skills_table_enname` class name hasn't changed
+**Missing Japanese Names (`enName` fields empty in the legacy schema)**:
+1. Verify the current GameTora skills JSON still contains `jpname`
+2. Verify the manifest still exposes a `skills` hash
+3. Check whether GameTora renamed `name_tw` or `jpname`
 
 **Puppeteer Launch Failures**:
 - Add `--no-sandbox --disable-setuid-sandbox` args

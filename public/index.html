@@ -1045,7 +1045,7 @@
             <div id="skillParsedData" class="parsed-data hidden">
                 <div class="sub-tabs">
                     <button class="sub-tab active" onclick="switchSubTab('skill', 'parsed')">解析結果</button>
-                    <button class="sub-tab" onclick="switchSubTab('skill', 'raw')">原始內容</button>
+                    <button class="sub-tab" onclick="switchSubTab('skill', 'raw')">來源內容</button>
                 </div>
 
                 <div id="skillParsedTab" class="sub-tab-content active">
@@ -1060,7 +1060,7 @@
                     </div>
 
                     <div class="parsed-section">
-                        <h2>🔍 抓取到的完整 HTML 內容</h2>
+                        <h2>🔍 抓取來源資訊</h2>
                         <div class="result-content" id="skillHtmlContent" style="max-height: 600px; overflow-y: auto;">
                         </div>
                     </div>
@@ -1341,6 +1341,8 @@
             skillLoading.classList.remove('hidden');
             skillFetchBtn.disabled = true;
             currentSkillData = null; // 重置資料
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 45000);
 
             try {
                 const response = await fetch('/api/fetch-basic', {
@@ -1348,7 +1350,8 @@
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({ url })
+                    body: JSON.stringify({ url }),
+                    signal: controller.signal
                 });
 
                 const data = await response.json();
@@ -1359,8 +1362,12 @@
                     showSkillError(data.error || '抓取失敗');
                 }
             } catch (err) {
-                showSkillError('發生錯誤: ' + err.message);
+                const message = err.name === 'AbortError'
+                    ? '抓取超過 45 秒，已自動中止，請稍後再試'
+                    : '發生錯誤: ' + err.message;
+                showSkillError(message);
             } finally {
+                clearTimeout(timeoutId);
                 skillLoading.classList.add('hidden');
                 skillFetchBtn.disabled = false;
             }
@@ -1376,11 +1383,11 @@
                 document.getElementById('skillJson').textContent = JSON.stringify(data.parsed, null, 2);
             }
 
-            // 顯示完整的 HTML 內容
+            // 顯示資料來源內容
             if (data.content) {
                 document.getElementById('skillHtmlContent').textContent = data.content;
             } else {
-                document.getElementById('skillHtmlContent').textContent = '無 HTML 內容';
+                document.getElementById('skillHtmlContent').textContent = '無來源內容';
             }
 
             skillParsedData.classList.remove('hidden');
