@@ -1262,18 +1262,28 @@ app.get('/api/skills-database', async (req, res) => {
       });
     }
 
-    // 讀取最新的技能資料檔案（按檔名排序，取最後一個）
+    // 新資料檔可能只包含部分技能；依時間合併，較新的翻譯優先。
     jsonFiles.sort();
     const latestFile = jsonFiles[jsonFiles.length - 1];
-    const filePath = path.join(skillsDir, latestFile);
-
-    // 讀取並解析 JSON
-    const fileContent = await fs.readFile(filePath, 'utf-8');
-    const skillData = JSON.parse(fileContent);
+    const skillsByName = new Map();
+    for (const file of jsonFiles) {
+      const fileContent = await fs.readFile(path.join(skillsDir, file), 'utf-8');
+      const skillData = JSON.parse(fileContent);
+      for (const skill of skillData.skills || []) {
+        if (!skill.enName) continue;
+        const previous = skillsByName.get(skill.enName);
+        skillsByName.set(skill.enName, {
+          ...previous,
+          ...skill,
+          // 新檔若缺少中文名稱，保留舊檔已有的翻譯。
+          jpName: skill.jpName?.trim() || previous?.jpName || ''
+        });
+      }
+    }
 
     res.json({
       success: true,
-      skills: skillData.skills || [],
+      skills: Array.from(skillsByName.values()),
       source: latestFile
     });
 

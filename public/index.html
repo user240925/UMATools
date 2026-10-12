@@ -300,8 +300,24 @@
             border-radius: 4px;
         }
 
+        .course-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 0 0 160px;
+        }
+
+        .course-group-title {
+            margin: 0 0 4px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #463f70;
+            color: #463f70;
+            font-size: 16px;
+            text-align: center;
+        }
+
         .course-btn {
-            padding: 12px 24px;
+            padding: 12px 16px;
             background: #f5f5f5;
             border: 2px solid #ddd;
             border-radius: 8px;
@@ -312,6 +328,11 @@
             transition: all 0.3s;
             white-space: nowrap;
             flex-shrink: 0;
+        }
+
+        .course-group .course-btn {
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .course-btn:hover:not(:disabled) {
@@ -394,6 +415,19 @@
             margin-top: 0;
             color: #463f70;
             border-bottom: 2px solid #463f70;
+        }
+
+        .selected-skills-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #463f70;
+        }
+        .selected-skills-header .section-title {
+            margin-bottom: 0;
+            border-bottom: none;
         }
 
         .skills-list {
@@ -704,6 +738,12 @@
             background: #ccc;
             cursor: not-allowed;
         }
+        .total-benefit-btn {
+            margin: 0 0 8px;
+            padding: 6px 12px;
+            flex-shrink: 0;
+            font-size: 13px;
+        }
         .eval-modal-overlay {
             display: none;
             position: fixed;
@@ -756,6 +796,49 @@
             overflow-y: auto;
             flex: 1;
             min-height: 0;
+        }
+        .total-benefit-summary {
+            padding: 18px 20px;
+            border-bottom: 1px solid #eee;
+            background: #f7f8ff;
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .total-benefit-value {
+            color: #463f70;
+            font-size: 24px;
+        }
+        .total-benefit-note {
+            color: #666;
+            font-size: 12px;
+        }
+        .total-benefit-body {
+            overflow-x: auto;
+        }
+        .total-benefit-list {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(var(--benefit-rows), 45px);
+            grid-auto-columns: min(270px, calc(100vw - 80px));
+            column-gap: 12px;
+        }
+        .total-benefit-list .eval-skill-row {
+            min-width: 0;
+            padding: 6px 0;
+        }
+        .total-benefit-list .eval-skill-name {
+            flex: 1 1 auto;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .total-benefit-list .eval-skill-efficiency {
+            flex-shrink: 0;
+            margin-left: auto;
+            text-align: right;
         }
         .eval-tab-bar {
             display: flex;
@@ -1176,7 +1259,10 @@
 
                 <!-- D區：已選技能 -->
                 <div class="skills-panel">
-                    <h3 class="section-title">✓ 已選技能</h3>
+                    <div class="selected-skills-header">
+                        <h3 class="section-title">✓ 已選技能</h3>
+                        <button id="totalBenefitBtn" class="eval-btn total-benefit-btn" disabled onclick="openTotalBenefitPopup()">總收益數據</button>
+                    </div>
                     <div id="selectedSkillsContainer" class="skills-list">
                         <div class="empty-placeholder"></div>
                     </div>
@@ -1654,13 +1740,38 @@
             const container = document.getElementById('courseListContainer');
             container.innerHTML = '';
 
+            const coursesByVenue = new Map();
             allCourses.forEach((course, index) => {
-                const btn = document.createElement('button');
-                btn.className = 'course-btn';
-                btn.textContent = course.displayName;
-                btn.dataset.index = index;
-                btn.onclick = () => selectCourse(index);
-                container.appendChild(btn);
+                if (!coursesByVenue.has(course.courseName)) {
+                    coursesByVenue.set(course.courseName, []);
+                }
+                coursesByVenue.get(course.courseName).push({ course, index });
+            });
+
+            coursesByVenue.forEach((entries, venue) => {
+                entries.sort((a, b) => a.course.distance.localeCompare(b.course.distance, undefined, { numeric: true }));
+
+                const group = document.createElement('section');
+                group.className = 'course-group';
+                const heading = document.createElement('h4');
+                heading.className = 'course-group-title';
+                heading.textContent = venue;
+                group.appendChild(heading);
+
+                entries.forEach(({ course, index }) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'course-btn';
+                    const sameDistanceCount = entries.filter(entry => entry.course.distance === course.distance).length;
+                    btn.textContent = sameDistanceCount > 1 ? `${course.distance} (${course.surface})` : course.distance;
+                    btn.setAttribute('aria-label', `${venue} ${course.distance} (${course.surface})`);
+                    btn.dataset.index = index;
+                    btn.classList.toggle('active', selectedCourse?.courseName === venue
+                        && selectedCourse.distance === course.distance && selectedCourse.surface === course.surface);
+                    btn.onclick = () => selectCourse(index);
+                    group.appendChild(btn);
+                });
+
+                container.appendChild(group);
             });
         }
 
@@ -1670,12 +1781,8 @@
 
             // 更新賽道按鈕的啟用狀態
             const courseBtns = document.querySelectorAll('.course-btn');
-            courseBtns.forEach((btn, i) => {
-                if (i === courseIndex) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
+            courseBtns.forEach(btn => {
+                btn.classList.toggle('active', Number(btn.dataset.index) === courseIndex);
             });
 
             // 更新跑法按鈕狀態
@@ -1878,6 +1985,7 @@
         // 渲染D區：已選技能
         function renderSelectedSkills() {
             const container = document.getElementById('selectedSkillsContainer');
+            document.getElementById('totalBenefitBtn').disabled = selectedSkills.length === 0;
 
             if (selectedSkills.length === 0) {
                 container.innerHTML = '<div class="empty-placeholder"></div>';
@@ -2263,14 +2371,25 @@
         function moveSkillsToSelected() {
             if (selectedAvailableSkillIds.size === 0) return;
 
-            // 找出選中的技能
-            const skillsToMove = availableSkills.filter(skill => selectedAvailableSkillIds.has(skill.id));
+            // 同組中 groupRate 較低的技能是下位技能，一併移入已選區。
+            const skillIdsToMove = new Set(selectedAvailableSkillIds);
+            const requestedSkills = availableSkills.filter(skill => selectedAvailableSkillIds.has(skill.id));
+            requestedSkills.forEach(upperSkill => {
+                if (upperSkill.groupId == null || !Number.isFinite(upperSkill.groupRate)) return;
+                availableSkills.forEach(skill => {
+                    if (skill.groupId === upperSkill.groupId && Number.isFinite(skill.groupRate)
+                        && skill.groupRate < upperSkill.groupRate) {
+                        skillIdsToMove.add(skill.id);
+                    }
+                });
+            });
+            const skillsToMove = availableSkills.filter(skill => skillIdsToMove.has(skill.id));
 
             // 移至D區
             selectedSkills.push(...skillsToMove);
 
             // 從C區移除
-            availableSkills = availableSkills.filter(skill => !selectedAvailableSkillIds.has(skill.id));
+            availableSkills = availableSkills.filter(skill => !skillIdsToMove.has(skill.id));
 
             // 清除選擇狀態
             selectedAvailableSkillIds.clear();
@@ -2320,11 +2439,84 @@
             // 停用技能評價按鈕
             const evalBtn = document.getElementById('skillEvalBtn');
             if (evalBtn) evalBtn.disabled = true;
+            document.getElementById('totalBenefitBtn').disabled = true;
+        }
+
+        // 取得技能的效果值（バ）；缺少數據時不納入合計。
+        function getSkillBenefit(skill) {
+            const value = skill.effectData?.effectValue;
+            if (Number.isFinite(value)) return value;
+            const match = skill.effect?.match(/(\d+(?:\.\d+)?)\s*\[バ\]/);
+            return match ? Number(match[1]) : null;
+        }
+
+        // 顯示已選技能的個別效果與總收益。
+        async function openTotalBenefitPopup() {
+            if (selectedSkills.length === 0) return;
+            await loadSkillsDatabase();
+            if (selectedSkills.length === 0) return;
+
+            const body = document.getElementById('totalBenefitModalBody');
+            const list = document.createElement('ul');
+            list.className = 'eval-category-list eval-tab-content total-benefit-list';
+            const maxRows = Math.max(1, Math.floor((window.innerHeight - 260) / 45));
+            list.style.setProperty('--benefit-rows', Math.min(selectedSkills.length, maxRows));
+            const efficiencyTiers = calculateEfficiencyTiers(selectedSkills, [...availableSkills, ...selectedSkills]);
+            let total = 0;
+            let missingCount = 0;
+
+            selectedSkills.forEach(skill => {
+                const benefit = getSkillBenefit(skill);
+                const tier = efficiencyTiers.get(skill.id);
+                if (benefit === null) missingCount++;
+                else total += benefit;
+
+                const displayName = skillsDatabase.get(skill.name)?.jpName?.trim() || skill.name;
+                const row = document.createElement('li');
+                row.className = 'eval-skill-row';
+
+                const icon = document.createElement('img');
+                icon.className = 'eval-skill-icon';
+                icon.src = skill.icon || '';
+                icon.alt = '';
+                row.appendChild(icon);
+
+                const name = document.createElement('span');
+                name.className = 'eval-skill-name' + (tier ? ` efficiency-tier-${tier}` : '');
+                name.textContent = displayName;
+                name.title = displayName;
+                row.appendChild(name);
+
+                const value = document.createElement('span');
+                value.className = 'eval-skill-efficiency' + (tier ? ` efficiency-tier-${tier}` : '');
+                value.textContent = benefit === null ? '無バ數據' : `${benefit.toFixed(2)} [バ]`;
+                row.appendChild(value);
+                list.appendChild(row);
+            });
+
+            document.getElementById('totalBenefitValue').textContent = `${total.toFixed(2)} [バ]`;
+            document.getElementById('totalBenefitNote').textContent = missingCount
+                ? `${missingCount} 個技能無バ數據，未計入加總`
+                : `已計入全部 ${selectedSkills.length} 個技能`;
+            body.replaceChildren(list);
+            body.scrollTop = 0;
+            body.scrollLeft = 0;
+            document.getElementById('totalBenefitModal').classList.add('open');
+        }
+
+        function closeTotalBenefitPopup() {
+            document.getElementById('totalBenefitModal').classList.remove('open');
+        }
+
+        function handleTotalBenefitOverlayClick(event) {
+            if (event.target === event.currentTarget) closeTotalBenefitPopup();
         }
 
         // 開啟技能評價 Popup
-        function openSkillEvaluationPopup() {
+        async function openSkillEvaluationPopup() {
             if (availableSkills.length === 0) return;
+
+            await loadSkillsDatabase();
 
             // 更新標題
             const title = document.getElementById('evalModalTitle');
@@ -2423,10 +2615,8 @@
                 const stats = evalStatsCache.get(skill.id);
                 const tier = tierMap.get(skill.id);
 
-                // 名稱轉換（查詢 skillsDatabase）
-                const displayName = skillsDatabase.has(skill.name)
-                    ? (skillsDatabase.get(skill.name).jpName || skill.name)
-                    : skill.name;
+                // 繁中技能資料的 jpName 是中文翻譯；沒有翻譯時使用賽道資料的日文名稱。
+                const displayName = skillsDatabase.get(skill.name)?.jpName?.trim() || skill.name;
 
                 const row = document.createElement('li');
                 row.className = 'eval-skill-row';
@@ -2489,6 +2679,21 @@
             <div class="eval-tab-bar" id="evalTabBar"></div>
             <div class="eval-modal-body" id="evalModalBody">
             </div>
+        </div>
+    </div>
+    <!-- 總收益數據 Modal -->
+    <div id="totalBenefitModal" class="eval-modal-overlay" onclick="handleTotalBenefitOverlayClick(event)">
+        <div class="eval-modal" role="dialog" aria-modal="true" aria-labelledby="totalBenefitTitle">
+            <div class="eval-modal-header">
+                <span class="eval-modal-title" id="totalBenefitTitle">📊 總收益數據</span>
+                <button class="eval-modal-close" onclick="closeTotalBenefitPopup()" aria-label="關閉總收益數據">✕</button>
+            </div>
+            <div class="total-benefit-summary">
+                <span>已選技能バ加總</span>
+                <strong class="total-benefit-value" id="totalBenefitValue">0.00 [バ]</strong>
+                <span class="total-benefit-note" id="totalBenefitNote"></span>
+            </div>
+            <div class="eval-modal-body total-benefit-body" id="totalBenefitModalBody"></div>
         </div>
     </div>
 </body>
