@@ -1,32 +1,6 @@
 @echo off
-chcp 65001 >nul
-echo ========================================
-echo UMA Tools 關閉中...
-echo ========================================
-echo.
+title UMA Tools - Stop
+cd /d "%~dp0"
 
-REM 查找並終止 server.js 進程
-echo [提示] 正在尋找 UMA Tools 服務器進程...
-
-REM 使用 netstat 查找佔用 3001 端口的進程
-for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3001 ^| findstr LISTENING') do (
-    set PID=%%a
-)
-
-if defined PID (
-    echo [找到] 進程 ID: %PID%
-    echo [執行] 正在終止進程...
-    taskkill /F /PID %PID% >nul 2>nul
-    if %ERRORLEVEL% EQU 0 (
-        echo [成功] UMA Tools 服務器已關閉
-    ) else (
-        echo [錯誤] 無法終止進程 (可能需要管理員權限)
-    )
-) else (
-    echo [提示] 未找到運行中的 UMA Tools 服務器
-    echo [提示] 端口 3001 沒有被佔用
-)
-
-echo.
-echo ========================================
-pause
+powershell -NoProfile -Command "$serverIds = @(netstat -ano -p tcp | ForEach-Object { if ($_ -match '\sTCP\s+\S+:10010\s+\S+\s+LISTENING\s+(\d+)\s*$') { [int]$Matches[1] } } | Sort-Object -Unique); if ($serverIds.Count -eq 0) { Write-Host '[INFO] UMA Tools server is not running.'; exit 0 }; foreach ($serverId in $serverIds) { $serverProcess = Get-Process -Id $serverId -ErrorAction SilentlyContinue; if (!$serverProcess -or $serverProcess.ProcessName -ne 'node') { Write-Error ('Port 10010 is owned by another process (PID ' + $serverId + ').'); exit 1 }; try { Stop-Process -Id $serverId -ErrorAction Stop; Write-Host ('[OK] Stopped UMA Tools server (PID ' + $serverId + ').') } catch { Write-Error $_; exit 1 } }"
+exit /b %errorlevel%
